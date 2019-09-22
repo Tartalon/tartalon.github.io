@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 15px;
+  color: #fefbfc;
+
+}
+
+.container {
+  background: url("../img/GRID.png") no-repeat center;
+  background-color: #121116;
+  width: 100%;
+  height: 450px;
+  text-align: center;
+}
+
+.header {
+  
+}
+
+.logo {
+  display: block;
+  margin: 0 auto;
+  padding: 120px 0 50px;
+}
+
+.main {
+
+}
+
+.main__title {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.main__title::after {
+  counter-reset: "";
+  border: 2px solid #fefbfc;
+  width: 17%;
+}
