@@ -29,7 +29,7 @@ body {
 }
 
 .main {
-
+ display: block;
 }
 
 .main__title {
@@ -37,12 +37,31 @@ body {
   font-size: 20px;
   font-weight: 400;
   text-transform: uppercase;
-  display: inline-block;
-  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  margin-bottom: 15px;
 }
 
-.main__title::after {
-  counter-reset: "";
-  border: 2px solid #fefbfc;
-  width: 17%;
+.main__title:after {
+  content: "";
+  border: 1px solid #fefbfc;
+  width: 230px;
+  /* display: block; */
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
 }
+
+.main__nav-item {
+  display: inline-block;
+  margin-right: 30px;
+}
+
+.main__nav-item:last-child {
+  margin-right: 0;
+}
+
+/* .main__link {
+  display: inline-block;
+} */
