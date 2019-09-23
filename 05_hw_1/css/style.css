@@ -19,10 +19,6 @@ body {
   text-align: center;
 }
 
-.header {
-  
-}
-
 .logo {
   display: block;
   margin: 0 auto;
@@ -48,7 +44,6 @@ body {
   content: "";
   border: 1px solid #fefbfc;
   width: 230px;
-  /* display: block; */
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -62,6 +57,10 @@ body {
 
 .main__nav-item:last-child {
   margin-right: 0;
+}
+
+.main__link:hover {
+  border: 1px solid #19c8fa;
 }
 
 .footer {
