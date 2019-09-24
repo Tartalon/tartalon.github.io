@@ -5,26 +5,29 @@
 }
 
 body {
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
   font-size: 15px;
   color: #fefbfc;
-
+  background-color: #000;
 }
 
 .container {
-  background-color: #121116;
   width: 100%;
-  font-family: 'Open Sans', sans-serif;
-  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #121116;
 }
 
 .footer {
-    margin: 0 auto;
-    padding: 120px 0 40px;
+  margin: 0 auto;
+  padding: 120px 0 40px;
+  text-align: center;
 }
 
 .footer__logo {
   display: inline-block;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .logo-link {
@@ -70,10 +73,6 @@ body {
 }
 
 .footer__nav-item {
-  width: 20px;
-  height: 20px;
-  border: 1px solid #121116;
-  border-radius: 50%;
   display: inline-block;
   margin-right: 30px;
 }
@@ -82,16 +81,21 @@ body {
   margin-right: 0;
 }
 
-.footer__nav-item:hover {
+.footer__nav-link:hover {
   border: 1px solid #19c8fa;
 }
 
 .footer__nav-link {
- display: block;
+  display: block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #121116;
+  border-radius: 50%;
 }
 
 .footer__requis {
   display: block;
+  margin-bottom: 85px;
 }
 
 .footer__requis-text {
