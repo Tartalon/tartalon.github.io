@@ -31,8 +31,7 @@ body {
 
 .logo-link {
   display: inline-block;
-  width: 117px;
-  height: 40px;
+  font-size: 0;
   border: 1px solid #121116;
   border-radius: 10px;
 }
