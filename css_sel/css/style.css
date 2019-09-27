@@ -41,16 +41,19 @@ body {
   display: block;
 }
 
-.form__item {
-  list-style: none;
-  width: 100%;
+.form__group {
   text-align: left;
   border-top: 2px solid transparent;
   border-bottom: 2px solid transparent;
   padding: 10px;
 }
 
-.form__item:hover {
+.form__item {
+  list-style: none;
+  width: 100%;
+}
+
+.form__group:hover {
   background-color: #5e6175;
   border-top: 2px solid #e0e6f9;
   border-bottom: 2px solid #e0e6f9;
@@ -64,7 +67,7 @@ body {
   background-color: #848499;
 }
 
-.form__item:active {
+.form__group:active {
   background-color: #ea7070;
 }
 
