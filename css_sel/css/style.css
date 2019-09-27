@@ -53,21 +53,21 @@ body {
   width: 100%;
 }
 
-.form__group:hover {
+.form__item:hover > .form__group {
   background-color: #5e6175;
   border-top: 2px solid #e0e6f9;
   border-bottom: 2px solid #e0e6f9;
 }
 
-.form__item:nth-child(2n+1) {
+.form__item:nth-child(2n+1) > .form__group{
   background-color: #77778e;
 }
 
-.form__item:nth-child(2n) {
+.form__item:nth-child(2n) > .form__group {
   background-color: #848499;
 }
 
-.form__group:active {
+.form__item:active > .form__group {
   background-color: #ea7070;
 }
 
