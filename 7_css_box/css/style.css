@@ -37,6 +37,7 @@ body {
 .main {
   width: 100%;
   box-sizing: border-box;
+  margin-bottom: 15px;
 }
 
 .main__content {
@@ -135,3 +136,11 @@ body {
   background-color: #626a95;
 }
 
+.footer__text {
+  font-size: .9rem;
+  font-weight: 300;
+}
+
+.capital {
+  text-transform: capitalize;
+}
