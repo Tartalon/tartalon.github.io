@@ -20,34 +20,42 @@ body {
 
 .offers {
 	padding: 90px 0;
+	min-height: 1200px;
 }
 
-.offer__list {
+.offers__list {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
-}
-
-.offers__item {
-	list-style: none;
-	background-color: #fff;
+	align-content: space-between;
 }
 
 .offers__link {
-	width: 100%;
 	display: block;
-	text-decoration: none;
-	color: #fff;
-	min-width: 360px;
+	width: 100%;
 	max-width: 360px;
-	min-height: 540px;
+	text-decoration: none;
 	background-color: #fff;
+	height: 540px;
 }
 
 .offers__link.cars {
-	background-color: #ccc;
-	background: url("../img/car.jpg") no-repeat;
-	background-repeat: no-repeat;
-	background-position: center;
+	background:url("../img/car.jpg") no-repeat;
 	min-width: 740px;
+}
+
+.offers__intro {
+	padding: 0 25px;
+}
+
+.link__foto {
+	margin-bottom: 30px;
+}
+
+.intro__date {
+	margin-bottom: 20px;
+}
+
+.intro__text {
+	margin-bottom: 70px;
 }
