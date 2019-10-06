@@ -36,9 +36,10 @@ body {
 	height: 1100px;
 }
 
- {
-	background-image: url("../img/car.jpg");
+.offers__item {
+	list-style: none;
 }
+
 
 .offers__link {
 	display: flex;
