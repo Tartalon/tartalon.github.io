@@ -51,6 +51,7 @@ body {
 	text-transform: uppercase;
 	background-color: #fff;
 	height: 540px;
+	justify-content: space-between;
 }
 
 .offers__link:hover {
@@ -78,7 +79,7 @@ body {
 
 .link__text {
 	height: 105px;
-	width: 440px;
+	max-width: 440px;
     display: flex;
     flex-direction: column;
     text-transform: uppercase;
@@ -98,10 +99,6 @@ body {
 	font-weight: 700;
 	color: #fff;
 	width: 100%;
-}
-
-.link__foto {
-	margin-bottom: 30px;
 }
 
 .offers__intro {
