@@ -53,12 +53,12 @@
 
 .photo__item {
 	display: block;
-	position: relative;
+	text-transform: capitalize;
 }
 
 .box__img {
 	display: block;
-	background-color: $photo;
+	position: relative;
 }
 
 .photo__img {
@@ -66,22 +66,23 @@
 	margin-bottom: 20px;
 }
 
-.photo__img:hover {
-	opacity: 0;
-}
-
-.box__img:hover .sociol__link{
-	opacity: 1;
-}
-
 .photo__sociol {
 	display: flex;
 	justify-content: center;
+	align-items: center;
 	position: absolute;
-	top: 40%;
+	top: 0;
+	right: 0;
+	bottom: 0;
 	left: 0;
 	width: 100%;
 	text-align: center;
+	background-color: $photo;
+	opacity: 0;
+
+	&:hover {
+		opacity: 1;
+	}
 }
 
 .sociol__link {
@@ -91,27 +92,26 @@
 	width: 45px;
 	padding: 7px;
 	margin-right: 4px;
-	opacity: 0;
+
+	&:hover {
+		background-color: $bg_icon;
+	}
 }
 
 .sociol__link:last-child {
 	margin-right: 0;
 }
 
-.sociol__link:hover {
-	background-color: $bg_icon;
-}
-
 .link__title {
 	font-size: 1.1rem;
 	font-weight: 700;
-	text-transform: capitalize;
+	// text-transform: capitalize;
 	color: $black;
 }
 
 .link__subtitle {
 	font-size: .8rem;
 	font-weight: 300;
-	text-transform: capitalize;
+	// text-transform: capitalize;
 	color: $dark;
 }
