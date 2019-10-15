@@ -1,13 +1,21 @@
-.cahee {
-	color: $black;
+.section__cahee {
 	background: url("../img/bg_01.jpg");
+}
+
+.cahee {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	color: $black;
+	height: 100vh;
+	min-height: 1000px;
 
 	&__header {
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
 		align-items: center;
-		padding: 50px 15px;
+		padding: 0 15px;
 	}
 
 	&__logo {
@@ -15,6 +23,7 @@
 		font-size: 3.1rem;
 		font-weight: 400;
 		text-transform: capitalize;
+		color: $black;
 	}
 }
 
@@ -46,4 +55,39 @@
 	&:hover::before {
 			opacity: 1;
 		}
+}
+
+.main {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 375px;
+	height: 250px;
+
+	&__title {
+		font-family: $main-font;
+		font-size: 3.75rem;
+		font-weight: 900;
+		text-transform: capitalize;
+		color: $black;
+	}
+
+	&__subtitle {
+		font-family: $main-font;
+		font-size: 1.1rem;
+		font-weight: 300;
+		line-height: 1.5;
+	}
+
+	&__btn {
+		display: inline-block;
+		font-family: $main-font;
+		font-size: 1.2rem;
+		font-weight: 300;
+		text-transform: uppercase;
+		padding: 20px 25px;
+		background-color: $menu-hover;
+		color: $white;
+		line-height: 1.5;
+	}
 }
