@@ -1,21 +1,19 @@
-.section__cahee {
-	background: url("../img/bg_01.jpg");
+.page-cahee {
+	background: url("../img/bg_01.jpg") center no-repeat / cover;
 }
 
-.cahee {
+.section-cahee {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
 	color: $black;
 	height: 100vh;
-	min-height: 1000px;
 
 	&__header {
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
 		align-items: center;
-		padding: 0 15px;
 	}
 
 	&__logo {
@@ -57,12 +55,12 @@
 		}
 }
 
-.main {
+.fresh {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	width: 375px;
-	height: 250px;
+	align-items: baseline;
+	max-width: 375px;
 
 	&__title {
 		font-family: $main-font;
@@ -70,24 +68,72 @@
 		font-weight: 900;
 		text-transform: capitalize;
 		color: $black;
+		margin-bottom: 30px;
 	}
 
-	&__subtitle {
-		font-family: $main-font;
-		font-size: 1.1rem;
-		font-weight: 300;
-		line-height: 1.5;
+	&__text {
+		margin-bottom: 30px;
 	}
+}
 
-	&__btn {
-		display: inline-block;
-		font-family: $main-font;
-		font-size: 1.2rem;
+.box-text {
+	font-family: $main-font;
+		font-size: 1rem;
 		font-weight: 300;
-		text-transform: uppercase;
-		padding: 20px 25px;
-		background-color: $menu-hover;
+		line-height: 1.6;
+}
+
+.btn__link {
+	display: inline-block;
+	font-family: $main-font;
+	font-size: 1.2rem;
+	font-weight: 300;
+	text-transform: uppercase;
+	padding: 20px 25px;
+	background-color: $menu-hover;
+	color: $white;
+	line-height: 1.5;
+	box-shadow: 3px 3px 10px 0px black;
+
+	&:hover {
+		color: $menu-hover;
+		background-color: $white;
+		font-weight: 700;
+	}
+}
+
+.cahee-footer {
+	text-align: center;
+}
+
+.page-about {
+	background-color: $bg-about;
+}
+
+.section-about {
+	display: flex;
+	justify-content: space-between;
+	text-align: start;
+	align-items: center;
+	font-family: $main-font;
+}
+
+.box-about {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	max-width: 40%;
+	max-height: 300px;
+
+	&__title {
+		font-size: 5.6rem;
+		font-weight: 700;
+		line-height: 1.2;
+		text-transform: capitalize;
 		color: $white;
-		line-height: 1.5;
+	}
+
+	&__text {
+		color: $white;
 	}
 }
