@@ -24,7 +24,7 @@
 	text-transform: uppercase;
 	letter-spacing: .3em;
 	color: $black;
-	margin-bottom: 65px;
+	margin-bottom: 50px;
 }
 
 .about__title::after {
@@ -41,7 +41,7 @@
 	line-height: 2rem;
 	font-weight: 300;
 	color: $dark;
-	margin-bottom: 60px;
+	padding: 50px  0;
 }
 
 .photo__list {
@@ -52,8 +52,7 @@
 }
 
 .photo__item {
-	display: block;
-	text-transform: capitalize;
+    text-transform: capitalize;
 }
 
 .box__img {
@@ -63,10 +62,9 @@
 
 .photo__img {
 	display: block;
-	margin-bottom: 20px;
 }
 
-.photo__sociol {
+.photo__social {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -102,14 +100,18 @@
 	margin-right: 0;
 }
 
-.link__title {
+.photo__text {
+	padding: 30px 0 0;
+}
+
+.tex__title {
 	font-size: 1.1rem;
 	font-weight: 700;
 	// text-transform: capitalize;
 	color: $black;
 }
 
-.link__subtitle {
+.text__subtitle {
 	font-size: .8rem;
 	font-weight: 300;
 	// text-transform: capitalize;
