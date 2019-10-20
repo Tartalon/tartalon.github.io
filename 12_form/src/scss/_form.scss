@@ -1,0 +1,41 @@
+.modal {
+	width: 100%;
+	padding: 100px 0;
+	box-sizing: border-box;
+
+	&__inner {
+	background: url('../img/form_bg.jpg');
+	width: 100%;
+	max-width: 400px;
+	max-height: 500px;
+	min-height: 480px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	}
+}
+
+.box-form {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	padding: 50px 70px;
+
+	&__sign {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+	}
+
+	&__list {
+		display: flex;
+		justify-content: space-around;
+	}
+}
+
+.form-sign__label {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
