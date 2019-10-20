@@ -14,7 +14,7 @@
 			<div class="box-form">
 					<ul class="box-form__list">
 						<li class="box-form__item">
-							<a href="" class="box-form__link">
+							<a href="#form-sign" class="box-form__link box-form__link--active">
 								sign in
 							</a>
 						</li>
@@ -25,35 +25,38 @@
 						</li>
 					</ul>
 
-				<form action="" class="box-form__sign">
-					<label for="" class="form-sign__label" anme="username">
+				<form action="#" metod="get" class="box-form__sign" id="form-sign">
+					<label class="form-sign__label" name="username">
 						<span class="label__span">username</span>
-						<input type="text" class="form-sign__input" required>
+						<input type="text" class="form-sign__input" minlength="4" required>
 					</label>
 
 					<label for="" class="form-sign__label" name="password" required>
 						<span class="label__span">password</span>
-						<input type="password" class="form-sing__input" required>
+						<input type="password" class="form-sign__input" minlength="8" required>
 					</label>
 
-					<label name="remember">
-						<input type="checkbox" class="" checked> keep me signed in
+					<label name="remember" class="box-form__remember">
+						<input type="checkbox" class="remember__check" checked>
+						<span class="remember__text">Keep me signed in</span>
 					</label>
 
-					<button type="submit">
+					<button type="submit" class="box-form__submit">
 						sign in
 					</button>
 
-					<ul>
-						<li>
-							<a href="#">
+					<ul class="box-form__advanced">
+						<li class="advanced__item">
+							<a href="#" class="advanced__link">
 								forgot password
 							</a>
+							<hr class="advanced__link-bottom">
 						</li>
-						<li>
-							<a href="#">
+						<li class="advanced__item">
+							<a href="#" class="advanced__link">
 								create an account
 							</a>
+							<hr class="advanced__link-bottom">
 						</li>
 					</ul>
 				</form>

@@ -6,6 +6,7 @@
 
 html, body {
 	min-height: 100vh;
+	font-size: 100%;
 }
 
 li {
@@ -14,4 +15,7 @@ li {
 
 a {
 	text-decoration: none;
+}
+.box-form {
+	font-family: $main-font;
 }
