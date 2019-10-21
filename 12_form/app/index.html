@@ -26,15 +26,21 @@
 					</ul>
 
 				<form action="#" metod="get" class="box-form__sign" id="form-sign">
-					<label class="form-sign__label" name="username">
-						<span class="label__span">username</span>
-						<input type="text" class="form-sign__input" minlength="4" required>
-					</label>
+					<div class="form-sign__content">
+						<label class="form-sign__label" name="username">
+							<span class="label__span">username</span>
+							<input type="text" class="form-sign__input" minlength="4" required>
+						</label>
+						<div class="form-sign__error">minlength 4 symbol</div>
+					</div>
 
-					<label for="" class="form-sign__label" name="password" required>
-						<span class="label__span">password</span>
-						<input type="password" class="form-sign__input" minlength="8" required>
-					</label>
+					<div class="form-sign__content">
+						<label class="form-sign__label" name="password" required>
+							<span class="label__span">password</span>
+							<input type="password" class="form-sign__input" minlength="8" required>
+						</label>
+						<div class="form-sign__error">minlength 8 symbol</div>
+					</div>
 
 					<label name="remember" class="box-form__remember">
 						<input type="checkbox" class="remember__check" checked>
@@ -50,13 +56,11 @@
 							<a href="#" class="advanced__link">
 								forgot password
 							</a>
-							<hr class="advanced__link-bottom">
 						</li>
 						<li class="advanced__item">
 							<a href="#" class="advanced__link">
 								create an account
 							</a>
-							<hr class="advanced__link-bottom">
 						</li>
 					</ul>
 				</form>
