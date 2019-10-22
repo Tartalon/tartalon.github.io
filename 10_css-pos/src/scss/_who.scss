@@ -3,8 +3,6 @@
 	flex-direction: column;
 	justify-content: space-around;
 	background-color: $background;
-	min-height: 740px;
-	padding: 105px 0;
 }
 
 .who__about {
@@ -12,10 +10,10 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	position: relative;
 	max-width: 575px;
 	margin: 0 auto;
 	text-align: center;
+	padding: 100px 0 50px;
 }
 
 .about__title {
@@ -24,7 +22,9 @@
 	text-transform: uppercase;
 	letter-spacing: .3em;
 	color: $black;
-	margin-bottom: 50px;
+	margin-bottom: 70px;
+	position: relative;
+
 }
 
 .about__title::after {
@@ -32,8 +32,8 @@
 	width: 45px;
 	border: 2px solid $grey;
 	position: absolute;
-	top: 30%;
-    left: 46%;
+	bottom: -25px;
+    left: 45%;
 }
 
 .who__text {
@@ -41,7 +41,6 @@
 	line-height: 2rem;
 	font-weight: 300;
 	color: $dark;
-	padding: 50px  0;
 }
 
 .photo__list {
