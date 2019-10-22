@@ -1,0 +1,39 @@
+%svg-common {
+	background: url("../img/sprite.svg") no-repeat;
+}
+
+.svg-design {
+	@extend %svg-common;
+	background-position: 49.97727617027723% 0;
+	width: 99.97px;
+	height: 103.03px;
+}
+
+.svg-development {
+	@extend %svg-common;
+	background-position: 99.96984924623115% 0;
+	width: 99px;
+	height: 96px;
+}
+
+.svg-ellipse {
+	@extend %svg-common;
+	background-position: 0 100%;
+	width: 87px;
+	height: 90px;
+}
+
+.svg-product {
+	@extend %svg-common;
+	background-position: 0 0;
+	width: 98.97px;
+	height: 111px;
+}
+
+.svg-scroll {
+	@extend %svg-common;
+	background-position: 34.11764705882353% 77.08333333333333%;
+	width: 43px;
+	height: 57px;
+}
+

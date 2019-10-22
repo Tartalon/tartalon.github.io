@@ -1,0 +1,39 @@
+.svg-design,
+.svg-development,
+.svg-ellipse,
+.svg-product,
+.svg-scroll {
+	background: url("../img/sprite.svg") no-repeat;
+}
+
+.svg-design {
+	background-position: 49.97727617027723% 0;
+	width: 99.97px;
+	height: 103.03px;
+}
+
+.svg-development {
+	background-position: 99.96984924623115% 0;
+	width: 99px;
+	height: 96px;
+}
+
+.svg-ellipse {
+	background-position: 0 100%;
+	width: 87px;
+	height: 90px;
+}
+
+.svg-product {
+	background-position: 0 0;
+	width: 98.97px;
+	height: 111px;
+}
+
+.svg-scroll {
+	background-position: 34.11764705882353% 77.08333333333333%;
+	width: 43px;
+	height: 57px;
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIl9zcHJpdGUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNDLDhDQUE4QyxFQUFBOztBQUcvQztFQUVDLHlDQUF5QztFQUN6QyxjQUFjO0VBQ2QsZ0JBQWdCLEVBQUE7O0FBR2pCO0VBRUMseUNBQXlDO0VBQ3pDLFdBQVc7RUFDWCxZQUFZLEVBQUE7O0FBR2I7RUFFQywyQkFBMkI7RUFDM0IsV0FBVztFQUNYLFlBQVksRUFBQTs7QUFHYjtFQUVDLHdCQUF3QjtFQUN4QixjQUFjO0VBQ2QsYUFBYSxFQUFBOztBQUdkO0VBRUMsMERBQTBEO0VBQzFELFdBQVc7RUFDWCxZQUFZLEVBQUEiLCJmaWxlIjoic3R5bGUuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiJXN2Zy1jb21tb24ge1xuXHRiYWNrZ3JvdW5kOiB1cmwoXCIuLi9pbWcvc3ByaXRlLnN2Z1wiKSBuby1yZXBlYXQ7XG59XG5cbi5zdmctZGVzaWduIHtcblx0QGV4dGVuZCAlc3ZnLWNvbW1vbjtcblx0YmFja2dyb3VuZC1wb3NpdGlvbjogNDkuOTc3Mjc2MTcwMjc3MjMlIDA7XG5cdHdpZHRoOiA5OS45N3B4O1xuXHRoZWlnaHQ6IDEwMy4wM3B4O1xufVxuXG4uc3ZnLWRldmVsb3BtZW50IHtcblx0QGV4dGVuZCAlc3ZnLWNvbW1vbjtcblx0YmFja2dyb3VuZC1wb3NpdGlvbjogOTkuOTY5ODQ5MjQ2MjMxMTUlIDA7XG5cdHdpZHRoOiA5OXB4O1xuXHRoZWlnaHQ6IDk2cHg7XG59XG5cbi5zdmctZWxsaXBzZSB7XG5cdEBleHRlbmQgJXN2Zy1jb21tb247XG5cdGJhY2tncm91bmQtcG9zaXRpb246IDAgMTAwJTtcblx0d2lkdGg6IDg3cHg7XG5cdGhlaWdodDogOTBweDtcbn1cblxuLnN2Zy1wcm9kdWN0IHtcblx0QGV4dGVuZCAlc3ZnLWNvbW1vbjtcblx0YmFja2dyb3VuZC1wb3NpdGlvbjogMCAwO1xuXHR3aWR0aDogOTguOTdweDtcblx0aGVpZ2h0OiAxMTFweDtcbn1cblxuLnN2Zy1zY3JvbGwge1xuXHRAZXh0ZW5kICVzdmctY29tbW9uO1xuXHRiYWNrZ3JvdW5kLXBvc2l0aW9uOiAzNC4xMTc2NDcwNTg4MjM1MyUgNzcuMDgzMzMzMzMzMzMzMzMlO1xuXHR3aWR0aDogNDNweDtcblx0aGVpZ2h0OiA1N3B4O1xufVxuXG4iXX0= */
