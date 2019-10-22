@@ -1,8 +1,14 @@
+.container {
+	background-color: $background;
+	height: 100vh;
+}
+
 .who {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
-	background-color: $background;
+	max-width: 1200px;
+	margin: 0 auto;
 }
 
 .who__about {
@@ -57,6 +63,7 @@
 .box__img {
 	display: block;
 	position: relative;
+	margin-bottom: 30px;
 }
 
 .photo__img {
@@ -97,10 +104,6 @@
 
 .sociol__link:last-child {
 	margin-right: 0;
-}
-
-.photo__text {
-	padding: 30px 0 0;
 }
 
 .tex__title {
