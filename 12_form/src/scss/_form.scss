@@ -7,8 +7,6 @@
 		background: url('../img/form_bg.jpg');
 		width: 100%;
 		max-width: 400px;
-		max-height: 500px;
-		min-height: 480px;
 		margin: 0 auto;
 		display: flex;
 		flex-direction: column;
@@ -109,6 +107,7 @@
 
 	&__content {
 		margin-bottom: 10px;
+		border: none;
 	}
 
 	&__label {
