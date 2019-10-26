@@ -1,0 +1,223 @@
+.lab {
+	background: url(../img/hero-bg.jpg) top right no-repeat;
+
+	&__inner {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		max-width: 600px;
+		color: $white;
+		text-align: center;
+	}
+
+	&__title {
+		font-size: 3.4rem;
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: .1em;
+    	word-spacing: .2em;
+    	margin-bottom: 50px;
+	}
+
+	&__text {
+		font-weight: 400;
+		text-transform: uppercase;
+		word-spacing: 2px;
+    	line-height: 1.5em;
+	}
+}
+
+.container-lab {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	padding: 110px 0 65px;
+	min-height: 100vh;
+}
+
+.logo-svg {
+	fill: $white;
+	stroke: $white;
+	width: 70px;
+	height: 70px;
+}
+
+.container {
+
+		&__inner {
+		position: relative;
+
+		&::before {
+			content: "";
+			width: 20%;
+			height: 2px;
+			top: 0;
+			left: 0;
+			position: absolute;
+		}
+
+		&::after {
+			content: "";
+			width: 20%;
+			height: 2px;
+			top: 0;
+			right: 0;
+			position: absolute;
+		}
+	}
+
+	&__title {
+		position: absolute;
+		font-size: 2.1rem;
+		font-weight: 700;
+		text-transform: uppercase;
+    	top: -18px;
+    	left: 50%;
+    	transform: translate(-50%);
+    	letter-spacing: .2em;
+	}
+
+	&__text {
+		margin-bottom: 30px;
+		font-size: 1rem;
+		font-weight: 300;
+		line-height: 1.5em;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	&__services {
+		padding: 130px 0 110px;
+		color: $white;
+	}
+}
+
+.about {
+	padding: 160px 0;
+	background-color: $white;
+
+	&__inner {
+		width: 100%;
+		border-right: 2px solid $black;
+		border-bottom: 2px solid $black;
+		border-left: 2px solid $black;
+		padding: 75px 150px 30px;
+
+		&::before {
+			background-color: $black;
+		}
+
+		&::after {
+			background-color: $black;
+		}
+	}
+}
+
+.services {
+	background: url(../img/services.jpg);
+
+	&__inner {
+		width: 100%;
+		border-right: 2px solid $white;
+		border-bottom: 2px solid $white;
+		border-left: 2px solid $white;
+		padding: 75px 150px 30px;
+
+		&::before {
+			background-color: $white;
+		}
+
+		&::after {
+			background-color: $white;
+		}
+	}
+}
+
+.wedo {
+	padding: 120px 0;
+
+	&__inner {
+		width: 100%;
+		border-right: 2px solid $black;
+		border-bottom: 2px solid $black;
+		border-left: 2px solid $black;
+		padding: 120px 150px 90px;
+
+		&::before {
+			background-color: $black;
+		}
+
+		&::after {
+			background-color: $black;
+		}
+	}
+
+	&__subtitle {
+		font-size: 1.2rem;
+		font-weight: 700;
+		text-transform: uppercase;
+		margin-bottom: 40px;
+		letter-spacing: .3em;
+	}
+
+	&__text {
+		font-size: .9rem;
+		line-height: 2em;
+		margin-bottom: 90px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
+
+.svg {
+	height: 80px;
+	width: 80px;
+	margin-bottom: 40px;
+}
+
+.photo {
+
+	&__list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	min-height: 485px;
+	}
+
+	&__item {
+		max-width: 25%;
+		overflow: hidden;
+
+		&:nth-child(3n+2) {
+			max-width: 48%;
+		}
+	}
+
+	&__link {
+		display: block;
+		background: url(../img/topworkz.jpg);
+		position: relative;
+	}
+}
+
+.link__img {
+	display: block;
+}
+
+.link__text {
+	position: absolute;
+    z-index: 2;
+    left: 25px;
+    bottom: 25px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: .3em;
+    text-transform: uppercase;
+    color: $white;
+}
