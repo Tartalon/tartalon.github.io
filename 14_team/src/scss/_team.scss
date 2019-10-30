@@ -24,7 +24,7 @@
 
 	&__portfolio {
 		display: flex;
-		justify-content: space-between;
+		justify-content: space-around;
 		align-items: center;
 		position: relative;
 
@@ -91,6 +91,13 @@
 .portfolio-photo {
 	position: relative;
 
+	&__wrap {
+		width: 47%;
+    	display: flex;
+    	align-items: center;
+    	justify-content: center;
+	}
+
 	&__img {
 		height: 100%;
 		border: 1px solid $yellow;
@@ -136,5 +143,84 @@
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
-	width: 47%;
+	max-width: 420px;
+	height: 100%;
+	text-align: center;
+
+	&__name {
+		font-family: $title-font;
+		font-size: 2.3rem;
+		font-weight: 700;
+		text-transform: capitalize;
+		color: $dark-grey;
+		margin-bottom: 45px;
+		position: relative;
+
+		&::after {
+			content: "";
+			width: 50%;
+			height: 1px;
+			left: 50%;
+			bottom: -30px;
+			transform: translateX(-50%);
+			background-color: $yellow;
+			position: absolute;
+		}
+	}
+
+	&__prof {
+		font-size: 1.4rem;
+		font-weight: 400;
+		text-transform: capitalize;
+		line-height: 1.6em;
+		color: $dark-grey;
+	}
+
+	&__list {
+		display: flex;
+		justify-content: space-between;
+		width: 140px;
+	}
+
+
+
+	&__link {
+		font-size: .8rem;
+		height: 30px;
+		width: 30px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 50%;
+		border: 1px solid $light-grey;
+		color: $light-grey;
+
+		&:hover {
+			background-color: $yellow;
+			border: $yellow;
+			color: $dark-grey;
+		}
+	}
+
+	&__text {
+		font-size: .9rem;
+		font-weight: 500;
+		line-height: 1.8em;
+		margin-bottom: 40px;
+	}
+
+	&__view {
+		font-family: $title-font;
+		font-weight: 700;
+		font-size: 1rem;
+		color: $dark-grey;
+		text-transform: uppercase;
+		padding: 5px 10px;
+		border: 1px solid $yellow;
+
+
+		&:hover {
+			background-color: $yellow;
+		}
+	}
 }
