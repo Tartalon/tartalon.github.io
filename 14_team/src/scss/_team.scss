@@ -1,0 +1,64 @@
+.team {
+	padding: 100px 200px;
+
+	&__container {
+		width: 100%;
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+
+	&__header {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		height: 150px;
+		position: relative;
+	}
+}
+
+.team-header {
+
+	&__subtitle {
+		font-size: 1.1rem;
+		font-weight: 500;
+		text-transform: uppercase;
+		color: $light-grey;
+		letter-spacing: .1em;
+	}
+
+	&__title {
+		font-family: $title-font;
+		font-size: 3.8rem;
+		font-weight: 700;
+		text-transform: uppercase;
+		color: $yellow;
+		letter-spacing: -0.03em;
+		margin-bottom: 45px;
+
+	}
+
+	&__box-img {
+
+		&::before {
+			content: "";
+			height: 2px;
+			width: 215px;
+			background-color: $yellow;
+			position: absolute;
+			left: 30%;
+			bottom: 0;
+		}
+
+		&::after {
+			content: "";
+			height: 2px;
+			width: 215px;
+			background-color: $yellow;
+			position: absolute;
+			bottom: 0;
+    		right: 30%;
+		}
+	}
+}
+
