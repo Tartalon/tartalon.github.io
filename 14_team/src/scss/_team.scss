@@ -300,7 +300,7 @@
 		background-color: $yellow;
 		border: 1px solid $yellow;
 
-		&:hover {
+		&.active, &:hover, &:focus {
 			background-color: $white;
 		}
 	}
