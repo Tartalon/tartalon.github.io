@@ -31,9 +31,8 @@
 .container-lab {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+	justify-content: space-around;
 	align-items: center;
-	padding: 110px 0 65px;
 	min-height: 100vh;
 }
 
@@ -91,7 +90,6 @@
 	}
 
 	&__services {
-		padding: 130px 0 110px;
 		color: $white;
 	}
 
@@ -100,7 +98,6 @@
 		justify-content: space-between;
 		align-items: center;
 		max-width: 350px;
-		padding: 0 0 60px;
 	}
 }
 
@@ -127,6 +124,7 @@
 
 .services {
 	background: url(../img/services.jpg);
+	padding: 130px 0 110px;
 
 	&__inner {
 		width: 100%;
@@ -296,6 +294,8 @@
 }
 
 .footer {
+
+	padding: 0 0 60px;
 
 	&__svg {
 		fill: $black;
