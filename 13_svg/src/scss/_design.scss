@@ -28,6 +28,10 @@
 	}
 }
 
+.center {
+	text-align: center;
+}
+
 .container-lab {
 	display: flex;
 	flex-direction: column;
@@ -162,6 +166,26 @@
 		}
 	}
 
+	&__list {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+	}
+
+	&__item {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+		margin-bottom: 100px;
+		text-align: center;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
 	&__subtitle {
 		font-size: 1.2rem;
 		font-weight: 700;
@@ -173,11 +197,6 @@
 	&__text {
 		font-size: .9rem;
 		line-height: 2em;
-		margin-bottom: 90px;
-
-		&:last-child {
-			margin-bottom: 0;
-		}
 	}
 }
 
