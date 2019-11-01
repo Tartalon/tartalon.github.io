@@ -1,5 +1,6 @@
 .page-cahee {
-	background: url("../img/bg_01.jpg") center no-repeat / cover;
+	background: url("../img/bg_01.jpg") center no-repeat;
+	background-size: cover;
 }
 
 .section-cahee {
@@ -60,7 +61,7 @@
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: baseline;
-	max-width: 32%;
+	width: 32%;
 
 	&__title {
 		font-family: $main-font;
@@ -111,19 +112,20 @@
 }
 
 .section-about {
-	display: flex;
-	justify-content: space-between;
-	text-align: start;
-	align-items: center;
+	background: $bg-about url("../img/raspberry.png") left top no-repeat;
 	font-family: $main-font;
+	height: 650px;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
 }
 
 .box-about {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	max-width: 40%;
-	max-height: 300px;
+	width: 40%;
+	min-height: 350px;
 
 	&__title {
 		font-size: 5.6rem;
@@ -137,3 +139,4 @@
 		color: $white;
 	}
 }
+
