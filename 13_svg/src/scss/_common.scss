@@ -21,11 +21,41 @@ a {
 
 section {
 	max-width: 1920px;
+	padding: 120px 0;
+
+	@include md-screen {
+		padding: 30px 0;
+	}
 }
 
 .container {
 	width: 100%;
 	max-width: 900px;
+	padding: 0 15px;
 	margin: 0 auto;
-	// text-align: center;
+
+	&__inner {
+		width: 100%;
+		border-right: 2px solid $black;
+		border-bottom: 2px solid $black;
+		border-left: 2px solid $black;
+		padding: 85px 150px 50px;
+
+		&::before {
+			background-color: $black;
+		}
+
+		&::after {
+			background-color: $black;
+		}
+
+		@include md-screen-max {
+			padding: 85px 70px 50px;
+		}
+
+		@include md-screen {
+			padding: 85px 20px 50px;
+		}
+
+	}
 }

@@ -18,6 +18,10 @@
 		letter-spacing: .1em;
     	word-spacing: .2em;
     	margin-bottom: 50px;
+
+    	@include xs-screen {
+    		font-size: 2.4rem;
+    	}
 	}
 
 	&__text {
@@ -69,6 +73,10 @@
 			right: 0;
 			position: absolute;
 		}
+
+		@include md-screen {
+			padding: 40px 20px;
+		}
 	}
 
 	&__title {
@@ -76,10 +84,20 @@
 		font-size: 2.1rem;
 		font-weight: 700;
 		text-transform: uppercase;
-    	top: -18px;
+    	top: -6%;
     	left: 50%;
     	transform: translate(-50%);
     	letter-spacing: .2em;
+
+    	@include md-screen {
+    		font-size: 1.4rem;
+    		top: -4%;
+    	}
+
+    	@include xs-screen {
+    		font-size: 1.1rem;
+    		text-align: center;
+    	}
 	}
 
 	&__text {
@@ -106,36 +124,33 @@
 }
 
 .about {
-	padding: 160px 0;
 	background-color: $white;
 
 	&__inner {
-		width: 100%;
-		border-right: 2px solid $black;
-		border-bottom: 2px solid $black;
-		border-left: 2px solid $black;
-		padding: 75px 150px 30px;
+	// 	width: 100%;
+	// 	border-right: 2px solid $black;
+	// 	border-bottom: 2px solid $black;
+	// 	border-left: 2px solid $black;
+	// 	padding: 75px 150px 30px;
 
-		&::before {
-			background-color: $black;
-		}
+	// 	&::before {
+	// 		background-color: $black;
+	// 	}
 
-		&::after {
-			background-color: $black;
-		}
+	// 	&::after {
+	// 		background-color: $black;
+	// 	}
 	}
 }
 
 .services {
-	background: url(../img/services.jpg);
-	padding: 130px 0 110px;
+	background: url("../img/services.jpg") no-repeat;
+	background-size: cover;
 
 	&__inner {
-		width: 100%;
 		border-right: 2px solid $white;
 		border-bottom: 2px solid $white;
 		border-left: 2px solid $white;
-		padding: 75px 150px 30px;
 
 		&::before {
 			background-color: $white;
@@ -148,22 +163,29 @@
 }
 
 .wedo {
-	padding: 120px 0;
 
 	&__inner {
-		width: 100%;
-		border-right: 2px solid $black;
-		border-bottom: 2px solid $black;
-		border-left: 2px solid $black;
-		padding: 120px 150px 90px;
+		// width: 100%;
+		// border-right: 2px solid $black;
+		// border-bottom: 2px solid $black;
+		// border-left: 2px solid $black;
+		// padding: 85px 150px 50px;
 
-		&::before {
-			background-color: $black;
-		}
+		// &::before {
+		// 	background-color: $black;
+		// }
 
-		&::after {
-			background-color: $black;
-		}
+		// &::after {
+		// 	background-color: $black;
+		// }
+	}
+
+	&__title {
+		top: -2%;
+
+		@include md-screen {
+    		top: -1%;
+    	}
 	}
 
 	&__list {
@@ -184,6 +206,10 @@
 		&:last-child {
 			margin-bottom: 0;
 		}
+
+		@include md-screen {
+			margin-bottom: 30px;
+		}
 	}
 
 	&__subtitle {
@@ -192,6 +218,14 @@
 		text-transform: uppercase;
 		margin-bottom: 40px;
 		letter-spacing: .3em;
+
+		@include md-screen {
+			margin-bottom: 20px;
+		}
+
+		@include xs-screen {
+			font-size: 1rem;
+		}
 	}
 
 	&__text {
@@ -204,16 +238,29 @@
 	height: 80px;
 	width: 80px;
 	margin-bottom: 40px;
+
+	@include md-screen {
+		height: 40px;
+		width: 40px;
+		margin-bottom: 20px;
+	}
 }
 
 .photo {
-
+	width: 100%;
+	max-width: 1920px;
 
 	&__list {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
 		height: 485px;
+
+		@include md-screen {
+			width: 100%;
+			flex-direction: column;
+			min-height: 900px;
+		}
 	}
 
 	&__item {
@@ -223,10 +270,20 @@
 
 		&:nth-child(3n+2) {
 			max-width: 48%;
+
+			@include md-screen {
+				min-width: 100%;
+			}
+		}
+
+		@include md-screen {
+			min-width: 100%;
+			max-height: 16%;
 		}
 	}
 
 	&__link {
+		background: url("../img/topworkz.jpg");
 		display: flex;
 		width: 100%;
     	height: 100%;
@@ -237,6 +294,42 @@
     		opacity: .7;
     		color: $black;
     	}
+
+    	&.topworkz {
+			background: url("../img/topworkz.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+
+		&.joint {
+			background: url("../img/joint.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+
+		&.market {
+			background: url("../img/market.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+
+		&.worktop {
+			background: url("../img/worktop.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+
+		&.lable {
+			background: url("../img/lable.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+
+		&.kyiv {
+			background: url("../img/kyiv.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
 	}
 }
 
@@ -248,48 +341,23 @@
 	color: $white;
 }
 
-.topworkz {
-	background: url("../img/topworkz.jpg");
-}
-
-.joint {
-	background: url("../img/joint.jpg");
-}
-
-.market {
-	background: url("../img/market.jpg");
-}
-
-.worktop {
-	background: url("../img/worktop.jpg");
-}
-
-.lable {
-	background: url("../img/lable.jpg");
-}
-
-.kyiv {
-	background: url("../img/kyiv.jpg");
-}
-
 .contact {
-	padding: 140px 0;
 
-	&__inner {
-		width: 100%;
-    	border-right: 2px solid $black;
-    	border-bottom: 2px solid $black;
-    	border-left: 2px solid $black;
-    	padding: 70px 175px 50px;
+	// &__inner {
+	// 	width: 100%;
+ //    	border-right: 2px solid $black;
+ //    	border-bottom: 2px solid $black;
+ //    	border-left: 2px solid $black;
+ //    	padding: 70px 175px 50px;
 
-    	&::before {
-			background-color: $black;
-		}
+ //    	&::before {
+	// 		background-color: $black;
+	// 	}
 
-		&::after {
-			background-color: $black;
-		}
-	}
+	// 	&::after {
+	// 		background-color: $black;
+	// 	}
+	// }
 
 	&__text {
 		margin-bottom: 45px;
@@ -301,6 +369,7 @@
 		letter-spacing: .3em;
 		text-transform: uppercase;
 		display: inline-flex;
+		justify-content: center;
 		padding: 25px 130px;
 		background-color: $black;
 		color: $white;
@@ -308,6 +377,11 @@
 		&:hover {
 			font-weight: 700;
 			border-radius: 15px;
+		}
+
+		@include md-screen {
+			padding: 25px 0;
+			width: 100%;
 		}
 	}
 }
@@ -321,10 +395,19 @@
 		stroke: $black;
 		width: 40px;
 		height: 40px;
+
+		@include md-screen {
+    		width: 25px;
+			height: 25px;
+    	}
 	}
 
 	&__sign {
 		font-size: .9rem;
 		font-weight: 400;
+
+		@include xs-screen {
+			font-size: .8rem;
+		}
 	}
 }
