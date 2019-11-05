@@ -41,6 +41,7 @@
 		flex-direction: column-reverse;
 		justify-content: space-around;
 		align-items: center;
+		padding: 25px 0;
 		}
 
 		&__nav {
@@ -70,5 +71,9 @@
 
 	.nav__burger {
 		display: inline-block;
+	}
+
+	.title {
+		font-size: 2.5rem;
 	}
 }

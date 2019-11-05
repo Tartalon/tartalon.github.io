@@ -104,13 +104,13 @@
 	justify-content: space-between;
 	align-items: baseline;
 	width: 32%;
+	color: $black;
 
 	&__title {
 		font-family: $main-font;
 		font-size: 3.75rem;
 		font-weight: 900;
 		text-transform: capitalize;
-		color: $black;
 		margin-bottom: 30px;
 	}
 
