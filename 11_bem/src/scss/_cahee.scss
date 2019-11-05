@@ -9,6 +9,7 @@
 	justify-content: space-around;
 	color: $black;
 	height: 100vh;
+	padding: 25px 0;
 
 	&__header {
 		display: flex;
@@ -26,12 +27,53 @@
 	}
 }
 
-.nav__list {
+.nav {
+
+	&__list {
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
 		min-width: 560px;
 	}
+
+	&__burger {
+		height: 45px;
+		width: 45px;
+		background-color: $menu-hover;
+		border-radius: 50%;
+		display: none;
+		position: relative;
+	}
+
+	&__burger-span {
+		width: 25px;
+		height: 2px;
+		background-color: $white;
+		top: 50%;
+		left: 50%;
+		position: absolute;
+		transform: translateX(-50%);
+		display: flex;
+		flex-direction: column;
+
+		&::before,
+		&::after {
+			content: "";
+			width: 25px;
+			height: 2px;
+			background-color: $white;
+			position: absolute;
+		}
+
+		&::before {
+			top: 8px;
+		}
+
+		&::after {
+			top: -8px;
+		}
+	}
+}
 
 .list__link {
 	text-transform: uppercase;

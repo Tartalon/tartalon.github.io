@@ -33,7 +33,7 @@
 	}
 }
 
-@media (max-width: 980px) {
+@media (max-width: 991px) {
 
 	.section-cahee {
 
@@ -57,9 +57,18 @@
 	}
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
+
+	.section-cahee__header {
+		flex-direction: row;
+		align-items: center;
+	}
 
 	.nav__list {
-		flex-wrap: wrap;
+		display: none;
+	}
+
+	.nav__burger {
+		display: inline-block;
 	}
 }
