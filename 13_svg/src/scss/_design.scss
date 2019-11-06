@@ -1,5 +1,7 @@
 .lab {
 	background: url(../img/hero-bg.jpg) top right no-repeat;
+	background-size: cover;
+	padding: 0;
 
 	&__inner {
 		display: flex;
@@ -19,8 +21,8 @@
     	word-spacing: .2em;
     	margin-bottom: 50px;
 
-    	@include xs-screen {
-    		font-size: 2.4rem;
+    	@include md-screen {
+    		font-size: 2rem;
     	}
 	}
 
@@ -29,6 +31,10 @@
 		text-transform: uppercase;
 		word-spacing: 2px;
     	line-height: 1.5em;
+
+    	@include md-screen {
+    		font-size: .7rem;
+    	}
 	}
 }
 
@@ -49,6 +55,11 @@
 	stroke: $white;
 	width: 70px;
 	height: 70px;
+
+	@include md-screen {
+    		width: 40px;
+			height: 40px;
+    	}
 }
 
 .container {
