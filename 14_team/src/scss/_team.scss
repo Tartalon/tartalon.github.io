@@ -243,7 +243,28 @@
 	}
 
 	.portfolio-description__dashed {
+		height: 5px;
+		width: 30px;
+		background-color: $yellow;
 		margin-bottom: 20px;
+		position: relative;
+
+		&::before,
+		&::after {
+			content: "";
+			height: 5px;
+			width: 15px;
+			background-color: $yellow;
+			position: absolute;
+		}
+
+		&::before {
+			left: -22px;
+		}
+
+		&::after {
+			right: -22px;
+		}
 	}
 
 	// &__carusel-list{
