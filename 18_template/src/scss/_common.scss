@@ -1,0 +1,47 @@
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html, body {
+	min-height: 100vh;
+}
+
+body {
+	font-size: $base-size;
+	font-family: $main-font;
+	color: $text-color;
+}
+
+
+ul {
+
+	display: flex;
+	list-style: none;
+	li {
+		a {
+			display: flex;
+			text-decoration: none;
+		}
+	}
+}
+
+a {
+	text-decoration: none;
+	color: $text-color;
+}
+
+
+.template-header__inner-menu {
+	display: none;
+}
+
+.container {
+	width: 100%;
+	max-width: 1170px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
