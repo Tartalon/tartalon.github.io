@@ -1,27 +1,32 @@
-.burger-span {
-	width: 35px;
-	height: 4px;
-	background-color: $white;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
 
-	&::before,
-	&::after {
-		content: '';
-		width: 35px;
-		height: 4px;
-		background-color: $white;
+.burger {
+
+	&__icon {
+		fill: $white;
+		width: 45px;
+		height: 45px;
+		align-self: end;
+
+		&:hover {
+			box-shadow: 0 0 6px 1px black;
+			fill: $grey-text;
+			cursor: pointer;
+		}
+	}
+
+	&__close {
+		fill: $blue;
+		width: 45px;
+		height: 45px;
 		position: absolute;
-	}
+		top: 20px;
+		right: 20px;
 
-	&::before {
-		transform: translateY(-10px);
-	}
-
-	&::after {
-		transform: translateY(10px);
+		&:hover {
+			box-shadow: 0 0 6px 1px black;
+			fill: $grey-text;
+			cursor: pointer;
+		}
 	}
 }
 
@@ -48,19 +53,18 @@
 		border-radius: 20px;
 		margin: 0 auto;
 		align-items: center;
+		position: relative;
 	}
 
-	&__menu-burger {
-		@include square(45px);
-		background-color: transparent;
-		display: block;
+	&__menu-social {
 		position: relative;
-		align-self: flex-end;
-		z-index: 2;
 
-		&:hover {
-			cursor: pointer;
-			box-shadow: 0 0 3px 1px black;
+		&::before {
+			content: "";
+			width: 100%;
+			height: 2px;
+			background-color: $grey-text;
+			position: absolute;
 		}
 	}
 }
@@ -96,15 +100,6 @@
 		width: 100%;
 		max-width: 290px;
 		padding: 65px 0;
-		position: relative;
-
-		&::before {
-			content: "";
-			width: 100%;
-			height: 2px;
-			background-color: $grey-text;
-			position: absolute;
-		}
 	}
 
 	&__link {
@@ -125,4 +120,8 @@
 
 .element {
 	display: block;
+}
+
+.close {
+	display: none;
 }

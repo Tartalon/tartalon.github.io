@@ -16,6 +16,14 @@
 
 				<div class="header__menu-wrapper">
 					<div class="header__inner-menu">
+						<svg display="none">
+							<symbol id="close" viewBox="0 0 512 512">
+								<path d="M437.5,386.6L306.9,256l130.6-130.6c14.1-14.1,14.1-36.8,0-50.9c-14.1-14.1-36.8-14.1-50.9,0L256,205.1L125.4,74.5  c-14.1-14.1-36.8-14.1-50.9,0c-14.1,14.1-14.1,36.8,0,50.9L205.1,256L74.5,386.6c-14.1,14.1-14.1,36.8,0,50.9  c14.1,14.1,36.8,14.1,50.9,0L256,306.9l130.6,130.6c14.1,14.1,36.8,14.1,50.9,0C451.5,423.4,451.5,400.6,437.5,386.6z"/>
+							</symbol>
+						</svg>
+						<svg class="burger__close burger__icon">
+							<use xlink:href="#close"></use>
+						</svg>
 						<nav class="header__menu">
 							<ul class="menu__list">
 								<li class="menu__item">
@@ -39,38 +47,43 @@
 									</a>
 								</li>
 							</ul>
+
+							<div class="header__menu-social">
+								<ul class="social__list">
+									<li class="social__item">
+										<a href="#" class="social__link">
+											<i class="fab fa-facebook-f"></i>
+										</a>
+									</li>
+									<li class="social__item">
+										<a href="#" class="social__link">
+											<i class="fab fa-twitter"></i>
+										</a>
+									</li>
+									<li class="social__item">
+										<a href="#" class="social__link">
+											<i class="fab fa-dribbble"></i>
+										</a>
+									</li>
+									<li class="social__item">
+										<a href="#" class="social__link">
+											<i class="fab fa-behance"></i>
+										</a>
+									</li>
+								</ul>
+							</div>
 						</nav>
-
-						<!-- <div class="header__menu-social"> -->
-							<ul class="social__list">
-								<li class="social__item">
-									<a href="#" class="social__link">
-										<i class="fab fa-facebook-f"></i>
-									</a>
-								</li>
-								<li class="social__item">
-									<a href="#" class="social__link">
-										<i class="fab fa-twitter"></i>
-									</a>
-								</li>
-								<li class="social__item">
-									<a href="#" class="social__link">
-										<i class="fab fa-dribbble"></i>
-									</a>
-								</li>
-								<li class="social__item">
-									<a href="#" class="social__link">
-										<i class="fab fa-behance"></i>
-									</a>
-								</li>
-							</ul>
-						<!-- </div> -->
 					</div> <!-- /.template-header__inner-menu -->
-				</div>
+				</div> <!-- /.header__menu-wrapper -->
 
-				<a class="header__menu-burger">
-					<span class="burger-span"></span>
-				</a>
+				<svg display="none">
+					<symbol id="burger" viewBox="0 0 32 32">
+						<path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"/>
+					</symbol>
+				</svg>
+				<svg class="burger__icon">
+					<use xlink:href="#burger"></use>
+				</svg>
 
 				<div class="header__photo">
 					<img src="" alt="" class="header__photo-img">
