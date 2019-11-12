@@ -5,7 +5,7 @@
 		fill: $white;
 		width: 45px;
 		height: 45px;
-		align-self: end;
+		align-self: flex-end;
 
 		&:hover {
 			box-shadow: 0 0 6px 1px black;
@@ -38,9 +38,9 @@
 		top: 0;
 		background-color: rgba(0, 0, 0, .7);
 		position: fixed;
-    	padding: 100px 15px 0;
-    	display: none;
-    	z-index: 3;
+    padding: 100px 15px 0;
+    display: none;
+    z-index: 3;
 	}
 
 	&__inner-menu {
@@ -120,8 +120,4 @@
 
 .element {
 	display: block;
-}
-
-.close {
-	display: none;
 }
