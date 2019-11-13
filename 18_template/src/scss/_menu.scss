@@ -14,20 +14,20 @@
 		}
 	}
 
-	&__close {
-		fill: $blue;
-		width: 45px;
-		height: 45px;
-		position: absolute;
-		top: 20px;
-		right: 20px;
+	// &__close {
+	// 	fill: $blue;
+	// 	width: 45px;
+	// 	height: 45px;
+	// 	position: absolute;
+	// 	top: 20px;
+	// 	right: 20px;
 
-		&:hover {
-			box-shadow: 0 0 6px 1px black;
-			fill: $grey-text;
-			cursor: pointer;
-		}
-	}
+	// 	&:hover {
+	// 		box-shadow: 0 0 6px 1px black;
+	// 		fill: $grey-text;
+	// 		cursor: pointer;
+	// 	}
+	// }
 }
 
 .modal-wrapper {
@@ -36,49 +36,38 @@
 	top: 0;
 	background-color: rgba(0, 0, 0, .7);
 	position: fixed;
-  padding: 100px 15px 0;
-  display: none;
-  z-index: 3;
+  	padding: 100px 15px 0;
+  	display: none;
+  	z-index: 3;
 }
 
-.inner-wrapper {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	width: 100%;
-	max-width: 1170px;
-	background-color: $white;
-	border-radius: 20px;
-	margin: 0 auto;
-	align-items: center;
-	position: relative;
-}
+// .inner-wrapper {
+// 	display: flex;
+// 	flex-direction: column;
+// 	justify-content: space-around;
+// 	width: 100%;
+// 	max-width: 1170px;
+// 	background-color: $white;
+// 	border-radius: 20px;
+// 	margin: 0 auto;
+// 	align-items: center;
+// 	position: relative;
+// }
 
 .header {
 
-	// &__menu-wrapper {
-	// 	width: 100%;
-	// 	height: 100%;
-	// 	top: 0;
-	// 	background-color: rgba(0, 0, 0, .7);
-	// 	position: fixed;
-  //   padding: 100px 15px 0;
-  //   display: none;
-  //   z-index: 3;
-	// }
-
-	// &__inner-menu {
-	// 	display: flex;
-	// 	flex-direction: column;
-	// 	justify-content: space-around;
-	// 	width: 100%;
-	// 	max-width: 1170px;
-	// 	background-color: $white;
-	// 	border-radius: 20px;
-	// 	margin: 0 auto;
-	// 	align-items: center;
-	// 	position: relative;
-	// }
+	&__inner-menu {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		width: 100%;
+		max-width: 1170px;
+		background-color: $white;
+		border-radius: 20px;
+		margin: 0 auto;
+		align-items: center;
+		position: relative;
+	}
 
 	&__menu {
 		width: 100%;
@@ -144,5 +133,24 @@
 		&:hover {
 			background-color: $blue;
 		}
+	}
+}
+
+
+
+// SVG
+
+.svg-close {
+	fill: $blue;
+	width: 45px;
+	height: 45px;
+	position: absolute;
+	top: 20px;
+	right: 20px;
+
+	&:hover {
+		box-shadow: 0 0 6px 1px black;
+		fill: $grey-text;
+		cursor: pointer;
 	}
 }
