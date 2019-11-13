@@ -5,6 +5,10 @@
 	align-items: center;
 	width: 100%;
 
+	&__wrapper {
+		display: none;
+	}
+
 	&__inner {
 		display: flex;
 		flex-direction: column;
