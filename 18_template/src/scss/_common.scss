@@ -46,3 +46,15 @@ a {
 	margin: 0 auto;
 	padding: 0 15px;
 }
+
+.btn {
+	font-weight: 700;
+	color: $blue;
+	background-color: $white;
+	text-transform: uppercase;
+	transition: all .3s ease-in;
+
+	&:hover {
+		box-shadow: 0 0 8px 1px black;
+	}
+}
