@@ -91,29 +91,23 @@
 				<div class="form__wrapper modal-wrapper">
 					<div class="form__inner">
 
-						<form class="form">
-							<svg display="none">
+						<svg display="none">
 							<symbol id="close-form" viewBox="0 0 512 512">
 								<path
 									d="M437.5,386.6L306.9,256l130.6-130.6c14.1-14.1,14.1-36.8,0-50.9c-14.1-14.1-36.8-14.1-50.9,0L256,205.1L125.4,74.5  c-14.1-14.1-36.8-14.1-50.9,0c-14.1,14.1-14.1,36.8,0,50.9L205.1,256L74.5,386.6c-14.1,14.1-14.1,36.8,0,50.9  c14.1,14.1,36.8,14.1,50.9,0L256,306.9l130.6,130.6c14.1,14.1,36.8,14.1,50.9,0C451.5,423.4,451.5,400.6,437.5,386.6z" />
 							</symbol>
-							</svg>
-							<svg class="close-modal svg-close">
+						</svg>
+						<svg class="close-modal svg-close">
 							<use xlink:href="#close-form">
-							</svg>
+						</svg>
 
-							<h2 class="form__title">hire me</h2>
+						<h2 class="form__title">hire me</h2>
 
-							<label class="form__label-name">
-								<input type="text" class="form__input-name" placeholder="your name">
-							</label>
-							<label class="form__label-email">
-								<input type="email" class="form__input-email" placeholder="your e-mail">
-							</label>
-							<label for="" class="form__label-text">
-								<input type="textarea" class="form__input-text" placeholder="your-message">
-							</label>
-							<input type="submit" value="send message">
+						<form class="form">
+							<input type="text" name="name" class="form__input input-name" placeholder="Your Name">
+							<input type="email" name="email" class="form__input input-email" placeholder="Your E-Mail">
+							<textarea class="form__input input-text" name="textarea" cols="25" rows="10" maxlength="100" placeholder="Your-Message"></textarea>
+							<input type="submit" name="submit" value="send message" class="form__btn btn">
 						</form>
 					</div>
 				</div> <!-- /.form__wrapper modal-wrapper -->
