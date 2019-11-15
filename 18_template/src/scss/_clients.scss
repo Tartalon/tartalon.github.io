@@ -1,0 +1,10 @@
+.clients {
+
+	background-color: $grey-bg;
+
+	&__list {
+		flex-wrap: wrap;
+		width: 100%;
+		justify-content: space-around;
+	}
+}

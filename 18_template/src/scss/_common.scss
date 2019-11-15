@@ -96,5 +96,10 @@ a {
 
 	&__link {
 		height: 100%;
+
+		&:hover {
+      		box-shadow: 0 0 8px 1px black;
+      		background-color: $white;
+    	}
 	}
 }
