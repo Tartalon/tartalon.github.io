@@ -81,4 +81,20 @@ a {
 		font-weight: 400;
 		color: $text-color;
 	}
+
+	&__list {
+		width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+	}
+
+	&__item {
+		flex-basis: 30%;
+    height: 45%;
+	}
+
+	&__link {
+		height: 100%;
+	}
 }
