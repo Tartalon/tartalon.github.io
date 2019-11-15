@@ -17,3 +17,7 @@ document.querySelector('.header__btn-contact').addEventListener('click', functio
 document.querySelector('.close-modal').addEventListener('click', function () {
   document.querySelector('.form__wrapper').style.display = 'none';
 })
+
+document.querySelector('.menu__link').addEventListener('click', function () {
+  document.querySelector('.header__menu-wrapper').style.display = 'none';
+})
