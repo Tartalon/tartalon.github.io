@@ -10,7 +10,7 @@ document.querySelector('.cookie__btn').addEventListener('click', function () {
   document.querySelector('.header__cookie').style.display = 'none';
 })
 
-document.querySelectorAll('.contact').addEventListener('click', function () {
+document.querySelector('.contact').addEventListener('click', function () {
   document.querySelector('.form__wrapper').style.display = 'block';
 })
 
@@ -18,6 +18,6 @@ document.querySelector('.close-modal').addEventListener('click', function () {
   document.querySelector('.form__wrapper').style.display = 'none';
 })
 
-document.querySelector('.menu__link').addEventListener('click', function () {
+document.querySelectorAll('.menu__link').addEventListener('click', function () {
   document.querySelector('.header__menu-wrapper').style.display = 'none';
 })
