@@ -4,8 +4,13 @@
 
 	&__inner {
 		display: flex;
-		flex-direction: row;
+		flex-direction: column;
 		justify-content: space-between;
+		min-height: 150px;
+
+		@include md-screen {
+			flex-direction: row;
+		}
 	}
 
 	&__title {
@@ -16,8 +21,12 @@
 	}
 
 	&__btn {
-		padding: 20px 70px;
+		padding: 10px 50px;
 		border-radius: 50px;
+
+		@include md-screen {
+			padding: 20px 70px;
+		}
 	}
 }
 

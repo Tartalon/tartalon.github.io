@@ -23,10 +23,14 @@
   }
 
   &__item-title {
-    font-size: px_to_rem(24px);
+    font-size: px_to_rem(20px);
     font-weight: 700;
     text-transform: uppercase;
     color: $blue;
+
+    @include md-screen {
+      font-size: px_to_rem(24px);
+    }
   }
 
   &__item-text {

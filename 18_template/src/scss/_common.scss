@@ -47,11 +47,16 @@ a {
 	padding: 0 15px;
 
 	&__inner {
-		padding: 100px 0;
+		padding: 20px 0;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
 		align-items: center;
+		text-align: center;
+
+		@include md-screen {
+			padding: 80px 0;
+		}
 	}
 }
 
@@ -70,11 +75,19 @@ a {
 .section {
 
 	&__title {
-		font-size: px_to_rem(50px);
+		font-size: px_to_rem(30px);
 		font-weight: 300;
 		text-transform: capitalize;
 		color: $blue;
-		margin-bottom: 70px;
+		margin-bottom: 20px;
+
+		@include md-screen {
+			font-size: px_to_rem(50px);
+		}
+
+		@include lg-screen {
+			margin-bottom: 70px;
+		}
 	}
 
 	&__text {
@@ -84,9 +97,15 @@ a {
 
 	&__list {
 		width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+
+		@include md-screen {
+			flex-wrap: wrap;
+			flex-direction: row;
+		}
 	}
 
 	&__item {
@@ -98,8 +117,8 @@ a {
 		height: 100%;
 
 		&:hover {
-      		box-shadow: 0 0 8px 1px black;
-      		background-color: $white;
-    	}
+      box-shadow: 0 0 8px 1px black;
+      background-color: $white;
+    }
 	}
 }

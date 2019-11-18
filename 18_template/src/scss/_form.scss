@@ -17,19 +17,28 @@
 		max-width: 1170px;
 		background-color: $white;
 		border-radius: 20px;
-		padding: 60px 15px;
+		padding: 30px 10px;
 		margin: 0 auto;
 		align-items: center;
 		position: relative;
+
+		@include md-screen {
+			padding: 60px 15px;
+		}
 	}
 
 	&__title {
-		font-size: px_to_rem(50px);
+		font-size: px_to_rem(30px);
 		font-weight: 400;
 		color: $blue;
 		text-transform: capitalize;
 		line-height: 2em;
-		margin-bottom: 60px;
+		margin-bottom: 30px;
+
+		@include md-screen {
+			font-size: px_to_rem(50px);
+			margin-bottom: 60px;
+		}
 	}
 
 	&__input {
@@ -59,5 +68,9 @@
 
 .input-text {
 	resize: none;
-	margin-bottom: 45px;
+	margin-bottom: 20px;
+
+	@include md-screen {
+		margin-bottom: 45px;
+	}
 }
