@@ -1,0 +1,12 @@
+.ch-header {
+  width: 100%;
+  min-height: 100vh;
+  background: url(../img/bg_fs.jpg) no-repeat;
+  background-size: cover;
+
+  &__menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+}
