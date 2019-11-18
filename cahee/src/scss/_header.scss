@@ -1,0 +1,60 @@
+.first-screen {
+  width: 100%;
+  background: url(../img/bg_fs.jpg) no-repeat top left;
+
+  &__inner {
+  	padding: 55px 0 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 380px;
+    min-height: 240px;
+  }
+}
+
+.ch-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__logo {
+    font-family: $logo-font;
+    font-size: px_to_rem(50px);
+    text-transform: capitalize;
+    color: $blak;
+  }
+}
+
+.content {
+
+  &__title {
+    font-size: px_to_rem(60px);
+    font-weight: 900;
+    color: $blak;
+    text-transform: capitalize;
+  }
+
+  &__text {
+    line-height: 1.5em;
+  }
+
+  &__btn {
+    background-color: $orange-btn;
+    color: $white;
+    text-transform: uppercase;
+    padding: 20px 25px;
+    max-width: 200px;
+  }
+}
+
+.mous__svg {
+  @include square(43px);
+}
