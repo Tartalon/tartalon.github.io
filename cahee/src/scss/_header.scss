@@ -1,6 +1,7 @@
 .first-screen {
   width: 100%;
-  background: url(../img/bg_fs.jpg) no-repeat top left;
+  background: $white url(../img/bg_fs.jpg) no-repeat top left;
+  background-size: cover;
 
   &__inner {
   	padding: 55px 0 70px;
@@ -56,6 +57,10 @@
     justify-content: center;
     align-items: center;
     padding: 20px 0;
+
+    &:hover {
+      box-shadow: 0 0 10px 3px black;
+    }
   }
 }
 

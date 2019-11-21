@@ -31,3 +31,24 @@ a {
   margin: 0 auto;
   padding: 0 15px;
 }
+
+.section {
+
+	&__title {
+		font-size: px_to_rem(90px);
+		font-weight: 700;
+		text-transform: capitalize;
+	}
+
+	&__text {
+		line-height: px_to_em(27px);
+	}
+}
+
+.text {
+	margin-bottom: 10px;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}

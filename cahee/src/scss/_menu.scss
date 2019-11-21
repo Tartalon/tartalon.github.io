@@ -1,13 +1,15 @@
-.ch-header {
+// .ch-header {
 
-	&__menu {
-		width: 100%;
-    	display: flex;
-    	justify-content: space-between;
-	}
-}
+// 	&__menu {
+// 		width: 100%;
+//     	// display: flex;
+//     	justify-content: space-between;
+//     	display: none;
+// 	}
+// }
 
 .menu {
+	display: none;
 
 	&__list {
 		display: flex;
@@ -22,5 +24,46 @@
 		font-weight: 700;
 		text-transform: uppercase;
 		color: $blak;
+		position: relative;
+
+		&:hover::before {
+			width: 100%;
+		}
+
+		&::before {
+			content: "";
+			width: 0;
+			height: 3px;
+			background-color: $orange-btn;
+			top: -7px;
+			left: 0;
+			position: absolute;
+		}
+	}
+
+	@include lg-screen {
+		display: block;
+	}
+}
+
+.burger {
+
+	&__icon {
+		fill: $orange-btn;
+		width: 45px;
+		height: 45px;
+		display: block;
+		position: fixed;
+    	right: 15px;
+
+		&:hover {
+			box-shadow: 0 0 6px 1px black;
+			// fill: $orange-btn;
+			cursor: pointer;
+		}
+
+		@include lg-screen{
+			display: none;
+		}
 	}
 }

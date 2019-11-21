@@ -1,0 +1,22 @@
+.ch-about {
+	background: $bg-green url("../img/bg_about.png") no-repeat;
+	min-height: 700px;
+
+	&__wrapper {
+		width: 100%;
+		padding: 180px 0 0 0;
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+	}
+
+	&__content {
+		width: 100%;
+		max-width: 500px;
+		min-height: 300px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		color: $white;
+	}
+}
