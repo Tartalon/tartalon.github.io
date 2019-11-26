@@ -1,8 +1,9 @@
 .ch-about {
-	background: $bg-green url("../img/bg_about.png") no-repeat;
+	background: $bg-green;
 	min-height: 700px;
 
 	&__wrapper {
+		background: url("../img/bg_about.png") no-repeat;
 		width: 100%;
 		padding: 180px 0 0 0;
 		display: flex;
