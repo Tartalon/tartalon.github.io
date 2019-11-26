@@ -25,6 +25,24 @@
 	&__title {
 		margin-bottom: 20px;
 	}
+
+	&__photo {
+		width: 100%;
+		margin-bottom: 50px;
+	}
+
+	&__btn {
+		padding: 20px 25px;
+		font-size: px_to_rem(20px);
+		font-weight: 300;
+		text-transform: uppercase;
+		color: $white;
+		background-color: $blue-btn;
+
+		&:hover {
+			box-shadow: 0 0 20px 5px black;
+		}
+	}
 }
 
 .photo {
@@ -33,5 +51,56 @@
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
+		min-height: 985px;
+	}
+
+	&__item {
+		width: 100%;
+		max-height: 550px;
+	}
+
+	&__link {
+		display: flex;
+
+		&:hover {
+			transform: translate(10px, -10px);
+			box-shadow: 0 0 10px 5px black;
+		}
+	}
+}
+
+.first {
+
+	&__item {
+		max-width: 770px;
+	}
+
+	&__link {
+		@include padding-hack(550px);
+	}
+}
+
+.second {
+
+	&__item {
+		max-width: 370px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+}
+
+.therd {
+
+	&__item {
+		max-width: 570px;
+	}
+}
+
+.fourth {
+
+
+	&__item {
+		max-width: 570px;
 	}
 }
