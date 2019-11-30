@@ -4,8 +4,8 @@ let message = (age<=11) ? "Baby": //ребенок
 	(age<=59) ? "Adult": //взрослый
 	(age>=60) ? "Retiree":
 "You entered the wrong age";
-
 alert (message);
+
 
 
 let num = prompt ("Enter a number from 0 to 9");
@@ -43,5 +43,6 @@ switch (+num) {
 	default:
 		alert ("Wrong number!");
 }
+
 
 
