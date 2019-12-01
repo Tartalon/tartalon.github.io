@@ -1,7 +1,68 @@
 .header {
-	background: #4c3b71 url("../img/home-bg.jpg") no-repeat;
+	background: #4c3b71 url("../img/home-bg.jpg") center no-repeat;
 	background-size: cover;
-	height: 100vh;
+	min-height: 100vh;
 	width: 100%;
+	padding: 25px 0 70px;
+	position: relative;
+
+	&::before {
+		content: "";
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background: linear-gradient(90deg, rgba(46,42,79, .8) 0%, rgba(79,63,118, .8) 100%);
+		position: absolute;
+	}
+
+	&__nav {
+		align-items: center;
+	}
+
+	&__logo {
+		display: flex;
+		width: 100%;
+		max-width: 135px;
+
+		.logo-text {
+			font-size: px_to_rem(30px);
+			font-weight: 300;
+			color: $cyan;
+		}
+
+		.logo-img {
+			margin-right: 10px;
+		}
+	}
+
+	&__title {
+		font-size: px_to_rem(32px);
+		font-weight: 900;
+		text-transform: capitalize;
+		color: $white;
+		margin-bottom: 50px;
+	}
+
+	&__text {
+		font-weight: 300;
+		color: $white;
+		line-height: 1.8em;
+		letter-spacing: 0.06em;
+	}
 }
 
+.nav {
+	justify-content: flex-end;
+
+	&-link {
+		font-size: px_to_rem(13px);
+		font-weight: 900;
+		text-transform: uppercase;
+		color: $white;
+
+		&:hover {
+			color: $cyan;
+		}
+	}
+}
