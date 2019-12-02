@@ -3,7 +3,7 @@
 	background-size: cover;
 	min-height: 100vh;
 	width: 100%;
-	padding: 25px 0 70px;
+	// padding: 25px 0 70px;
 	position: relative;
 
 	&::before {
@@ -14,6 +14,11 @@
 		left: 0;
 		background: linear-gradient(90deg, rgba(46,42,79, .8) 0%, rgba(79,63,118, .8) 100%);
 		position: absolute;
+	}
+	&__inner {
+		height: 100vh;
+		display: flex;
+		flex-direction: column;
 	}
 
 	&__nav {
@@ -50,6 +55,18 @@
 		line-height: 1.8em;
 		letter-spacing: 0.06em;
 	}
+
+	.f_grow-1 {
+		flex-grow: 1;
+	}
+
+	.f_grow-3 {
+		flex-grow: 3;
+	}
+
+	.f_grow-1 {
+		flex-grow: 1;
+	}
 }
 
 .nav {
@@ -64,5 +81,9 @@
 		&:hover {
 			color: $cyan;
 		}
+	}
+
+	&__btn {
+		padding: 15px;
 	}
 }
