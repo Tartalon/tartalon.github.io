@@ -1,19 +1,33 @@
 ul {
-	margin: 0;
-	padding: 0;
-	list-style: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 a {
-	text-decoration: none;
+    text-decoration: none;
 
-	&:hover {
-		text-decoration: none;
-	}
+    &:hover {
+        text-decoration: none;
+    }
 }
 
 body {
-	font-size: $base-size;
-	font-family: $main-font;
-	color: $text-color;
+    font-family: $main-font;
+    color: $text-color;
+}
+
+.tj-btn {
+    display: block;
+    max-width: 130px;
+    color: $cyan;
+    border: 1px solid $cyan;
+    font-family: $btn-font;
+    font-size: px_to_rem(16px);
+    text-transform: uppercase;
+
+    &:hover {
+        background-color: $btn-color;
+		color: $white;
+    }
 }

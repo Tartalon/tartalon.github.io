@@ -1,0 +1,39 @@
+.tj-video {
+	background: #4c3b71 url("../img/story.jpg") center no-repeat;
+	background-size: cover;
+	width: 100%;
+	min-height: 550px;
+	position: relative;
+
+	&::before {
+		content: "";
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background: linear-gradient(90deg, rgba(46,42,79, .8) 0%, rgba(79,63,118, .8) 100%);
+		position: absolute;
+	}
+
+	&__link {
+		display: flex;
+	}
+
+	&__subtitle {
+		font-size: px_to_rem(16px);
+		font-weight: 900;
+		text-transform: uppercase;
+		color: $white;
+		margin-bottom: 0;
+	}
+}
+
+.play {
+	@include square(100px);
+	fill: $white;
+	margin: 0 auto;
+
+	&:hover {
+		fill: $btn-color;
+	}
+}

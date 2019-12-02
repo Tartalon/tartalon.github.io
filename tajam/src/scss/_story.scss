@@ -1,0 +1,33 @@
+.section {
+	padding: 70px 0;
+
+	&:nth-child(odd) {
+		background-color: $white;
+	}
+
+	&__title {
+		font-family: $title-font;
+		font-size: px_to_rem(22px);
+		color: $black;
+		text-transform: uppercase;
+	}
+
+	&__text {
+		font-size: px_to_rem(14px);
+		font-weight: 400;
+		color: $text-color;
+		letter-spacing: .01em;
+		line-height: 1.5em;
+	}
+}
+
+.story {
+
+	&__title {
+		margin-bottom: 30px;
+	}
+
+	&__text:nth-child(2n+1) {
+		margin-bottom: 30px;
+	}
+}
