@@ -5,13 +5,6 @@
 		background-color: $white;
 	}
 
-	&__title {
-		font-family: $title-font;
-		font-size: px_to_rem(22px);
-		color: $black;
-		text-transform: uppercase;
-	}
-
 	&__text {
 		font-size: px_to_rem(14px);
 		font-weight: 400;

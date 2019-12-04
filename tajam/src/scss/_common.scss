@@ -25,9 +25,20 @@ body {
     font-family: $btn-font;
     font-size: px_to_rem(16px);
     text-transform: uppercase;
+    letter-spacing: -0.01em;
 
     &:hover {
         background-color: $btn-color;
 		color: $white;
+    }
+}
+
+.section {
+    &__title {
+        font-family: $title-font;
+        font-weight: 700;
+        font-size: px_to_rem(22px);
+        color: $black;
+        text-transform: uppercase;
     }
 }

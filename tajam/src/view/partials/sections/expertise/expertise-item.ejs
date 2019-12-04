@@ -1,0 +1,44 @@
+<% const cards = [
+	{
+		title: "web design & development",
+		text: "This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.",
+		img: "../../../../img/icons/web.png"
+	},
+	{
+		title: "branding identity",
+		text: "This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.",
+		img: "../../../../img/icons/brand.png"
+	},
+	{
+		title: "mobile app",
+		text: "This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.",
+		img: "../../../../img/icons/mob.png"
+	},
+	{
+		title: "search engine optimization",
+		text: "This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.",
+		img: "../../../../img/icons/eng.png"
+	},
+	{
+		title: "game development",
+		text: "This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.",
+		img: "../../../../img/icons/game.png"
+	},
+	{
+		title: "made with love",
+		text: "This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.",
+		img: "../../../../img/icons/heart.png"
+	}
+]%>
+
+<% cards.forEach(card => { %>
+<div class="col-md-4 tj-expertise__item">
+	<div class="card text-center">
+  		<img src="<%= card.img %>" class="card-img-top" alt="...">
+  		<div class="card-body">
+    		<h5 class="card-title"><%= card.title %></h5>
+    		<p class="card-text"><%= card.text %></p>
+  		</div>
+	</div>
+</div>
+<%})%>
