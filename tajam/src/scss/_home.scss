@@ -30,11 +30,13 @@
 		display: flex;
 		width: 100%;
 		max-width: 135px;
+		margin-right: 0;
 
 		.logo-text {
 			font-size: px_to_rem(30px);
 			font-weight: 300;
 			color: $cyan;
+			margin-bottom: 0;
 		}
 
 		.logo-img {
