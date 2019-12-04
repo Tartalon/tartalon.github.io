@@ -1,0 +1,79 @@
+.tj-team {
+	background: #4c3b71 url("../img/team-bg.jpg") center no-repeat;
+	background-size: cover;
+	width: 100%;
+	min-height: 715px;
+	position: relative;
+
+	&::before {
+		content: "";
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background: linear-gradient(90deg, rgba(31,28,64,1) 0%, rgba(63,46,101,0.6) 100%);
+		position: absolute;
+	}
+
+	&__titles {
+		margin-bottom: 70px;
+
+		&::after {
+			content: "";
+			width: 50px;
+			height: 2px;
+			background-color: $light-grey;
+			left: 50%;
+			bottom: -15px;
+			transform: translatex(-50%);
+			position: absolute;
+		}
+	}
+
+	&__title {
+		color: $white;
+	}
+
+	&__text {
+		color: $white;
+	}
+
+	&__card {
+		margin-bottom: 70px;
+		background-color: transparent;
+		border-color: $light-grey;
+
+		.card {
+
+			&-body {
+			text-transform: uppercase;
+			}
+
+			&-title {
+				font-size: px_to_rem(14px);
+				font-weight: 400;
+				color: $white;
+			}
+
+			&-text {
+				font-size: px_to_rem(13px);
+			}
+		}
+	}
+
+	&__footer {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	&__btn {
+		max-width: 155px;
+	}
+
+	.footer-text {
+		font-size: px_to_rem(13px);
+		color: $white;
+		margin-bottom: 30px;
+	}
+}

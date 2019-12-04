@@ -30,13 +30,11 @@
 		display: flex;
 		width: 100%;
 		max-width: 135px;
-		margin-right: 0;
 
 		.logo-text {
 			font-size: px_to_rem(30px);
 			font-weight: 300;
 			color: $cyan;
-			margin-bottom: 0;
 		}
 
 		.logo-img {
@@ -55,7 +53,7 @@
 		&::after {
 			content: "";
 			width: 50px;
-			height: 1px;
+			height: 2px;
 			background-color: $cyan;
 			left: 50%;
 			bottom: -25px;
@@ -80,35 +78,6 @@
 		flex-grow: 3;
 	}
 }
-
-	// &__carousel {
-
-	// 	& li {
-	// 		@include square(10px);
-	// 		border: 2px solid $grey;
-	// 		border-radius: 50%;
-	// 		background: transparent;
-
-	// 		&:hover,
-	// 		&:active {
-	// 			background-color: $btn-color;
-	// 			border-color: $btn-color;
-	// 			opacity: 1;
-	// 		}
-	// 	}
-
-	// 	// &_active {
-	// 	// 	background-color: $btn-color;
-	// 	// 	border-color: $btn-color;
-	// 	// 	opacity: 1;
-	// 	// }
-	// }
-
-	// &__carousel_active {
-	// 	background-color: $btn-color;
-	// 	border-color: $btn-color;
-	// 	opacity: 1;
-	// }
 
 .nav {
 	justify-content: flex-end;

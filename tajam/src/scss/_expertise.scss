@@ -8,12 +8,24 @@
 	&__titles {
 		font-family: $title-font;
 		margin-bottom: 65px;
+		position: relative;
+
+		&::after {
+			content: "";
+			width: 50px;
+			height: 2px;
+			background-color: $light-grey;
+			left: 50%;
+			bottom: -15px;
+			transform: translatex(-50%);
+			position: absolute;
+		}
 	}
 
 	&__item {
 
-		border-right: 1px solid $grey;
-		border-bottom: 1px solid $grey;
+		border-right: 1px solid $light-grey;
+		border-bottom: 1px solid $light-grey;
 
 		&:nth-child(3n+3) {
 				border-right: none;

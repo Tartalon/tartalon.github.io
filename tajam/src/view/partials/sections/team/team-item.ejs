@@ -1,0 +1,30 @@
+<% const cards = [
+	{
+		title: "semf ucuk",
+		text: "ceo & founder",
+	},
+	{
+		title: "dik adalin",
+		text: "engineering",
+	},
+	{
+		title: "jeng kol",
+		text: "designer",
+	},
+	{
+		title: "pet romak",
+		text: "marketing",
+	}
+]%>
+
+<% cards.forEach(card => { %>
+<div class="col-lg-3">
+	<div class="card tj-team__card">
+		<img class="tj-team__card-img" src="<%= blocks.imgholder %>220/230/portret" alt="">
+		<div class="card-body text-center">
+			<h5 class="card-title"><%= card.title %></h5>
+	    	<p class="card-text"><%= card.text %></p>
+	    </div>
+	</div> <!-- /.card -->
+</div>
+<%})%>
