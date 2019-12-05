@@ -39,9 +39,10 @@
 	}
 
 	&__card {
-		margin-bottom: 70px;
 		background-color: transparent;
 		border-color: $light-grey;
+		max-width: 230px;
+		margin: 0 auto 70px;
 
 		.card {
 
