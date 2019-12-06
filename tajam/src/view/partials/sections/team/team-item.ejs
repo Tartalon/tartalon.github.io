@@ -19,12 +19,14 @@
 
 <% cards.forEach(card => { %>
 <div class="col-lg-3 col-sm-6">
-	<div class="card tj-team__card">
-		<img class="tj-team__card-img" src="<%= blocks.imgholder %>220/230/portret" alt="">
-		<div class="card-body text-center">
-			<h5 class="card-title"><%= card.title %></h5>
-	    	<p class="card-text"><%= card.text %></p>
-	    </div>
-	</div> <!-- /.card -->
+	<a href="#" class="card__link">
+		<div class="card tj-team__card">
+			<img class="tj-team__card-img" src="<%= blocks.imgholder %>220/230/portret" alt="">
+			<div class="card-body text-center">
+				<h5 class="card-title"><%= card.title %></h5>
+	    		<p class="card-text"><%= card.text %></p>
+	    	</div>
+		</div> <!-- /.card -->
+	</a>
 </div>
 <%})%>

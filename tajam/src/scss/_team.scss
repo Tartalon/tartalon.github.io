@@ -42,9 +42,17 @@
 		background-color: transparent;
 		border-color: $light-grey;
 		max-width: 230px;
-		margin: 0 auto 70px;
+		margin: 0 auto;
 
 		.card {
+
+			&__link {
+
+				&:hover {
+					// transform: translateY(-10px);
+					opacity: .7;
+				}
+			}
 
 			&-body {
 			text-transform: uppercase;
@@ -58,6 +66,7 @@
 
 			&-text {
 				font-size: px_to_rem(13px);
+				color: $text-color;
 			}
 		}
 	}
@@ -77,4 +86,8 @@
 		color: $white;
 		margin-bottom: 30px;
 	}
+}
+
+.row__card {
+	margin-bottom: 70px;
 }

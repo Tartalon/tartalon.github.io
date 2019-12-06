@@ -3,7 +3,7 @@
 	background-size: cover;
 	min-height: 100vh;
 	width: 100%;
-	// padding: 25px 0 70px;
+	padding: 10px 0;
 	position: relative;
 
 	&::before {
@@ -87,6 +87,7 @@
 		font-weight: 900;
 		text-transform: uppercase;
 		color: $white;
+		transition: ease .2s;
 
 		&:hover {
 			color: $cyan;
@@ -114,6 +115,7 @@
 		border: 2px solid $grey;
 		border-radius: 50%;
 		display: flex;
+		transition: ease .2s;
 
 		&.active, &:hover, &:focus {
 			background-color: $btn-color;
