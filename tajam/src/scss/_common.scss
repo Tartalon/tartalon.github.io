@@ -18,7 +18,9 @@ body {
 }
 
 .tj-btn {
-    display: block;
+    display: flex;
+    text-align: center;
+    justify-content: center;
     max-width: 150px;
     color: $cyan;
     border: 1px solid $cyan;
