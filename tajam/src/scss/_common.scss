@@ -60,3 +60,19 @@ body {
 		line-height: 1.5em;
 	}
 }
+
+.main__logo {
+    display: flex;
+    width: 100%;
+    max-width: 135px;
+
+    .logo-text {
+        font-size: px_to_rem(30px);
+        font-weight: 300;
+        color: $cyan;
+    }
+
+    .logo-img {
+        margin-right: 10px;
+    }
+}

@@ -26,22 +26,6 @@
 		align-items: center;
 	}
 
-	&__logo {
-		display: flex;
-		width: 100%;
-		max-width: 135px;
-
-		.logo-text {
-			font-size: px_to_rem(30px);
-			font-weight: 300;
-			color: $cyan;
-		}
-
-		.logo-img {
-			margin-right: 10px;
-		}
-	}
-
 	&__title {
 		font-size: px_to_rem(32px);
 		font-weight: 900;
