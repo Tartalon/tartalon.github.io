@@ -61,6 +61,11 @@
 			&:last-child {
 				margin-right: 0;
 			}
+
+			&:focus,
+			&.active {
+				@include square(65px);
+			}
 		}
 	}
 
