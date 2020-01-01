@@ -383,18 +383,7 @@
         <div class="row">
             <div class="tj-testimonial__main">
                 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators carousel__list">
-                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="carousel__photo active">
-                        	<img class="img-circle photo__img" src="./img/photo_1.png" alt="">
-                        </li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="1" class="carousel__photo">
-                        	<img class="img-circle photo__img" src="./img/photo_2.png" alt="">
-                        </li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="2" class="carousel__photo">
-                        	<img class="img-circle photo__img" src="./img/photo_3.png" alt="">
-                        </li>
-                    </ol>
-                    <div class="carousel-inner text-center col-md-10 mx-auto">
+                    <div class="carousel-inner text-center col-md-10 mx-auto mb-3">
                         <div class="carousel-item tj-testimonial__carousel active">
                             <div class="item tj-testimonial__description">
                             	<i class="material-icons quot"> format_quote </i>
@@ -447,14 +436,27 @@
                             </div>
                         </div>
                     </div> <!-- /.carousel-inner -->
-                    <a class="carousel__prev carousel__btn" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                        <i class="material-icons prev-icon">chevron_left</i>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel__next carousel__btn" href="#carouselExampleIndicators" role="button" data-slide="next">
-                        <i class="material-icons next-icon">chevron_right</i>
-                        <span class="sr-only">Next</span>
-                    </a>
+                    <div class="tj-testimonial__carousel-wrapper">
+                        <ol class="carousel-indicators carousel__list">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="carousel__photo active">
+                                <img class="img-circle photo__img" src="./img/photo_1.png" alt="">
+                            </li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1" class="carousel__photo">
+                                <img class="img-circle photo__img" src="./img/photo_2.png" alt="">
+                            </li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2" class="carousel__photo">
+                                <img class="img-circle photo__img" src="./img/photo_3.png" alt="">
+                            </li>
+                        </ol>
+                        <a class="carousel__prev carousel__btn" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                            <i class="material-icons prev-icon">chevron_left</i>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel__next carousel__btn" href="#carouselExampleIndicators" role="button" data-slide="next">
+                            <i class="material-icons next-icon">chevron_right</i>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div> <!-- /.tj-testimonial__carousel-wrapper -->
                 </div> <!-- /.carousel -->
             </div> <!-- /.tj-testimonial__main -->
         </div> <!-- /.row -->
@@ -547,35 +549,110 @@
     </div> <!-- /.container -->
 </section>
 <section class="section tj-footer">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-4">
-				<a href="/" class="main__logo">
-					<img src="./img/logo.png" alt="" class="logo-img">
-					<h1 class="logo-text">tajam</h1>
-				</a>
-
-				<p class="tj-footer__text">
-					lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh elit. Duis sed odio sit amet auctror a ornare odio non mauris vitae erat in elit
-				</p>
-			</div>
-			<div class="col-md-4">
-				<h5 class="tj-footer__title-contact">
-					our studio
-				</h5>
-				<div class="row">
-					<div class="col">
-						<div class="tj-footer__position">
-							
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-4">
-				
-			</div>
-		</div> <!-- /.row -->
-	</div> <!-- /.container -->
+    <div class="container">
+        <div class="row tj-footer__inner">
+            <div class="col-md-4">
+                <a href="/" class="main__logo tj-footer__logo mb-4">
+                    <img src="./img/logo.png" alt="" class="logo-img">
+                    <h1 class="logo-text">tajam</h1>
+                </a>
+                <p class="tj-footer__text mb-0">
+                    lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh elit. Duis sed odio sit amet auctror a ornare odio non mauris vitae erat in elit
+                </p>
+            </div>
+            <div class="col-md-4">
+                <h5 class="tj-footer__title mb-5">
+                    our studio
+                </h5>
+                <div class="row">
+                    <div class="col">
+                        <a href="#" target="_blank" class="tj-footer__position">
+                            <i class="material-icons place-icon">room</i>
+                            <span class="position__address tj-footer__text mb-0">
+                                Ruko cucruk, Jl. Radio luar dalem jos No.12 - 13, Kalideres - Jakarta Barat
+                                11480 - Indonesia
+                            </span>
+                        </a>
+                        <a href=":+622122243333" class="phone__link">
+                            <i class="material-icons phone-icon">local_phone</i>
+                            <span>+(62) 21-2224 3333</span>
+                        </a>
+                    </div> <!-- /.col -->
+                </div> <!-- /.row -->
+            </div> <!-- /.col-md-4 -->
+            <div class="col-md-4">
+                <h5 class="tj-footer__title mb-5">
+                    stay in touch
+                </h5>
+                <form class="tj-footer__form">
+                    <label class="tj-footer__label">
+                        <input type="email" class="tj-footer__email" placeholder="Subscribe our newsletter">
+                    </label>
+                    <button type="submit" class="btn tj-footer__submit">
+                        <i class="material-icons submit__icon">near_me</i>
+                    </button>
+                </form>
+                <ul class="social__list">
+                    <li class="social__item">
+                        <a href="#" class="social__link" target="_blank">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a href="#" class="social__link" target="_blank">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a href="#" class="social__link" target="_blank">
+                            <i class="fab fa-dribbble"></i>
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a href="#" class="social__link" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a href="#" class="social__link" target="_blank">
+                            <i class="fab fa-google-plus-g"></i>
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a href="#" class="social__link" target="_blank">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div> <!-- /.col-md-4 -->
+        </div> <!-- /.row -->
+        <div class="row">
+        	<div class="col-md-6 tj-footer__menu">
+        		<ul class="footer-menu__list">
+        			<li class="footer-menu__item">
+        				<a href="#" class="footer-menu__link">
+        					help
+        				</a>
+        			</li>
+        			<li class="footer-menu__item">
+        				<a href="#" class="footer-menu__link">
+        					terms & condition
+        				</a>
+        			</li>
+        			<li class="footer-menu__item">
+        				<a href="#" class="footer-menu__link">
+        					privacy
+        				</a>
+        			</li>
+        		</ul>
+        	</div> <!-- /.col-md-6 tj-footer__menu -->
+        	<div class="col-md-6">
+        		<p class="copyright">
+        			Copyright © 2015 - Tajem Creative
+        		</p>
+        	</div>
+        </div> <!-- /.row -->
+    </div> <!-- /.container -->
 </section> <!-- index.ejs -->  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
