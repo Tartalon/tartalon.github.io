@@ -35,6 +35,7 @@
 	&__list {
 		margin-bottom: 0;
 		position: inherit;
+		z-index: 0;
 	}
 
 	&__text {
@@ -92,6 +93,10 @@
 		color: $light-grey;
 		position: absolute;
 		bottom: 0;
+
+		&:hover {
+			color: $cyan;
+		}
 	}
 }
 
