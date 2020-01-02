@@ -1,7 +1,8 @@
 .header {
 	background: #4c3b71 url("../img/home-bg.jpg") center no-repeat;
 	background-size: cover;
-	min-height: 100vh;
+	height: 100vh;
+	min-height: 730px;
 	width: 100%;
 	padding: 10px 0;
 	position: relative;
@@ -84,11 +85,6 @@
 }
 
 .carousel {
-
-	&__list {
-		display: flex;
-		justify-content: center;
-	}
 
 	&__item:not(:last-child) {
 		margin-right: 5px;

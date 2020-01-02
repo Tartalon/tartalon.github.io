@@ -23,7 +23,7 @@
                                 11480 - Indonesia
                             </span>
                         </a>
-                        <a href=":+622122243333" class="phone__link">
+                        <a href="tel:+622122243333" class="phone__link">
                             <i class="material-icons phone-icon">local_phone</i>
                             <span>+(62) 21-2224 3333</span>
                         </a>
@@ -43,57 +43,14 @@
                     </button>
                 </form>
                 <ul class="social__list">
-                    <li class="social__item">
-                        <a href="#" class="social__link" target="_blank">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                    </li>
-                    <li class="social__item">
-                        <a href="#" class="social__link" target="_blank">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                    </li>
-                    <li class="social__item">
-                        <a href="#" class="social__link" target="_blank">
-                            <i class="fab fa-dribbble"></i>
-                        </a>
-                    </li>
-                    <li class="social__item">
-                        <a href="#" class="social__link" target="_blank">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                    </li>
-                    <li class="social__item">
-                        <a href="#" class="social__link" target="_blank">
-                            <i class="fab fa-google-plus-g"></i>
-                        </a>
-                    </li>
-                    <li class="social__item">
-                        <a href="#" class="social__link" target="_blank">
-                            <i class="fab fa-youtube"></i>
-                        </a>
-                    </li>
+                    <%- partial('footer_social-item') %>
                 </ul>
             </div> <!-- /.col-md-4 -->
         </div> <!-- /.row -->
         <div class="row">
         	<div class="col-md-6 tj-footer__menu">
         		<ul class="footer-menu__list">
-        			<li class="footer-menu__item">
-        				<a href="#" class="footer-menu__link">
-        					help
-        				</a>
-        			</li>
-        			<li class="footer-menu__item">
-        				<a href="#" class="footer-menu__link">
-        					terms & condition
-        				</a>
-        			</li>
-        			<li class="footer-menu__item">
-        				<a href="#" class="footer-menu__link">
-        					privacy
-        				</a>
-        			</li>
+        			<%- partial('footer_menu-item') %>
         		</ul>
         	</div> <!-- /.col-md-6 tj-footer__menu -->
         	<div class="col-md-6">
