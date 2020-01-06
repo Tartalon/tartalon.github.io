@@ -134,6 +134,7 @@
 	}
 
 	&__link {
+		display: inline-block;
 		font-size: px_to_rem(14px);
 		font-weight: 400;
 		text-transform: uppercase;

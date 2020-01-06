@@ -56,6 +56,7 @@ body {
 		color: $text-color;
 		letter-spacing: .01em;
 		line-height: 1.5em;
+        margin-bottom: 0;
 	}
 }
 
@@ -68,6 +69,7 @@ body {
         font-size: px_to_rem(30px);
         font-weight: 300;
         color: $cyan;
+        margin-bottom: 0;
     }
 
     .logo-img {

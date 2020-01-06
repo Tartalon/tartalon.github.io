@@ -1,9 +1,5 @@
 .form {
 
-	&__input {
-		padding: 15px;
-	}
-
 	&__textarea {
 		padding: 20px;
 	}
@@ -30,6 +26,6 @@
 	}
 
 	&__link {
-		display: flex;
+		display: inline-block;
 	}
 }
