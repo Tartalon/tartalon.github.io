@@ -1,4 +1,4 @@
-.story {
+.tj-story {
 
 	&__title {
 		margin-bottom: 30px;
@@ -9,5 +9,19 @@
 	}
 	&-btn {
 		margin: 0;
+	}
+
+	&__img-md {
+
+		@include sm-screen-max {
+		margin-bottom: 30px;
+		}
+	}
+
+	&__article-md {
+
+		@include sm-screen-max {
+		text-align: center;
+		}
 	}
 }
