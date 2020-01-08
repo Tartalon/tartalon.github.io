@@ -13,8 +13,6 @@
   
 
 
-
-
 <header class="header" id="home">
 	<div class="container">
 		<div class="header__inner">
@@ -30,34 +28,36 @@
 				<div class="collapse navbar-collapse navbar-right" id="navbarTogglerDemo02">
 					<ul class="navbar-nav nav navbar__list text-center">
 						
-							<li class="nav-item">
-								<a class="nav-link" href="#">home</a>
-							</li>
-						
-							<li class="nav-item">
-								<a class="nav-link" href="#">about</a>
-							</li>
-						
-							<li class="nav-item">
-								<a class="nav-link" href="#">expertise</a>
-							</li>
-						
-							<li class="nav-item">
-								<a class="nav-link" href="#">teamse</a>
-							</li>
-						
-							<li class="nav-item">
-								<a class="nav-link" href="#">works</a>
-							</li>
-						
-							<li class="nav-item">
-								<a class="nav-link" href="#">people say</a>
-							</li>
-						
-							<li class="nav-item">
-								<a class="nav-link" href="#">contact</a>
-							</li>
-						
+
+
+<li class="nav-item">
+	<a class="nav-link" href="#home">home</a>
+</li>
+
+<li class="nav-item">
+	<a class="nav-link" href="#about">about</a>
+</li>
+
+<li class="nav-item">
+	<a class="nav-link" href="#expertise">expertise</a>
+</li>
+
+<li class="nav-item">
+	<a class="nav-link" href="#teamse">teamse</a>
+</li>
+
+<li class="nav-item">
+	<a class="nav-link" href="#works">works</a>
+</li>
+
+<li class="nav-item">
+	<a class="nav-link" href="#say">people say</a>
+</li>
+
+<li class="nav-item">
+	<a class="nav-link" href="#contact">contact</a>
+</li>
+
 					</ul>
 				</div> <!-- /.collapse navbar-collapse -->
 			</nav>
@@ -101,7 +101,7 @@
 		</div> <!-- /.header__inner -->
 	</div> <!-- /.container -->
 </header>
-<section class="section tj-story">
+<section class="section tj-story" id="about">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-5 text-center tj-story__img-md">
@@ -151,7 +151,7 @@
 		</div>
 	</div>
 </section>
-<section class="tj-expertise">
+<section class="tj-expertise" id="expertise">
 	<div class="container">
 		<div class="row justify-content-center tj-expertise__titles">
 			<div class="col-lg-6">
@@ -230,7 +230,7 @@
 		</div> <!-- /.row -->
 	</div> <!-- /.container -->
 </section> <!-- /.tj-expertise -->
-<section class="section tj-team">
+<section class="section tj-team" id="teamse">
 	<div class="container">
 		<div class="row justify-content-center">
 			<div class="col-lg-6 tj-team__titles">
@@ -307,15 +307,15 @@
 		</div>
 	</div> <!-- /.container -->
 </section> <!-- /.tj-team -->
-<section class="section tj-work">
+<section class="section tj-work" id="works">
 	<div class="container">
 		<div class="row justify-content-between align-items-center tj-work__titles">
-			<div class="col-md-6 col-6">
+			<div class="col-md-6 tj-work__title-margin">
 				<h2 class="section__title tj-work__title">
 					our works
 				</h2>
 			</div>
-			<div class="col-md-3 col-6">
+			<div class="col-md-3">
 				<a href="#" class="tj-work__dribble">
 					<p class="tj-work__drible-text my-0">
 						See All Project in dribble
@@ -458,7 +458,7 @@
         </div> <!-- /.row -->
     </div> <!-- /.container -->
 </section>
-<section class="section tj-contact">
+<section class="section tj-contact" id="say">
     <div class="container">
         <div class="row justify-content-between">
             <div class="col-md-6 form-margin">
@@ -544,11 +544,11 @@
         </div> <!-- /.row -->
     </div> <!-- /.container -->
 </section>
-<section class="section tj-footer">
+<section class="section tj-footer" id="contact">
     <div class="container">
         <div class="row tj-footer__inner">
             <div class="col-md-4 tj-footer__who">
-                <a href="/" class="main__logo tj-footer__logo mb-4">
+                <a href="/" class="main__logo tj-footer__logo">
                     <img src="./img/logo.png" alt="" class="logo-img">
                     <h1 class="logo-text">tajam</h1>
                 </a>
@@ -571,7 +571,7 @@
                         </a>
                         <a href="tel:+622122243333" class="phone__link">
                             <i class="material-icons phone-icon">local_phone</i>
-                            <span>+(62) 21-2224 3333</span>
+                            <span class="tj-footer__text">+(62) 21-2224 3333</span>
                         </a>
                     </div> <!-- /.col -->
                 </div> <!-- /.row -->

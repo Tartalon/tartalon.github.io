@@ -15,8 +15,12 @@
 	}
 
 	&__logo {
-		margin-bottom: 20px;
+		margin-bottom: 25px;
 		display: inline-block;
+
+		@include sm-screen-max {
+			margin-bottom: 15px;
+		}
 	}
 
 	&__title {
@@ -50,7 +54,7 @@
 		@include sm-screen-max {
 
 			&-margin {
-				margin-bottom: 30px;
+				margin-bottom: 40px;
 			}
 		}
 	}
@@ -61,6 +65,7 @@
 
 		@include sm-screen-max {
 			justify-content: center;
+			margin-bottom: 15px;
 		}
 	}
 
@@ -111,7 +116,7 @@
 	&__who {
 
 		@include sm-screen-max {
-			margin-bottom: 30px;
+			margin-bottom: 40px;
 		}
 	}
 }
@@ -158,6 +163,10 @@
 	display: flex;
 	color: $white;
 
+	@include sm-screen-max {
+		justify-content: center;
+	}
+
 	&:hover {
 		color: $cyan;
 	}
@@ -175,6 +184,10 @@
 
 	&__item:not(:last-child) {
 		margin-right: 30px;
+
+		@include sm-screen-max {
+			margin-right: 15px;
+		}
 	}
 
 	&__link {
@@ -184,6 +197,10 @@
 		text-transform: uppercase;
 		color: $white;
 		letter-spacing: 0.07em;
+
+		@include sm-screen-max {
+			font-size: px_to_rem(12px);
+		}
 
 		&:hover {
 			color: $white;
@@ -196,5 +213,6 @@
 
 	@include sm-screen-max {
 		text-align: center;
+		font-size: px_to_rem(12px);
 	}
 }

@@ -7,6 +7,17 @@
 
 	&__title {
 		margin-bottom: 0;
+
+		@include sm-screen-max {
+			text-align: center;
+		}
+
+		&-margin {
+
+			@include sm-screen-max {
+				margin-bottom: 20px;
+			}
+		}
 	}
 
 	&__dribble {
@@ -18,6 +29,10 @@
 		width: 200px;
 		padding: 0 5px;
 		transition: ease .2s;
+
+		@include sm-screen-max {
+			margin: 0 auto;
+		}
 
 		&:hover {
 			border-color: $btn-color;
