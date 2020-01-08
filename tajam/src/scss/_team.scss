@@ -44,12 +44,6 @@
 		max-width: 230px;
 		margin: auto;
 
-		@include xs-screen {
-
-		}
-
-		// margin: 0 auto;
-
 		.card {
 
 			&__link {
@@ -73,6 +67,21 @@
 				font-size: px_to_rem(13px);
 				color: $text-color;
 			}
+		}
+	}
+
+	&__card-marge:not(:last-child) {
+		margin-bottom: 15px;
+
+		@include sm-screen {
+
+			&:nth-child(3) {
+				margin-bottom: 0;
+			}
+		}
+
+		@include lg-screen {
+			margin-bottom: 0;
 		}
 	}
 

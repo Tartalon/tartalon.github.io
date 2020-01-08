@@ -16,6 +16,7 @@
 
 	&__logo {
 		margin-bottom: 20px;
+		display: inline-block;
 	}
 
 	&__title {
@@ -23,12 +24,18 @@
 		font-weight: 900;
 		letter-spacing: 0.05em;
 		text-transform: uppercase;
+		margin-bottom: 45px;
+
+		@include sm-screen-max {
+			margin-bottom: 15px;
+		}
 	}
 
 	&__text {
 		font-size: px_to_rem(14px);
 		font-weight: 300;
 		line-height: 1.7em;
+		margin-bottom: 0;
 	}
 
 	&__position {
@@ -39,11 +46,22 @@
 		&:hover {
 			color: $cyan;
 		}
+
+		@include sm-screen-max {
+
+			&-margin {
+				margin-bottom: 30px;
+			}
+		}
 	}
 
 	&__form {
 		display: flex;
 		margin-bottom: 40px;
+
+		@include sm-screen-max {
+			justify-content: center;
+		}
 	}
 
 	&__email {
@@ -77,6 +95,24 @@
 
 	&__inner {
 		margin-bottom: 65px;
+
+		@include sm-screen-max {
+			text-align: center;
+		}
+	}
+
+	&__menu {
+
+		@include sm-screen-max {
+			margin-bottom: 40px;
+		}
+	}
+
+	&__who {
+
+		@include sm-screen-max {
+			margin-bottom: 30px;
+		}
 	}
 }
 
@@ -92,6 +128,10 @@
 
 	&__list {
 		display: flex;
+
+		@include sm-screen-max {
+			justify-content: center;
+		}
 	}
 
 	&__item:not(:last-child) {
@@ -127,6 +167,10 @@
 
 	&__list {
 		display: flex;
+
+		@include sm-screen-max {
+			justify-content: center;
+		}
 	}
 
 	&__item:not(:last-child) {
@@ -149,4 +193,8 @@
 
 .copyright {
 	text-align: end;
+
+	@include sm-screen-max {
+		text-align: center;
+	}
 }

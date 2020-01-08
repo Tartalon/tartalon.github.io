@@ -9,6 +9,17 @@
 		height: 40px;
 		margin: 0;
 	}
+
+	@include sm-screen-max {
+		text-align: center;
+	}
+
+	@include sm-screen-max {
+
+		&-margin {
+			margin-bottom: 35px;
+		}
+	}
 }
 
 .clients {
@@ -22,6 +33,10 @@
 
 		&:nth-last-child(-2n+2) {
 			margin-bottom: 0;
+		}
+
+		@include sm-screen-max {
+			text-align: center;
 		}
 	}
 
