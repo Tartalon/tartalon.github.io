@@ -1,0 +1,44 @@
+.ch-subscribe {
+	background: $white url('../img/bg_subscribe.png') right top no-repeat;
+	padding: 50px 0;
+
+	&__wrapper {
+		max-width: 770px;
+		min-height: 500px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	&__description {
+		max-width: 570px;
+		margin-bottom: 25px;
+	}
+
+	&__title {
+		font-size: px_to_rem(40px);
+		color: $black;
+		margin-bottom: 25px;
+	}
+
+	&__text {
+		font-weight: 300;
+		color: $black;
+	}
+
+	&__email {
+		width: 570px;
+		padding: 20px;
+		margin-right: 30px;
+	}
+
+	&__submit {
+		padding: 15px 30px;
+		background-color: $green-btn;
+		border-color: $green-btn;
+		font-size: px_to_rem(20px);
+		font-weight: 300;
+		text-transform: uppercase;
+		color: $white;
+	}
+}
