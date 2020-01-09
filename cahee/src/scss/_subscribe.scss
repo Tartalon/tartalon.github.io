@@ -40,5 +40,11 @@
 		font-weight: 300;
 		text-transform: uppercase;
 		color: $white;
+
+		&:hover {
+			font-weight: 700;
+			background-color: $white;
+			color: $green-btn;
+		}
 	}
 }
