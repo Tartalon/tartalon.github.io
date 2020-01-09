@@ -3,12 +3,14 @@
 
 	&__wrapper {
 		display: flex;
+		justify-content: space-between;
 		padding: 180px 0 150px;
 		background: url('../img/bg_services.png') right no-repeat;
 	}
 
 	&__list {
-		width: 50%;
+		width: 100%;
+		max-width: 400px;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
@@ -26,7 +28,7 @@
 	}
 
 	&__box_title {
-		width: 50%;
+		width: 550px;
 		display: flex;
 		align-items: center;
 		justify-content: end;
