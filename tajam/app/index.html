@@ -20,7 +20,7 @@
 			<nav class="navbar navbar-expand-lg">
 				<a href="/" class="navbar-brand main__logo">
 					<img src="./img/logo.png" alt="" class="logo-img">
-					<h1 class="logo-text">tajam</h1>
+					<span class="logo-text">tajam</span>
 				</a>
 				<button class="navbar-toggler navbar__burger" type="button"	data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
     				<span class="burger__span"></span>
@@ -64,9 +64,9 @@
 
 			<div class="row justify-content-center align-items-center f_grow-3">
 				<div class="col-lg-10 text-center">
-					<h2 class="header__title">
+					<h1 class="header__title">
 						we are awesome creative agency
-					</h2>
+					</h1>
 					<p class="text-center header__text">
 						This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem<br> quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh<br> vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.
 					</p>
@@ -232,7 +232,7 @@
 </section> <!-- /.tj-expertise -->
 <section class="section tj-team" id="teamse">
 	<div class="container">
-		<div class="row justify-content-center">
+		<div class="row justify-content-center tj-team__description">
 			<div class="col-lg-6 tj-team__titles">
 				<h2 class="section__title text-center tj-team__title">
 						meet our amazing team
@@ -308,8 +308,8 @@
 	</div> <!-- /.container -->
 </section> <!-- /.tj-team -->
 <section class="section tj-work" id="works">
-	<div class="container">
-		<div class="row justify-content-between align-items-center tj-work__titles">
+	<div class="container tj-work__titles">
+		<div class="row justify-content-between align-items-center">
 			<div class="col-md-6 tj-work__title-margin">
 				<h2 class="section__title tj-work__title">
 					our works
@@ -467,19 +467,16 @@
                 </h3>
                 <form class="form">
                     <div class="form-group">
-                        <label for="name"></label>
-                        <input type="text" class="form-control form__input" id="name" aria-describedby="emailHelp" placeholder="Name">
+                        <input type="text" required class="form-control form__input" id="name" aria-describedby="emailHelp" placeholder="Name">
                     </div>
                     <div class="form-group">
-                        <label for="emailId"></label>
-                        <input type="email" class="form-control form__input" id="emailId" aria-describedby="emailHelp" placeholder="Email">
+                        <input type="email" required class="form-control form__input" id="emailId" aria-describedby="emailHelp" placeholder="Email">
                     </div>
                     <div class="form-group">
-                        <label for="subject"></label>
-                        <input type="text" class="form-control form__input" id="subject" placeholder="Subject">
+                        <input type="text" required class="form-control form__input" id="subject" placeholder="Subject">
                     </div>
                     <div class="form-group">
-                        <textarea class="form-control form__textarea" name="message" rows="8" placeholder="Message"></textarea>
+                        <textarea class="form-control form__textarea" required name="message" rows="8" placeholder="Message"></textarea>
                     </div>
                     <button type="submit" class="btn form__btn tj-btn">Submit</button>
                 </form>
@@ -550,7 +547,7 @@
             <div class="col-md-4 tj-footer__who">
                 <a href="/" class="main__logo tj-footer__logo">
                     <img src="./img/logo.png" alt="" class="logo-img">
-                    <h1 class="logo-text">tajam</h1>
+                    <span class="logo-text">tajam</span>
                 </a>
                 <p class="tj-footer__text m-0">
                     lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh elit. Duis sed odio sit amet auctror a ornare odio non mauris vitae erat in elit
@@ -562,7 +559,7 @@
                 </h5>
                 <div class="row">
                     <div class="col">
-                        <a href="#" target="_blank" class="tj-footer__position">
+                        <a href="https://www.google.com.ua/maps/place/JOS+(Java+Oil+Seal)/@-6.1227548,106.712375,19z/data=!3m1!4b1!4m8!1m2!11m1!3e4!3m4!1s0x2e6a02b741064343:0x695e21a5da2f671d!8m2!3d-6.1227561!4d106.7129222?hl=ru" target="_blank" class="tj-footer__position">
                             <i class="material-icons place-icon">room</i>
                             <span class="position__address tj-footer__text mb-0">
                                 Ruko cucruk, Jl. Radio luar dalem jos No.12 - 13, Kalideres - Jakarta Barat
@@ -582,7 +579,7 @@
                 </h5>
                 <form class="tj-footer__form">
                     <label class="tj-footer__label">
-                        <input type="email" class="tj-footer__email" placeholder="Subscribe our newsletter">
+                        <input type="email" required class="tj-footer__email" placeholder="Subscribe our newsletter">
                     </label>
                     <button type="submit" class="btn tj-footer__submit">
                         <i class="material-icons submit__icon">near_me</i>

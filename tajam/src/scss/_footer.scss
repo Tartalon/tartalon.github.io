@@ -16,7 +16,7 @@
 
 	&__logo {
 		margin-bottom: 25px;
-		display: inline-block;
+		display: flex;
 
 		@include sm-screen-max {
 			margin-bottom: 15px;
