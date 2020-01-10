@@ -1,0 +1,34 @@
+.ch-footer {
+	background-color: $black;
+	padding: 35px 0;
+
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__copywrite {
+		font-size: px_to_rem(16px);
+		font-weight: 300;
+		color: $text_footer;
+	}
+
+	&__logo {
+		font-family: $logo-font;
+		font-size: px_to_rem(25px);
+		font-weight: 400;
+		text-transform: capitalize;
+		color: $text_footer;
+	}
+
+	&__made {
+		font-size: px_to_rem(15px);
+		font-weight: 300;
+		color: $text_footer;
+	}
+
+	&__red {
+		color: $footer_red;
+	}
+}

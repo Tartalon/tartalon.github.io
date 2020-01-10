@@ -23,6 +23,21 @@
 		justify-content: space-between;
 		flex-wrap: wrap;
 		margin-bottom: 30px;
+
+		@include md-screen-max {
+			min-height: 640px;
+			justify-content: center;
+		}
+	}
+
+	&__item {
+
+		@include md-screen-max {
+
+			&:nth-child(1) {
+				margin-right: 30px;
+			}
+		}
 	}
 
 	&__link {
@@ -38,6 +53,16 @@
 
 		&:hover {
 			transform: translateY(-10px);
+		}
+
+		@include lg-screen-max {
+			min-width: 290px;
+			max-width: 290px;
+		}
+
+		@include md-screen-max {
+			min-width: 320px;
+			max-width: 320px;
 		}
 	}
 

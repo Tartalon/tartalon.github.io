@@ -1,11 +1,20 @@
 .ch-services {
 	background: $bg_blue;
+	padding: 150px 0 150px;
+
+	@include md-screen-max {
+		padding: 70px 079px;
+	}
 
 	&__wrapper {
 		display: flex;
 		justify-content: space-between;
-		padding: 180px 0 150px;
 		background: url('../img/bg_services.png') right no-repeat;
+
+		@include md-screen-max {
+			flex-direction: column-reverse;
+			min-height: 600px;
+		}
 	}
 
 	&__list {
@@ -33,6 +42,10 @@
 		align-items: center;
 		justify-content: end;
 		padding-right: 15px;
+
+		@include md-screen-max {
+			align-self: center;
+		}
 	}
 
 	&__title {
@@ -61,6 +74,7 @@
 	}
 
 	&__box_icon {
+
 		@include square (100px);
 		display: flex;
 		justify-content: center;
