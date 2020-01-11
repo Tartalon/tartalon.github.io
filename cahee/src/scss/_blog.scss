@@ -24,18 +24,31 @@
 		flex-wrap: wrap;
 		margin-bottom: 30px;
 
+		@include sm-screen-max {
+			flex-direction: column;
+			align-items: center;
+		}
+
 		@include md-screen-max {
 			min-height: 640px;
 			justify-content: center;
+		}
+
+		.f-item {
+
+			@include sm-screen-max {
+				margin-right: 0;
+			}
 		}
 	}
 
 	&__item {
 
-		@include md-screen-max {
+		@include sm-screen-max {
+			margin-bottom: 15px;
 
-			&:nth-child(1) {
-				margin-right: 30px;
+			&:last-child {
+				margin-bottom: 0;
 			}
 		}
 	}
@@ -120,6 +133,13 @@
 			font-weight: 700;
 			color: #f72b3b;
 		}
+	}
+}
+
+.f-item {
+
+	@include md-screen-max {
+		margin-right: 30px;
 	}
 }
 

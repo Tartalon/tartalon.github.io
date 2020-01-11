@@ -3,13 +3,17 @@
 	padding: 150px 0 150px;
 
 	@include md-screen-max {
-		padding: 70px 079px;
+		padding: 70px 0;
 	}
 
 	&__wrapper {
 		display: flex;
 		justify-content: space-between;
 		background: url('../img/bg_services.png') right no-repeat;
+
+		@include sm-screen-max {
+			align-items: center;
+		}
 
 		@include md-screen-max {
 			flex-direction: column-reverse;

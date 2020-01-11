@@ -31,18 +31,32 @@
 		display: flex;
 		justify-content: space-between;
 		width: 100%;
+
+		@include sm-screen-max {
+			flex-direction: column;
+			max-width: 500px;
+			align-items: center;
+		}
 	}
 
 	&__form {
 		display: flex;
 		flex-direction: column;
 		width: 100%;
-		max-width: 500px;
+		flex-basis: 48%;
+
+		@include sm-screen-max {
+			margin-bottom: 30px;
+		}
 	}
 
 	&__we {
 		width: 100%;
-		max-width: 500px;
+		flex-basis: 48%;
+
+		@include sm-screen-max {
+			text-align: center;
+		}
 	}
 }
 
@@ -85,6 +99,10 @@
 			background-color: $white;
 			color: $blue-btn;
 			font-weight: 700;
+		}
+
+		@include sm-screen-max {
+			max-width: none;
 		}
 	}
 }

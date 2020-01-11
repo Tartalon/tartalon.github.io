@@ -1,15 +1,22 @@
 .ch-about {
 	background: $bg-green;
-	min-height: 700px;
 	padding: 50px 0;
+
+	@include sm-screen-max {
+		padding: 0;
+	}
 
 	&__wrapper {
 		background: url("../img/bg_about.png") no-repeat;
 		width: 100%;
-		min-height: 700px;
+		min-height: 500px;
 		display: flex;
 		justify-content: flex-end;
 		align-items: center;
+
+		@include sm-screen-max {
+			justify-content: center;
+		}
 	}
 
 	&__content {
@@ -20,6 +27,10 @@
 		flex-direction: column;
 		justify-content: space-between;
 		color: $white;
+
+		@include sm-screen-max {
+			align-items: center;
+		}
 
 		@include lg-screen-max {
 			background-color: rgba(0, 0, 0, .5);
