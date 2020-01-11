@@ -30,10 +30,6 @@
 		margin-bottom: 20px;
 	}
 
-	&__photo {
-		margin-bottom: 50px;
-	}
-
 	&__btn {
 		padding: 20px 25px;
 		font-size: px_to_rem(20px);
@@ -54,157 +50,57 @@
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
-		align-content: space-between;
-		height: 980px;
-
-		@include xs-screen {
-			flex-direction: column;
-			flex-wrap: nowrap;
-			height: 2000px;
-		}
 	}
 
 	&__item {
-
-		@include sm-screen-max {
-			margin-bottom: 20px;
-		}
-
-		&:last-child {
-			margin-bottom: 0;
-		}
+		width: 100%;
 	}
 
 	&__link {
+		width: 100%;
 		display: flex;
-		max-width: 100%;
-
-		&:hover {
-			transform: translate(10px, -10px);
-			box-shadow: 0 0 10px 5px black;
-		}
-	}
-
-	&__img {
-		max-width: 100%;
-		height: 100%;
-		object-fit: cover;
+		position: relative;
 	}
 }
 
-.first {
+.lg {
 
 	&__item {
-		flex-basis: 60%;
+	max-width: 65%;
 	}
 
 	&__link {
-		position: relative;
-		display: flex;
-		transition: all 0.2s ease;
-		width: 100%;
-		max-width: 760px;
-	    height: 550px;
-	    padding-top: 540px;
-	    flex-basis: 66%;
-	}
+		$lg-height: 540px;
 
-	&__link>img {
-		position: absolute;
-		top: 0;
-		right: 0;
-		bottom: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		object-fit: cover;
+		@include padding-hack($lg-height);
 	}
 }
 
-.second {
+.sm {
 
 	&__item {
+		max-width: 33%;
 		display: flex;
-	    flex-direction: column;
-	    justify-content: space-between;
-		height: 550px;
-        flex-basis: 32%;
+		flex-direction: column;
+		justify-content: space-between;
 	}
 
 	&__link {
-		position: relative;
-		display: flex;
-		width: 100%;
-		transition: all 0.2s ease;
-		padding-top: 260px;
-	}
+		$sm-height: 265px;
 
-	&__link>img {
-		position: absolute;
-		top: 0;
-		right: 0;
-		bottom: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		object-fit: cover;
+		@include padding-hack($sm-height);
 	}
 }
 
-.therd {
+.md {
 
 	&__item {
-		flex-basis: 49%;
+		max-width: 48%;
 	}
 
-	&__link {
-		position: relative;
-		display: flex;
-		width: 100%;
-		max-width: 570px;
-		min-height: 400px;
-		transition: all 0.5s ease;
-		padding-top: 400px;
-		flex-basis: 49%;
-	}
+	// &__link {
+	// 	$md-height: 300px;
 
-	&__link>img {
-		position: absolute;
-		top: 0;
-		right: 0;
-		bottom: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		object-fit: cover;
-	}
-}
-
-.fourth {
-
-	&__item {
-		flex-basis: 48%;
-	}
-
-	&__link {
-		position: relative;
-		display: flex;
-		width: 100%;
-		max-width: 570px;
-		min-height: 400px;
-		transition: all 0.5s ease;
-		padding-top: 400px;
-		flex-basis: 49%;
-	}
-
-	&__link>img {
-		position: absolute;
-		top: 0;
-		right: 0;
-		bottom: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		object-fit: cover;
-	}
+	// 	@include padding-hack($md-height);
+	// }
 }

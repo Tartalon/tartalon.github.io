@@ -1,7 +1,10 @@
 .ch-subscribe {
 	background: $white url('../img/bg_subscribe.png') right top no-repeat;
 	padding: 150px 0;
-	min-height: 500px;
+
+	@include sm-screen-max {
+		padding: 50px 0;
+	}
 
 	&__wrapper {
 		max-width: 745px;
@@ -9,8 +12,8 @@
 		flex-direction: column;
 		justify-content: center;
 
-		@include sm-screen-max {
-			background-color: rgba(192, 192, 192, .9);
+		@include lg-screen-max {
+			background-color: rgba(255, 255, 255, .6);
 			border-radius: 15px;
 			padding: 10px;
 			align-items: center;
@@ -61,7 +64,7 @@
 
 	&__submit {
 		display: block;
-		max-width: 135px;
+		max-width: 170px;
 		padding: 15px 30px;
 		background-color: $green-btn;
 		border-color: $green-btn;
@@ -71,7 +74,7 @@
 		color: $white;
 
 		&:hover {
-			font-weight: 700;
+			font-weight: 400;
 			background-color: $white;
 			color: $green-btn;
 		}

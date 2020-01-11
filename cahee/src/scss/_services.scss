@@ -46,14 +46,14 @@
 		align-items: center;
 		justify-content: end;
 		padding-right: 15px;
-
-		@include md-screen-max {
-			align-self: center;
-		}
 	}
 
 	&__title {
 		color: $white;
+
+		@include xs-screen {
+			margin: 0 auto;
+		}
 	}
 
 	&__link {

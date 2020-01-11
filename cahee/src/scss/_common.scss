@@ -40,6 +40,10 @@ a {
 		font-size: px_to_rem(90px);
 		font-weight: 700;
 		text-transform: capitalize;
+
+		@include xs-screen {
+			font-size: px_to_rem(50px);
+		}
 	}
 
 	&__text {

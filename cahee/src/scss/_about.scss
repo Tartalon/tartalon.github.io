@@ -9,13 +9,14 @@
 	&__wrapper {
 		background: url("../img/bg_about.png") no-repeat;
 		width: 100%;
-		min-height: 500px;
+		min-height: 650px;
 		display: flex;
 		justify-content: flex-end;
 		align-items: center;
 
 		@include sm-screen-max {
 			justify-content: center;
+			min-height: 500px;
 		}
 	}
 
