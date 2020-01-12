@@ -98,9 +98,9 @@
 		max-width: 48%;
 	}
 
-	// &__link {
-	// 	$md-height: 300px;
+	&__link {
+		$md-height: 300px;
 
-	// 	@include padding-hack($md-height);
-	// }
+		@include padding-hack($md-height);
+	}
 }
