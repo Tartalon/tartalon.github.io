@@ -100,8 +100,6 @@ check3.addEventListener('click', function(e) {
 	e.preventDefault();
 		let num = +numbsFeald.value;
 
-		console.log(num);
-
 	if (num.length > 3 || num.length < 3) {
 		result3.textContent = 'Введите трех значное число';
 	} else if (num[0] === num[2] || num[0] === num[1] || num[1] === num[2]) {
@@ -110,4 +108,4 @@ check3.addEventListener('click', function(e) {
 	else {
 		result3.textContent = 'Одинаковых чисел нет';
 	}
-})
+});
