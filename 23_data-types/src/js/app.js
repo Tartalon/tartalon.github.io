@@ -10,102 +10,104 @@
 
 //=====First
 
-// let ageField = document.querySelector('#i-age');
-// let check = document.querySelector('#submit-age');
-// let result = document.querySelector('#title');
 
-// check.addEventListener('click', function(e) {
 
-// 	e.preventDefault();
-//  	let age = +ageField.value;
-
-// 	if (age <= 11 && age > 0) {
-// 		result.textContent = 'Вы ребенок';
-// 	} else if (age <= 17) {
-// 		result.textContent = 'Вы подросток';
-// 	} else if (age <= 59) {
-// 		result.textContent ='Вы взрослый';
-// 	} else if (age >= 60 && age < 120) {
-// 		result.textContent = 'Вы пенсионер';
-// 	} else {
-// 		result.textContent = 'Вы, наверное, вели не верное число';
-// 	}
-// });
-
-let age = +document.querySelector('#i-age').value;
+let ageField = document.querySelector('#i-age');
 let check = document.querySelector('#submit-age');
 let result = document.querySelector('#title');
 
- function ageCheck () {
-   if (age <= 11 && age > 0) {
-     result.textContent = 'Вы ребенок';
-   } else if (age <= 17) {
-     result.textContent = 'Вы подросток';
-   } else if (age <= 59 && age < 120) {
-     result.textContent = 'Вы взрослый';
-   } else {
-     result.textContent = 'Вы, наверное, ввели не верное число';
-   }
- }
+check.addEventListener ('click', function(e) {
 
-check.addEventListener ('click', ageCheck);
+	e.preventDefault();
+		let age = +ageField.value;
+
+   if (age <= 11 && age > 0) {
+    	result.textContent = 'Вы ребенок';
+   } else if (age <= 17) {
+    	result.textContent = 'Вы подросток';
+   } else if (age <= 59) {
+    	result.textContent = 'Вы взрослый';
+   } else if (age >= 60 && age < 120) {
+   		result.textContent = 'Вы пенсионер';
+   } else {
+    	result.textContent = 'Вы, наверное, ввели не верное число';
+   }
+ });
 
 
 
 //=====Second
 
-// let num = document.querySelector('#i-numb');
-// let result2 = document.querySelector('#title');
 
-// num.addEventListener('click')
-// switch (+num) {
-// 	case 0:
-// 		alert (")");
-// 		break;
-// 	case 1:
-// 		alert ("!");
-// 		break;
-// 	case 2:
-// 		alert ("@");
-// 		break;
-// 	case 3:
-// 		alert ("#");
-// 		break;
-// 	case 4:
-// 		alert ("$");
-// 		break;
-// 	case 5:
-// 		alert ("%");
-// 		break;
-// 	case 6:
-// 		alert ("^");
-// 		break;
-// 	case 7:
-// 		alert ("&");
-// 		break;
-// 	case 8:
-// 		alert ("*");
-// 		break;
-// 	case 9:
-// 		alert ("(");
-// 		break;
-// 	default:
-// 		alert ("Wrong number!");
-// }
+let numField = document.querySelector('#i-numb');
+let result2 = document.querySelector('#title');
+let check2 = document.querySelector('#submit-numb');
+
+check2.addEventListener('click', function(e) {
+
+	e.preventDefault();
+		let num = +numField.value;
+
+switch (num) {
+	case 0:
+		result2.textContent = "Спец символ этой кнопки: )";
+		break;
+	case 1:
+		result2.textContent = "Спец символ этой кнопки: !";
+		break;
+	case 2:
+		result2.textContent = "Спец символ этой кнопки: @";
+		break;
+	case 3:
+		result2.textContent = "Спец символ этой кнопки: #";
+		break;
+	case 4:
+		result2.textContent = "Спец символ этой кнопки: $";
+		break;
+	case 5:
+		result2.textContent = "Спец символ этой кнопки: %";
+		break;
+	case 6:
+		result2.textContent = "Спец символ этой кнопки: ^";
+		break;
+	case 7:
+		result2.textContent = "Спец символ этой кнопки: &";
+		break;
+	case 8:
+		result2.textContent = "Спец символ этой кнопки: *";
+		break;
+	case 9:
+		result2.textContent = "Спец символ этой кнопки: (";
+		break;
+	default:
+		result2.textContent = "Не верные символ!"
+	break;
+	}
+	numField.value = "";
+});
 
 
 
 
+//========Third
 
-// let age = +ageField.value;
 
-// let test = (age <= 11) ? "Вы ребенок":
-// 	(age <= 17) ? "Вы подросток":
-// 	(age <= 59) ? "Вы взрослый":
-// 	(age > 59 && age < 120) ? "Вы пенсионер":
-// 	"Вы ввели неверный возраст";
+let numbsFeald = document.querySelector('#i-numbs');
+let check3 = document.querySelector('#submit-numbs');
+let result3 = document.querySelector('#title');
 
-// check.addEventListener('click', test);
-// console.log(test);
+check3.addEventListener('click', function(e) {
+	e.preventDefault();
+		let num = +numbsFeald.value;
 
-// result.textContent = test;
+		console.log(num);
+
+	if (num.length > 3 || num.length < 3) {
+		result3.textContent = 'Введите трех значное число';
+	} else if (num[0] === num[2] || num[0] === num[1] || num[1] === num[2]) {
+		result3.textContent = 'Есть одинаковые числа';
+	}
+	else {
+		result3.textContent = 'Одинаковых чисел нет';
+	}
+})
