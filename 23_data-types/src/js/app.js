@@ -10,70 +10,92 @@
 
 //=====First
 
-let ageField = document.querySelector('#i-age');
+// let ageField = document.querySelector('#i-age');
+// let check = document.querySelector('#submit-age');
+// let result = document.querySelector('#title');
+
+// check.addEventListener('click', function(e) {
+
+// 	e.preventDefault();
+//  	let age = +ageField.value;
+
+// 	if (age <= 11 && age > 0) {
+// 		result.textContent = 'Вы ребенок';
+// 	} else if (age <= 17) {
+// 		result.textContent = 'Вы подросток';
+// 	} else if (age <= 59) {
+// 		result.textContent ='Вы взрослый';
+// 	} else if (age >= 60 && age < 120) {
+// 		result.textContent = 'Вы пенсионер';
+// 	} else {
+// 		result.textContent = 'Вы, наверное, вели не верное число';
+// 	}
+// });
+
+let age = +document.querySelector('#i-age').value;
 let check = document.querySelector('#submit-age');
 let result = document.querySelector('#title');
 
-check.addEventListener('click', function(e) {
+ function ageCheck () {
+   if (age <= 11 && age > 0) {
+     result.textContent = 'Вы ребенок';
+   } else if (age <= 17) {
+     result.textContent = 'Вы подросток';
+   } else if (age <= 59 && age < 120) {
+     result.textContent = 'Вы взрослый';
+   } else {
+     result.textContent = 'Вы, наверное, ввели не верное число';
+   }
+ }
 
-	e.preventDefault();
- 	let age = +ageField.value;
-
-	if (age <= 11 && age > 0) {
-		result.textContent = 'Вы ребенок';
-	} else if (age <= 17) {
-		result.textContent = 'Вы подросток';
-	} else if (age <= 59) {
-		result.textContent ='Вы взрослый';
-	} else if (age >= 60 && age < 120) {
-		result.textContent = 'Вы пенсионер';
-	} else {
-		result.textContent = 'Вы, наверное, вели не верное число';
-	}
-});
+check.addEventListener ('click', ageCheck);
 
 
 
 //=====Second
 
-let num = document.querySelector('#i-numb');
-let result2 = document.querySelector('#title');
+// let num = document.querySelector('#i-numb');
+// let result2 = document.querySelector('#title');
 
-num.addEventListener('click')
-switch (+num) {
-	case 0:
-		alert (")");
-		break;
-	case 1:
-		alert ("!");
-		break;
-	case 2:
-		alert ("@");
-		break;
-	case 3:
-		alert ("#");
-		break;
-	case 4:
-		alert ("$");
-		break;
-	case 5:
-		alert ("%");
-		break;
-	case 6:
-		alert ("^");
-		break;
-	case 7:
-		alert ("&");
-		break;
-	case 8:
-		alert ("*");
-		break;
-	case 9:
-		alert ("(");
-		break;
-	default:
-		alert ("Wrong number!");
-}
+// num.addEventListener('click')
+// switch (+num) {
+// 	case 0:
+// 		alert (")");
+// 		break;
+// 	case 1:
+// 		alert ("!");
+// 		break;
+// 	case 2:
+// 		alert ("@");
+// 		break;
+// 	case 3:
+// 		alert ("#");
+// 		break;
+// 	case 4:
+// 		alert ("$");
+// 		break;
+// 	case 5:
+// 		alert ("%");
+// 		break;
+// 	case 6:
+// 		alert ("^");
+// 		break;
+// 	case 7:
+// 		alert ("&");
+// 		break;
+// 	case 8:
+// 		alert ("*");
+// 		break;
+// 	case 9:
+// 		alert ("(");
+// 		break;
+// 	default:
+// 		alert ("Wrong number!");
+// }
+
+
+
+
 
 // let age = +ageField.value;
 
