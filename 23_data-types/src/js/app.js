@@ -16,9 +16,9 @@ let ageField = document.querySelector('#i-age');
 let check = document.querySelector('#submit-age');
 let result = document.querySelector('#title');
 
-check.addEventListener ('click', function(e) {
+check.addEventListener ('click', function() {
 
-	e.preventDefault();
+	// e.preventDefault();
 		let age = +ageField.value;
 
    if (age <= 11 && age > 0) {
@@ -40,47 +40,46 @@ check.addEventListener ('click', function(e) {
 
 
 let numField = document.querySelector('#i-numb');
-let result2 = document.querySelector('#title');
 let check2 = document.querySelector('#submit-numb');
 
-check2.addEventListener('click', function(e) {
+check2.addEventListener('click', function() {
 
-	e.preventDefault();
+	// e.preventDefault();
 		let num = +numField.value;
 
 switch (num) {
 	case 0:
-		result2.textContent = "Спец символ этой кнопки: )";
+		result.textContent = "Спец символ этой кнопки: )";
 		break;
 	case 1:
-		result2.textContent = "Спец символ этой кнопки: !";
+		result.textContent = "Спец символ этой кнопки: !";
 		break;
 	case 2:
-		result2.textContent = "Спец символ этой кнопки: @";
+		result.textContent = "Спец символ этой кнопки: @";
 		break;
 	case 3:
-		result2.textContent = "Спец символ этой кнопки: #";
+		result.textContent = "Спец символ этой кнопки: #";
 		break;
 	case 4:
-		result2.textContent = "Спец символ этой кнопки: $";
+		result.textContent = "Спец символ этой кнопки: $";
 		break;
 	case 5:
-		result2.textContent = "Спец символ этой кнопки: %";
+		result.textContent = "Спец символ этой кнопки: %";
 		break;
 	case 6:
-		result2.textContent = "Спец символ этой кнопки: ^";
+		result.textContent = "Спец символ этой кнопки: ^";
 		break;
 	case 7:
-		result2.textContent = "Спец символ этой кнопки: &";
+		result.textContent = "Спец символ этой кнопки: &";
 		break;
 	case 8:
-		result2.textContent = "Спец символ этой кнопки: *";
+		result.textContent = "Спец символ этой кнопки: *";
 		break;
 	case 9:
-		result2.textContent = "Спец символ этой кнопки: (";
+		result.textContent = "Спец символ этой кнопки: (";
 		break;
 	default:
-		result2.textContent = "Не верные символ!"
+		result.textContent = "Не верные символ!"
 	break;
 	}
 	numField.value = "";
@@ -94,18 +93,59 @@ switch (num) {
 
 let numbsFeald = document.querySelector('#i-numbs');
 let check3 = document.querySelector('#submit-numbs');
-let result3 = document.querySelector('#title');
 
-check3.addEventListener('click', function(e) {
-	e.preventDefault();
-		let num = +numbsFeald.value;
+check3.addEventListener('click', function() {
+	// e.preventDefault();
+		let num = numbsFeald.value;
 
 	if (num.length > 3 || num.length < 3) {
-		result3.textContent = 'Введите трех значное число';
+		result.textContent = 'Введите трех значное число';
 	} else if (num[0] === num[2] || num[0] === num[1] || num[1] === num[2]) {
-		result3.textContent = 'Есть одинаковые числа';
+		result.textContent = 'Есть одинаковые числа';
 	}
 	else {
-		result3.textContent = 'Одинаковых чисел нет';
+		result.textContent = 'Одинаковых чисел нет';
+	}
+});
+
+
+
+
+// =============Fifth
+
+
+let yearFeald = document.querySelector('#i-year');
+let check4 = document.querySelector('#submit-year');
+
+check4.addEventListener('click', () => {
+	let year = +yearFeald.value;
+	if (year % 400 == 0 || year % 4 == 0 && year % 100 !== 0) {
+		result.textContent = 'Год высокосный';
+	}
+	else {
+		result.textContent = 'Год Не высокосный';
+	}
+});
+
+
+
+
+// ============6
+
+
+let palindromFeald = document.querySelector('#i-palindrom');
+let check5 = document.querySelector('#submit-palindrom');
+
+check5.addEventListener('click', () => {
+	let palindrom = palindromFeald.value;
+	let reverse = palindrom.split('').reverse().join('');
+
+	if (palindrom == reverse && palindrom.length == 5) {
+		result.textContent = 'Число палиндром';
+	} else if(palindrom != reverse && palindrom.length == 5){
+		result.textContent = 'Число не палиндром';
+	}
+	else {
+		result.textContent = 'Вы ввели не верное число';
 	}
 });
