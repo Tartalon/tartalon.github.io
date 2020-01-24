@@ -18,6 +18,7 @@ li {
 
 a {
 	text-decoration: none;
+	color: inherit;
 
 	&:hover {
 		text-decoration: none;
@@ -28,13 +29,23 @@ a {
 
 	&__title {
 		font-family: $title-font;
+		font-size: px_to_rem(20px);
 		font-weight: 300;
 		text-transform: uppercase;
 		letter-spacing: px_to_em(3px);
 	}
 
+	&__subtitle {
+		font-family: $main-font;
+		font-size: px_to_rem(16px);
+		font-weight: 400;
+		letter-spacing: px_to_em(1.5px);
+		line-height: px_to_em(25px);
+	}
+
 	&__text {
 		font-family: $main-font;
+		font-size: px_to_rem(14px);
 		font-weight: 400;
 		letter-spacing: px_to_em(1.5px);
 		line-height: px_to_em(25px);
