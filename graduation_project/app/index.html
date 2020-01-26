@@ -176,7 +176,7 @@
 				</div>
 				<div class="col-md-6 offset-md-1">
 					<p class="section__text ideas__text">
-						At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque <span class="ideas__subtitle--bold">corrupti quos</span> dolores et quas molestias excepturi sint occaecati cupiditate non provident, <span class="ideas__subtitle--bold">similique</span> sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem r
+						At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque <span class="ideas__subtitle--bold">corrupti quos</span> dolores et quas molestias <span class="ideas__subtitle--green">excepturi</span> sint occaecati cupiditate non provident, <span class="ideas__subtitle--bold">similique</span> sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem r
 					</p>
 				</div>
 			</div> <!-- /.row b-about__ideas -->
@@ -185,30 +185,38 @@
 </section> <!-- /.b-about -->
 <section class="section b-projects">
 	<div class="container">
-		<div class="row">
+		<div class="row b-projects__titles">
 			<div class="col-md-6">
-				<h2 class="section__title">
+				<h2 class="section__title b-projects__title">
 					featured projects
 				</h2>
-				<h4 class="section__text">
+				<h4 class="section__text b-projects__text">
 					At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
 				</h4>
 			</div> <!-- /.col-md-6 -->
 		</div> <!-- /.row -->
 	</div> <!-- /.container -->
-	<div class="container-fluid">
-		<ul class="projects__list">
-			<li class="projects__item">
-				<img src="./img/featured1.jpg" alt="" class="projects__img">
-			</li>
-			<li class="projects__item">
-				<img src="./img/featured2-1.jpg" alt="" class="projects__img">
-			</li>
-			<li class="projects__item">
-				<img src="./img/featured3-1.jpg" alt="" class="projects__img">
-			</li>
-		</ul>
+	<div class="container-fluid b-projects__fluid">
+		<div class="row">
+			<div class="col">
+				<ul class="b-projects__list">
+					<li class="b-projects__item">
+						<a href="#" class="b-projects__link"><img src="./img/featured1.jpg" alt="" class="b-projects__img"></a>
+					</li>
+					<li class="b-projects__item">
+						<a href="#" class="b-projects__link"><img src="./img/featured2-1.jpg" alt="" class="b-projects__img"></a>
+					</li>
+					<li class="b-projects__item">
+						<a href="#" class="b-projects__link"><img src="./img/featured3-1.jpg" alt="" class="b-projects__img"></a>
+					</li>
+				</ul>
+			</div> <!-- /.col -->
+		</div> <!-- /.row -->
 	</div> <!-- /.container-fluid -->
+	<div class="row">
+		<div class="container-fluid">
+		</div>
+	</div>
 </section> <!-- /.b-projects -->
  <!-- index.ejs -->  <script src="js/bundle.js"></script>
 </body>

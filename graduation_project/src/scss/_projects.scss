@@ -1,3 +1,51 @@
 .b-projects {
+	display: flex;
+	flex-direction: column;
 	padding: 70px 0 0;
+
+	&__titles {
+		justify-content: center;
+		text-align: center;
+		margin-bottom: 60px;
+	}
+
+	&__title {
+		color: $text-dark;
+	}
+
+	&__text {
+		color: $text-color;
+	}
+
+	&__list {
+		display: flex;
+	}
+
+	&__fluid {
+		padding: 0;
+	}
+
+	&__item {
+		width: 25%;
+		position: relative;
+
+		&:first-child {
+			width: 50%;
+		}
+
+		&::before {
+			content: "";
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			background: rgba(0, 0, 0, .5);
+			position: absolute;
+		}
+	}
+
+	&__img {
+		width: 100%;
+		height: fit-content;
+	}
 }

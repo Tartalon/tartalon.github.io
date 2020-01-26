@@ -120,6 +120,15 @@
 
 	&__subtitle {
 		color: $text-color;
+
+		&--green {
+			color: $green;
+			font-weight: 700;
+		}
+
+		&--bold {
+			font-weight: 700;
+		}
 	}
 
 	&__text {
