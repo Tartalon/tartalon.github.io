@@ -7,4 +7,37 @@
 		text-align: center;
 		margin-bottom: 55px;
 	}
+
+	&__subtitle {
+		color: $text-color;
+	}
+
+	&__item:not(:last-child) {
+		margin-bottom: 20px;
+	}
+
+	&__link {
+		margin-right: 0;
+	}
+}
+
+.aside {
+
+	&__title {
+		font-size: px_to_rem(20px);
+		font-weight: 400;
+		text-transform: capitalize;
+		color: $text-dark;
+		letter-spacing: px_to_em(4px);
+		margin-bottom: 25px;
+	}
+
+	&__subtitle {
+		color: $text-color;
+		margin-bottom: 25px;
+	}
+
+	&__text {
+		color: $text-color;
+	}
 }

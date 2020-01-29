@@ -97,7 +97,8 @@
 		transition: all .3s ease;
 
 		&:hover,
-		&:focus {
+		&:focus,
+		&.active {
 			background-color: $green;
 		}
 	}
