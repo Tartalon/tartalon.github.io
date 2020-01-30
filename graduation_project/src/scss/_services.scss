@@ -19,6 +19,12 @@
 	&__link {
 		margin-right: 0;
 	}
+
+	&__skills {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
 }
 
 .aside {
@@ -39,5 +45,82 @@
 
 	&__text {
 		color: $text-color;
+	}
+}
+
+
+// SKILLS=====
+.skills {
+
+	&__list {
+		display: flex;
+		width: 100%;
+		justify-content: space-around;
+	}
+
+	&__item {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	&__svg {
+		@include square(120px);
+		margin-bottom: 20px;
+	}
+
+	&__number {
+		position: absolute;
+		top: 30%;
+		left: 30%;
+
+		&>h3 {
+			font-size: 25px;
+			font-weight: 400;
+			color: $text-color;
+
+			&>span {
+				font-size: 16px;
+			}
+		}
+	}
+
+	&__kind {
+		text-transform: capitalize;
+		font-weight: 300;
+		color: $text-color;
+	}
+}
+
+#circle {
+	fill: none;
+	stroke: #ccc;
+	stroke-width: 3px;
+
+	&__percent {
+		fill: none;
+		stroke-width: 5px;
+	}
+}
+
+.circle {
+
+	&_1 {
+		stroke-dasharray: 350px;
+		stroke-dashoffset: calc(350 - (350 * 80) / 100);
+		stroke: $green;
+	}
+
+	&_2 {
+		stroke-dasharray: 350px;
+		stroke-dashoffset: calc(350 - (350 * 75) / 100);
+		stroke: $green;
+	}
+
+	&_3 {
+		stroke-dasharray: 350px;
+		stroke-dashoffset: calc(350 - (350 * 60) / 100);
+		stroke: $green;
 	}
 }
