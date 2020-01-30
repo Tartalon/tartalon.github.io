@@ -108,19 +108,19 @@
 
 	&_1 {
 		stroke-dasharray: 350px;
-		stroke-dashoffset: calc(350 - (350 * 80) / 100);
+		stroke-dashoffset: 70px;
 		stroke: $green;
 	}
 
 	&_2 {
 		stroke-dasharray: 350px;
-		stroke-dashoffset: calc(350 - (350 * 75) / 100);
+		stroke-dashoffset: 88px;
 		stroke: $green;
 	}
 
 	&_3 {
 		stroke-dasharray: 350px;
-		stroke-dashoffset: calc(350 - (350 * 60) / 100);
+		stroke-dashoffset: 140px;
 		stroke: $green;
 	}
 }
