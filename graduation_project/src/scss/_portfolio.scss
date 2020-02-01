@@ -11,82 +11,137 @@
 		flex-wrap: wrap;
 		justify-content: space-between;
 		width: 100%;
-		min-height: 955px;
+		min-height: 655px;
 	}
 
 	&__item {
-		width: 270px;
+		width: 100%;
+		max-width: 270px;
+		position: relative;
+		height: max-content;
 	}
 
 	&__link {
+		display: block;
+ 		$height: 210px;
+
+ 		@include padding-hack($height);
+	}
+
+	&__link--hover {
+		background-color: rgba(0, 0, 0, .7);
+		padding: 25px;
+		display: flex;
+		flex-direction: column;
+		position: absolute;
+		top: 0;
+		left: 0;
 		width: 100%;
+		height: 100%;
+		opacity: 1;
+	}
+}
+
+.b-portfolio__link {
+
+	&--title {
+		color: $green;
+		position: relative;
+		margin-bottom: px_to_em(20px);
+
+		&::after {
+			content: "";
+			width: 25px;
+			height: 2px;
+			left: 0;
+			top: 40px;
+			position: absolute;
+			background-color: $green;
+		}
+	}
+
+	&--text {
+		color: $text-gray;
+	}
+}
+
+.link {
+
+	&__list {
+		display: flex;
+	}
+
+	&__link {
+		color: $text-color;
 	}
 }
 
 
+
+
 // PORTFOLIO-LINKS=====
-.p_l-1,
-.p_l-4,
-.p_l-5 {
-	display: block;
-	$height: 360px;
+// .p_l-1,
+// .p_l-4,
+// .p_l-5 {
+// 	display: block;
+// 	$height: 360px;
 
-	@include padding-hack($height);
-}
+// 	@include padding-hack($height);
+// }
 
-.p_l-2 {
-	display: block;
-	$height: 229px;
+// .p_l-2 {
+// 	display: block;
+// 	$height: 229px;
 
-	@include padding-hack($height);
-}
+// 	@include padding-hack($height);
+// }
 
-.p_l-3,
-.p_l-12 {
-	display: block;
-	$height: 301px;
+// .p_l-3,
+// .p_l-12 {
+// 	display: block;
+// 	$height: 301px;
 
-	@include padding-hack($height);
-}
+// 	@include padding-hack($height);
+// }
 
-.p_l-6 {
-	display: block;
-	$height: 344px;
+// .p_l-6 {
+// 	display: block;
+// 	$height: 344px;
 
-	@include padding-hack($height);
-}
+// 	@include padding-hack($height);
+// }
 
-.p_l-7 {
-	display: block;
-	$height: 374px;
+// .p_l-7 {
+// 	display: block;
+// 	$height: 374px;
 
-	@include padding-hack($height);
-}
+// 	@include padding-hack($height);
+// }
 
-.p_l-8 {
-	display: block;
-	$height: 269px;
+// .p_l-8 {
+// 	display: block;
+// 	$height: 269px;
 
-	@include padding-hack($height);
-}
+// 	@include padding-hack($height);
+// }
 
-.p_l-9 {
-	display: block;
-	$height: 209px;
+// .p_l-9 {
+// 	display: block;
+// 	$height: 209px;
 
-	@include padding-hack($height);
-}
+// 	@include padding-hack($height);
+// }
 
-.p_l-10 {
-	display: block;
-	$height: 357px;
+// .p_l-10 {
+// 	display: block;
+// 	$height: 357px;
 
-	@include padding-hack($height);
-}
+// 	@include padding-hack($height);
+// }
 
-.p_l-11 {
-	display: block;
-	$height: 255px;
+// .p_l-11 {
+// 	display: block;
+// 	$height: 255px;
 
-	@include padding-hack($height);
-}
+// 	@include padding-hack($height);
+// }
