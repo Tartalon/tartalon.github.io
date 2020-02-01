@@ -1,0 +1,92 @@
+.b-portfolio {
+	padding: 75px 0 100px;
+	background-color: $bg-gray;
+
+	&__titles {
+		margin-bottom: 75px;
+	}
+
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		width: 100%;
+		min-height: 955px;
+	}
+
+	&__item {
+		width: 270px;
+	}
+
+	&__link {
+		width: 100%;
+	}
+}
+
+
+// PORTFOLIO-LINKS=====
+.p_l-1,
+.p_l-4,
+.p_l-5 {
+	display: block;
+	$height: 360px;
+
+	@include padding-hack($height);
+}
+
+.p_l-2 {
+	display: block;
+	$height: 229px;
+
+	@include padding-hack($height);
+}
+
+.p_l-3,
+.p_l-12 {
+	display: block;
+	$height: 301px;
+
+	@include padding-hack($height);
+}
+
+.p_l-6 {
+	display: block;
+	$height: 344px;
+
+	@include padding-hack($height);
+}
+
+.p_l-7 {
+	display: block;
+	$height: 374px;
+
+	@include padding-hack($height);
+}
+
+.p_l-8 {
+	display: block;
+	$height: 269px;
+
+	@include padding-hack($height);
+}
+
+.p_l-9 {
+	display: block;
+	$height: 209px;
+
+	@include padding-hack($height);
+}
+
+.p_l-10 {
+	display: block;
+	$height: 357px;
+
+	@include padding-hack($height);
+}
+
+.p_l-11 {
+	display: block;
+	$height: 255px;
+
+	@include padding-hack($height);
+}
