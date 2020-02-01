@@ -59,9 +59,7 @@
 
 .details {
 
-	&__header {
-		margin: 0 auto;
-		text-align: center;
+	&__titles {
 		margin-bottom: 55px;
 	}
 
@@ -112,6 +110,7 @@
 .ideas {
 
 	&__title {
+		font-family: $main-font;
 		letter-spacing: inherit;
 		text-transform: capitalize;
 		color: $text-dark;

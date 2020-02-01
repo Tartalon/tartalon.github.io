@@ -27,6 +27,11 @@ a {
 
 .section {
 
+	&__titles {
+		justify-content: center;
+		text-align: center;
+	}
+
 	&__title {
 		font-family: $title-font;
 		font-size: px_to_rem(20px);
