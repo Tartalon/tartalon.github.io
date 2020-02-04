@@ -1,0 +1,45 @@
+.b-contact {
+	background-color: $bg-gray;
+	padding: 75px 0 100px;
+}
+
+.card {
+
+	&__link {
+		width: 100%;
+		max-width: 285px;
+		min-height: 275px;
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__icon-box {
+		width: 100%;
+		height: 145px;
+		background: $bg-dark url("../img/contact-email.jpg") center no-repeat;
+		background-size: cover;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		&>i {
+			font-size: 50px;
+			color: $white;
+			transition: all .3s ease;
+		}
+
+		&:hover>i {
+			font-size: 60px;
+			color: $green;
+		}
+	}
+
+	&__inner {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		text-align: center;
+		width: 100%;
+		min-height: 100%;
+	}
+}
