@@ -18,6 +18,12 @@
 		background-color: $white;
 		width: 30%;
 		max-width: 285px;
+		transition: all .3s ease;
+
+		&:hover {
+			box-shadow: -10px 10px 11px 0px $green;
+			transform: translate(10px, -10px);
+		}
 	}
 
 	&__link {
