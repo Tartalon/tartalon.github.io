@@ -15,7 +15,19 @@
 		background: rgba(0, 0, 0, .5);
 		position: absolute;
 		z-index: 0;
+	}
 
+	&__logo {
+		display: block;
+		font-family: $logo-font;
+		font-size: px_to_rem(25px);
+		text-transform: uppercase;
+		letter-spacing: px_to_em(1px);
+		color: $white;
+
+		&:hover {
+			color: $white;
+		}
 	}
 
 	&__inner {
@@ -25,11 +37,6 @@
 		min-height: calc(100vh - 100px);
 		z-index: 1;
 		position: relative;
-	}
-
-	&__nav--wrapper {
-		display: flex;
-		justify-content: space-between;
 	}
 
 	&__logo {

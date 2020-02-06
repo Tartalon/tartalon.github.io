@@ -151,14 +151,11 @@
 								<a class="nav__link" href="#team">team</a>
 							</li>
 							<li class="nav__item">
-								<a class="nav__link" href="#blog">blog</a>
-							</li>
-							<li class="nav__item">
 								<a class="nav__link" href="#contact">contact</a>
 							</li>
 						</ul>
 					</nav>
-				</div> <!-- /.col -->
+				</div> <!-- /.col header__nav--wrapper -->
 			</div> <!-- /.row -->
 			<div class="row flex-grow2">
 				<div class="col-md-7 header__content">
@@ -804,6 +801,18 @@
 		</div> <!-- /.row -->
 	</div> <!-- /.container -->
 </section>
+<script>
+	var map;
+		function initMap() {
+			var pos = {lat: 49.066632, lng: 33.413616},
+    		map = new google.maps.Map(document.getElementById('map'), {
+        	center: pos,
+        	zoom: 15
+    	});
+    		var marker = new google.maps.Marker({position: pos, map: map, title: "We are here"});
+	};
+</script>
+<div id="map"></div>
 <section class="footer">
 	<div class="container">
 		<div class="row section__titles">
@@ -846,5 +855,6 @@
 	</div> <!-- /.container -->
 </section> <!-- index.ejs -->  <script src="https://kit.fontawesome.com/80887d3050.js" crossorigin="anonymous"></script>
 <script src="js/bundle.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCkp1UkNh80zjqFJjkP6-brkr0NAlNAdDM&callback=initMap" async defer></script>
 </body>
 </html>
