@@ -36,9 +36,7 @@
 		position: relative;
 	}
 
-	&__text1,
-	&__text2 {
-		align-items: center;
+	&__inner {
 		top: 0;
 		left: 0;
 		width: 100%;
@@ -47,13 +45,26 @@
 		position: absolute;
 		margin: 0;
 	}
+
+	&__text--first,
+	&__text--second {
+		align-items: center;
+		width: 100%;
+		height: 100%;
+		margin: 0;
+	}
+
+	&__text--second {
+		display: none;
+	}
+
+	&__carousel {
+		width: 100%;
+		height: 100%;
+	}
 }
 
-.img-box__text2 {
-	display: none;
-}
-
-.img-box__text1-title>h2 {
+.img-box__text--first-title>h2 {
 	text-align: center;
 	font-family: $logo-font;
 	font-size: 30px;
