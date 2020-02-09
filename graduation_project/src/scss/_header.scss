@@ -26,6 +26,7 @@
 		text-transform: uppercase;
 		letter-spacing: px_to_em(1px);
 		color: $white;
+		z-index: 3;
 
 		&:hover {
 			color: $white;
