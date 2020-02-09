@@ -70,3 +70,20 @@ a {
 		font-weight: 700;
 	}
 }
+
+// SLICK====
+.slick {
+
+	&-list {
+	height: inherit;
+	}
+
+	&-track {
+		height: 100%;
+	}
+
+	&-initialized .slick-slide {
+		display: flex;
+		justify-content: center;
+	}
+}
