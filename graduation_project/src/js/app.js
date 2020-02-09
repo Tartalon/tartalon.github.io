@@ -1,6 +1,8 @@
 $('.img-box__carousel').slick({
 	autoplay: true,
-	arrows: false
+	arrows: false,
+	fade: true,
+	speed: 2000
 });
 
 

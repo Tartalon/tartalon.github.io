@@ -73,8 +73,8 @@
 	color: $text-gray;
 }
 
-.img-box__text2-left,
-.img-box__text2-right {
+.img-box__text--second-left,
+.img-box__text--second-right {
 
 	&>h3 {
 		font-size: 25px;
@@ -88,3 +88,18 @@
 	}
 }
 
+// SLICK====
+.slick {
+
+	&-list {
+	height: 100%;
+	}
+
+	&-track {
+		height: 100%;
+	}
+
+	&-initialized .slick-slide {
+		display: flex;
+	}
+}
