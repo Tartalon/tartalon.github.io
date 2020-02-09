@@ -29,3 +29,11 @@
 		object-fit: $object-fit;
 	}
 }
+
+
+
+@mixin md-screen-max {
+	@media only screen and (max-width: 991px) {
+		@content;
+	}
+}
