@@ -1,10 +1,12 @@
 .header {
-	background: #77664e url("../img/header_bg.jpg") no-repeat center;
+	background-repeat: no-repeat;
+	background-position: center;
 	background-size: cover;
 	width: 100%;
 	min-height: 100vh;
 	padding: 35px 0;
 	position: relative;
+	animation: headerSlide 10s infinite;
 
 	&::after {
 		content: "";
@@ -12,7 +14,7 @@
 		right: 0;
 		bottom: 0;
 		left: 0;
-		background: rgba(0, 0, 0, .5);
+		background: rgba(0, 0, 0, .6);
 		position: absolute;
 		z-index: 0;
 	}
@@ -109,4 +111,31 @@
 	fill: $white;
 	stroke: $white;
 	stroke-width: 3px;
+}
+
+
+// BG_SLIDER=======
+.header__bg {
+	animation: headerSlide 2s;
+}
+
+@keyframes headerSlide {
+	0% {
+		background-image: url("../img/header_bg.jpg");
+	}
+	33% {
+		background-image: url("../img/header_bg.jpg");
+	}
+	33.01% {
+		background-image: url("../img/mountains.jpg");
+	}
+	66% {
+		background-image: url("../img/mountains.jpg");
+	}
+	66.01% {
+		background-image: url("../img/lake.jpg");
+	}
+	100% {
+		background-image: url("../img/lake.jpg");
+	}
 }
