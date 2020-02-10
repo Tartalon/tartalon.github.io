@@ -44,12 +44,6 @@
 	}
 }
 
-@mixin sm-screen-max {
-	@media only screen and (max-width: 767px) {
-		@content;
-	}
-}
-
 @mixin md-screen-max {
 	@media only screen and (max-width: 991px) {
 		@content;
@@ -58,6 +52,12 @@
 
 @mixin md-screen {
 	@media only screen and (min-width: 768px) {
+		@content;
+	}
+}
+
+@mixin sm-screen-max {
+	@media only screen and (max-width: 767px) {
 		@content;
 	}
 }

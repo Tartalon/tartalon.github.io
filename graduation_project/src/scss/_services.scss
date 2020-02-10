@@ -17,12 +17,37 @@
 		}
 	}
 
+	&__menu {
+		margin-bottom: 30px;
+
+		@include md-screen {
+			margin-bottom: 0;
+		}
+	}
+
+	&__list {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+
+		@include md-screen {
+			flex-direction: column;
+		}
+	}
+
 	&__item:not(:last-child) {
-		margin-bottom: 20px;
+
+		@include md-screen {
+			margin-bottom: 20px;
+		}
 	}
 
 	&__link {
 		margin-right: 0;
+	}
+
+	&__aside {
+		text-align: center;
 	}
 
 	&__skills {
@@ -59,8 +84,13 @@
 
 	&__list {
 		display: flex;
-		width: 100%;
-		justify-content: space-around;
+		flex-direction: column;
+
+		@include sm-screen {
+			flex-direction: row;
+			justify-content: space-around;
+			width: 100%;
+		}
 	}
 
 	&__item {
@@ -68,6 +98,15 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		margin-bottom: 35px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		@include sm-screen {
+			margin-bottom: 0;
+		}
 	}
 
 	&__svg {

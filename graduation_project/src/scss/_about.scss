@@ -58,9 +58,13 @@
 	}
 
 	&__img--box {
-		display: flex;
-		justify-content: center;
-		align-items: center;
+		display: none;
+
+		@include md-screen {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
 	}
 }
 
