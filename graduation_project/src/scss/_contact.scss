@@ -11,18 +11,41 @@
 
 	&__list {
 		display: flex;
+		flex-wrap: wrap;
 		justify-content: space-between;
 	}
 
 	&__item {
 		background-color: $white;
-		width: 30%;
-		max-width: 285px;
+		width: 100%;
+		margin-bottom: 35px;
 		transition: all .3s ease;
+
+		&:last-child {
+			margin-bottom: 0;
+
+			@include sm-screen {
+				margin: 0 auto;
+			}
+
+			@include lg-screen {
+				margin: 0;
+			}
+		}
 
 		&:hover {
 			box-shadow: -10px 10px 11px 0px $green;
 			transform: translate(10px, -10px);
+		}
+
+		@include md-screen {
+			width: 47%;
+		}
+
+		@include lg-screen {
+			width: 30%;
+			max-width: 285px;
+			margin: 0;
 		}
 	}
 

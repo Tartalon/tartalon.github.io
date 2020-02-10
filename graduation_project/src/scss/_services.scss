@@ -9,6 +9,14 @@
 		color: $text-color;
 	}
 
+	&__content {
+		margin-bottom: 50px;
+
+		@include lg-screen {
+			margin-bottom: 0;
+		}
+	}
+
 	&__item:not(:last-child) {
 		margin-bottom: 20px;
 	}

@@ -35,10 +35,26 @@
 		justify-content: space-between;
 	}
 
+	&__img--box {
+		text-align: center;
+
+		@include sm-screen-max {
+			margin: 0 0 35px;
+		}
+	}
+
 	&__description {
 		display: flex;
 		flex-direction: column;
-		align-items: flex-end;
+		text-align: center;
+
+		@include md-screen {
+			align-items: flex-end;
+		}
+
+		@include sm-screen-max {
+			margin: 0;
+		}
 
 		&-text {
 			text-align: end;

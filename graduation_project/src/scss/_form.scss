@@ -12,14 +12,30 @@
 
 	&__labels-box {
 		display: flex;
+		flex-direction: column;
 		justify-content: space-between;
 		margin-bottom: 30px;
+
+		@include lg-screen {
+			flex-direction: row;
+		}
 	}
 
 	&__label {
 		width: 100%;
-		max-width: 285px;
+		margin-bottom: 30px;
 
+		@include lg-screen {
+			max-width: 285px;
+			flex-direction: row;
+		}
+
+		&:last-child {
+
+			@include md-screen-max {
+				margin-bottom: 0;
+			}
+		}
 	}
 
 	&__input {

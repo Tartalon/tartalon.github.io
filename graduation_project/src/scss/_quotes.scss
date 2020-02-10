@@ -3,6 +3,18 @@
 	background-size: cover;
 	padding: 70px 0 90px;
 
+	&__content {
+		flex-direction: column-reverse;
+
+		@include lg-screen {
+			flex-direction: row;
+		}
+
+		&--image {
+			margin-bottom: 50px;
+		}
+	}
+
 	&__title {
 		color: $text-white;
 	}
@@ -24,15 +36,23 @@
 	}
 
 	&__img-box {
-		position: absolute;
-		top: -110px;
-		right: 0;
+		position: relative;
+		display: flex;
+		justify-content: center;
+
+		@include lg-screen {
+			position: absolute;
+			top: -110px;
+			right: 0;
+		}
 	}
 }
 
 .img-box {
 
 	&__mac {
+		width: 100%;
+		max-width: 410px;
 		position: relative;
 	}
 
