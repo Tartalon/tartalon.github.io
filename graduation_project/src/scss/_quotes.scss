@@ -18,6 +18,10 @@
 				justify-content: center;
 				margin-bottom: 50px;
 			}
+
+			@include lg-screen {
+				margin-bottom: 0;
+			}
 		}
 
 		@include lg-screen {

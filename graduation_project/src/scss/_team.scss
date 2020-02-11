@@ -39,6 +39,10 @@
 		}
 	}
 
+	&__img {
+		max-width: 100%;
+	}
+
 	&__description {
 		display: flex;
 		flex-direction: column;

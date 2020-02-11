@@ -19,7 +19,7 @@
 		}
 
 		&:nth-child(3) {
-			@include md-screen {
+			@include sm-screen {
 				margin-bottom: 0;
 			}
 		}

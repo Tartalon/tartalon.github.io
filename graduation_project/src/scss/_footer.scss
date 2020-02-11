@@ -2,6 +2,10 @@
 	background-color: $white;
 	padding: 75px 0 90px;
 
+	&__title {
+		display: none;
+	}
+
 	&__logo {
 		display: block;
 		font-family: $logo-font;

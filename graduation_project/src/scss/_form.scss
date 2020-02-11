@@ -36,6 +36,10 @@
 				margin-bottom: 0;
 			}
 		}
+
+		@include lg-screen {
+			margin-bottom: 0;
+		}
 	}
 
 	&__input {
@@ -75,4 +79,8 @@
 .message {
 	margin-bottom: 30px;
 	resize: none;
+}
+
+.contact__form--title {
+	display: none;
 }

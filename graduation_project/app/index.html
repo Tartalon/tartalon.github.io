@@ -271,7 +271,7 @@
 	</div> <!-- /.row b-about__ideas -->
 </section> <!-- /.b-about -->
 <section class="section b-projects">
-	<div class="container">
+	<div class="container b-projects__description">
 		<div class="row section__titles b-projects__titles">
 			<div class="col-md-6">
 				<h2 class="section__title b-projects__title">
@@ -660,8 +660,7 @@
                     </li>
                 </ul> <!-- /.b-portfolio__list -->
             </div> <!-- /.col-sm-3 -->
-        </div> <!-- /.col -->
-    </div> <!-- /.row -->
+        </div> <!-- /.row b-portfolio__content--img -->
     </div> <!-- /.container -->
 </section>
 <section id="team" class="b-team">
@@ -772,7 +771,7 @@
 						</a>
 					</li>
 					<li class="card__item">
-						<a href="tel:+00 11 66 99 66 44" class="card__link">
+						<a href="tel:+001166996644" class="card__link">
 							<div class="card__icon-box">
 								<i class="material-icons">
 									phone
@@ -798,19 +797,20 @@
 	<div class="container">
 		<div class="row">
 			<div class="col">
+				<h2 class="contact__form--title">Bouncy contact</h2>
 				<form id="contact__form" class="contact__form">
 					<div class="form__labels-box">
-						<label name="name" class="form__label">
+						<label class="form__label">
 							<input type="text" class="section__text form__input name" placeholder="Your name" required>
 						</label>
-						<label name="email" class="form__label">
+						<label class="form__label">
 							<input type="email" class="section__text form__input email" placeholder="Email address" required>
 						</label>
-						<label name="subject" class="form__label">
+						<label class="form__label">
 							<input type="text" class="section__text form__input subject" placeholder="Subject" required>
 						</label>
 					</div>
-					<textarea name="message" cols="30" rows="10" class=" section__text form__input message"></textarea>
+					<textarea name="message" cols="30" rows="10" class=" section__text form__input message" placeholder="Your message"></textarea>
 					<button type="submit" class="section__subtitle form__submit">
 						submit now
 					</button>
@@ -835,6 +835,7 @@
 	<div class="container">
 		<div class="row section__titles">
 			<div class="col-md-4">
+				<h2 class="footer__title">Bouncy in social networks</h2>
 				<a href="#" class="footer__logo">
 					bouncy
 				</a>
@@ -872,9 +873,9 @@
 		</div> <!-- /.row section__titles -->
 	</div> <!-- /.container -->
 </section> <!-- index.ejs -->  <script src="https://kit.fontawesome.com/80887d3050.js" crossorigin="anonymous"></script>
-<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-<script type="text/javascript" src="./assets/libs/slick/slick.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="./assets/libs/slick/slick.min.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCkp1UkNh80zjqFJjkP6-brkr0NAlNAdDM&callback=initMap" async defer></script>
 <script src="js/bundle.js"></script>
 </body>
