@@ -56,6 +56,11 @@
 		display: block;
 		$height: 400px;
 		position: relative;
+		overflow: hidden;
+
+		&:hover .b-projects__link--hover {
+			transform: translateX(0);
+		}
 
 		@include padding-hack($height);
 	}
@@ -70,7 +75,7 @@
 		height: 100%;
 		position: absolute;
 		background: rgba(0, 0, 0, .7);
-		opacity: 0;
+		transform: translateX(-100%);
 		transition: all .3s ease;
 
 		&:hover,

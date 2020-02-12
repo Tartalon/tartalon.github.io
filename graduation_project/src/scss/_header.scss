@@ -6,7 +6,7 @@
 	min-height: 100vh;
 	padding: 35px 0;
 	position: relative;
-	animation: headerSlide 10s infinite;
+	animation: headerSlide 15s infinite;
 
 	&::after {
 		content: "";
@@ -103,28 +103,19 @@
 }
 
 
-// BG_SLIDER=======
-.header__bg {
-	animation: headerSlide 2s;
-}
+// BG_SLIDER======
 
 @keyframes headerSlide {
 	0% {
 		background-image: url("../img/header_bg.jpg");
 	}
 	33% {
-		background-image: url("../img/header_bg.jpg");
-	}
-	33.01% {
 		background-image: url("../img/mount.jpg");
 	}
-	66% {
-		background-image: url("../img/mount.jpg");
-	}
-	66.01% {
+	67% {
 		background-image: url("../img/lake.jpg");
 	}
 	100% {
-		background-image: url("../img/lake.jpg");
+		background-image: url("../img/header_bg.jpg");
 	}
 }
