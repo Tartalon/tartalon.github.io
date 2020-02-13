@@ -20,6 +20,12 @@ $(document).ready(function() {
 	$('.header__nav--toggle, .nav__link').click(function(event) {
 		$('.header__nav--toggle').toggleClass('toggle__active');
 		$('.nav__list').toggleClass('nav__active');
+
+		if ($('.header__nav--toggle').hasClass('toggle__active')) {
+			$('body').css('overflow', 'hidden');
+		} else {
+			$('body').css('overflow', 'visible');
+		}
 	});
 });
 
@@ -27,17 +33,16 @@ $(document).ready(function() {
 // btnTop=======
 $(document).ready(function(){
 
-$(window).scroll(function(){
-if ($(this).scrollTop() > 100) {
-$('.scrollup').fadeIn();
-} else {
-$('.scrollup').fadeOut();
-}
+	$(window).scroll(function(){
+		if ($(this).scrollTop() > 100) {
+			$('.scrollup').fadeIn();
+		} else {
+			$('.scrollup').fadeOut();
+	}
 });
 
 $('.scrollup').click(function(){
-$("html, body").animate({ scrollTop: 0 }, 600);
-return false;
-});
-
+	$("html, body").animate({ scrollTop: 0 }, 600);
+		return false;
+	});
 });
