@@ -6,7 +6,13 @@
 	min-height: 100vh;
 	padding: 35px 0;
 	position: relative;
-	animation: headerSlide 15s infinite;
+	animation: none;
+	background-image: url("../img/header_bg.jpg");
+	// animation: headerSlide 15s infinite;
+
+	@include md-screen {
+		animation: headerSlide 15s infinite;
+	}
 
 	&::after {
 		content: "";
