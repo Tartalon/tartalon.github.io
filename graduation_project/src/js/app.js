@@ -16,9 +16,11 @@ $('.description__img--box').slick({
 
 
 // MENU=======
-document.querySelector('.header__nav--toggle').addEventListener('click', function toggle() {
-	document.querySelector('.nav__list').classList.toggle('nav__active');
-	document.querySelector('.header__nav--toggle').classList.toggle('toggle__active');
+$(document).ready(function() {
+	$('.header__nav--toggle, .nav__link').click(function(event) {
+		$('.header__nav--toggle').toggleClass('toggle__active');
+		$('.nav__list').toggleClass('nav__active');
+	});
 });
 
 
