@@ -20,12 +20,6 @@ $(document).ready(function() {
 	$('.header__nav--toggle, .nav__link').click(function(event) {
 		$('.header__nav--toggle').toggleClass('toggle__active');
 		$('.nav__list').toggleClass('nav__active');
-
-		if ($('.header__nav--toggle').hasClass('toggle__active')) {
-			$('body').css('overflow', 'hidden');
-		} else {
-			$('body').css('overflow', 'visible');
-		}
 	});
 });
 
@@ -46,3 +40,9 @@ $('.scrollup').click(function(){
 		return false;
 	});
 });
+
+
+
+
+// MODAL========
+// https://nisnom.com/veb-razrabotki/flat-modal-window/#more-1987
