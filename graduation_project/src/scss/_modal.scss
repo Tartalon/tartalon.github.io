@@ -4,9 +4,8 @@
 .modal {
 	background-color: $bg-gray;
 	width: 80%;
-	height: 100%;
+	max-height: 100%;
 	max-width: 700px;
-	padding: 2.5rem;
 	position: fixed;
 	overflow: auto;
 	top: 85px;
@@ -20,6 +19,7 @@
 	}
 
 	&__inner {
+		padding: 2.5rem;
 		position: relative;
 	}
 
@@ -30,8 +30,8 @@
 
 .button__close {
 	position: absolute;
-	top: -40px;
-	right: -40px;
+	top: 10px;
+	right: 10px;
 	font-size: 40px;
 	border: none;
 	background: transparent;
