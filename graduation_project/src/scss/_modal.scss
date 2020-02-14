@@ -1,0 +1,42 @@
+
+
+// MODAL========
+.modal {
+	background-color: $bg-gray;
+	width: 80%;
+	max-width: 700px;
+	padding: 2.5rem;
+	position: fixed;
+	overflow: auto;
+	top: 85px;
+	left: 50%;
+	transform: translateX(-50%);
+	display: none;
+	z-index: 5;
+
+	&.show {
+		display: flex;
+	}
+
+	&__inner {
+		position: relative;
+	}
+
+	&__text {
+		text-align: justify;
+	}
+}
+
+.button__close {
+	position: absolute;
+	top: -40px;
+	right: -40px;
+	font-size: 40px;
+	border: none;
+	background: transparent;
+
+	&:hover {
+		color: $green;
+		cursor: pointer;
+	}
+}

@@ -43,6 +43,30 @@ $('.scrollup').click(function(){
 
 
 
+// MODAL=========
 
-// MODAL========
-// https://nisnom.com/veb-razrabotki/flat-modal-window/#more-1987
+$(document).ready(function() {
+
+let modalCall = $("[data-modal]");
+let modalClose = $("[data-close]");
+
+modalCall.on("click", function(event) {
+	event.preventDefault();
+
+	let $this = $(this);
+	let modalId = $this.data('modal');
+
+	$(modalId).addClass('show');
+	$("body").addClass('no-scroll');
+});
+
+modalClose.on("click", function(event) {
+	event.preventDefault();
+
+	let $this = $(this);
+	let modalParent = $this.parents('.modal');
+
+	modalParent.removeClass('show');
+	$("body").removeClass('no-scroll');
+});
+});
