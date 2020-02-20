@@ -149,3 +149,55 @@ check5.addEventListener('click', () => {
 		result.textContent = 'Вы ввели не верное число';
 	}
 });
+
+
+
+
+
+
+//  ============= 7
+
+
+let moneyFeald = document.querySelector('#i-money');
+let convertEur = document.querySelector('#submit-eur');
+let convertUan = document.querySelector('#submit-uan');
+let convertAzn = document.querySelector('#submit-azn');
+
+convertEur.addEventListener('click', function() {
+  let eur = moneyFeald.value * 0.93;
+
+  result.textContent = eur + ' EUR';
+});
+
+convertUan.addEventListener('click', function() {
+  let uan = moneyFeald.value * 24.50;
+
+  result.textContent = uan + ' UAN';
+});
+
+convertAzn.addEventListener('click', function() {
+  let azn = moneyFeald.value * 1.7;
+
+  result.textContent = azn + ' AZN';
+});
+
+
+
+
+//  ============= 8
+
+
+let summFeald = document.querySelector('#i-money');
+let calculated = document.querySelector('#submit-money');
+
+calculated.addEventListener('click', function() {
+	let discount = summFeald.value;
+
+	if (discount < 200) {
+		result.textCcontent = discount;
+	} else if (discount >= 200 && discount < 300) {
+		result.textContent = discount - (discount * 3 / 100);
+	} else if (discount >=300 && discount < 500) {
+		result.textContent = discount - (discount * 5 / 100);
+	}
+});
