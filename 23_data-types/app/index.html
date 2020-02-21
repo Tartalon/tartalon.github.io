@@ -45,11 +45,28 @@
           			<input type="button" class="input-s submit-azn" id="submit-azn" value="AZN">
 				</label>
 				<label class="form-lb l-numbs">
-					<input type="number" class="input-t i-money" id="i-money" placeholder="Введите сумму">
-					<input type="button" class="input-s submit-money" id="submit-money" value="Сумма со скидкой">
+					<input type="number" class="input-t i-summ" id="i-summ" placeholder="Введите сумму">
+					<input type="button" class="input-s submit-summ" id="submit-summ" value="Сумма со скидкой">
 				</label>
 
+				<label class="form-lb l-numbs">
+					<input type="number" class="input-t i-circle" id="i-circle" placeholder="Введите длину окружности">
+					<input type="number" class="input-t i-square" id="i-square" placeholder="Введите периметр квадрата">
+					<input type="button" class="input-s submit-size" id="submit-size" value="Проверить">
+				</label>
 			</form>
+
+			<div class="questions">
+				<h3 class="questions__title">Сколько ног у паука?</h3>
+				<form class="questions__form" id="questions__form">
+					<label for="#q-input__first" class="q-label">8</label>
+					<input type="radio" class="q-input__first" id="q-input__first">
+					<label for="#q-input__second" class="q-label">6</label>
+					<input type="radio" class="q-input__second" id="q-input__second">
+					<label for="#q-input__third" class="q-label">10</label>
+					<input type="radio" class="q-input__third" id="q-input__third">
+				</form>
+			</div>
 		</div>
 	</div> <!-- /.container -->
 </section> <!-- index.ejs -->  <script src="js/bundle.js"></script>

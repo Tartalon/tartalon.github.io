@@ -187,17 +187,41 @@ convertAzn.addEventListener('click', function() {
 //  ============= 8
 
 
-let summFeald = document.querySelector('#i-money');
-let calculated = document.querySelector('#submit-money');
+let summFeald = document.querySelector('#i-summ');
+let calculated = document.querySelector('#submit-summ');
 
 calculated.addEventListener('click', function() {
 	let discount = summFeald.value;
 
 	if (discount < 200) {
-		result.textCcontent = discount;
+		result.textContent = discount;
 	} else if (discount >= 200 && discount < 300) {
 		result.textContent = discount - (discount * 3 / 100);
 	} else if (discount >=300 && discount < 500) {
 		result.textContent = discount - (discount * 5 / 100);
+	} else {
+		result.textContent = discount - (discount * 7 / 100);
+	}
+});
+
+
+
+
+
+//  ============= 9
+
+let circleLength = document.querySelector('#i-circle');
+let squarePerimetr = document.querySelector('#i-square');
+let checkSize = document.querySelector('#submit-size');
+
+checkSize.addEventListener('click', function () {
+	let circleSize = (circleLength.value / (3.14 * 2)) * 2;
+	let squareSize = squarePerimetr.value / 4;
+
+	if (circleSize < squareSize) {
+		result.textContent = 'Круг влезит в квадрат';
+	}
+	else {
+		result.textContent = 'Круг НЕ влезит в квадрат';
 	}
 });

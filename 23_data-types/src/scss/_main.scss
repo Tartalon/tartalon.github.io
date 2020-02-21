@@ -19,6 +19,7 @@
 	flex-direction: column;
 	align-items: center;
 	width: 100%;
+	margin-bottom: 20px;
 
 	&-lb {
 		display: flex;
@@ -43,4 +44,22 @@
 	&-s {
 		padding: 15px;
 	}
+}
+
+.questions {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	&__form {
+		width: 100%;
+		max-width: 200px;
+		
+		display: flex;
+	}
+}
+
+.q-label {
+	width: 100%;
 }
