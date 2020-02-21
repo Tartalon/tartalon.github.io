@@ -3,9 +3,7 @@
 	flex-direction: column;
 	padding: 70px 0 0;
 
-	&__titles {
-		justify-content: center;
-		text-align: center;
+	&__description {
 		margin-bottom: 60px;
 	}
 
@@ -19,36 +17,52 @@
 
 	&__list {
 		display: flex;
-	}
+		flex-wrap: wrap;
+		justify-content: center;
 
-	&__fluid {
-		padding: 0;
+		@include lg-screen {
+			display-wrap: none;
+		}
 	}
 
 	&__item {
-		width: 25%;
-		position: relative;
+		width: 100%;
+
+		@include sm-screen {
+			width: 50%;
+			max-width: 350px;
+		}
+
+		@include lg-screen {
+			width: 25%;
+		}
+
+		@include xl-screen {
+			max-width: none;
+		}
 
 		&:first-child {
-			width: 50%;
+			width: 100%;
+			max-width: 700px;
+
+			@include lg-screen {
+				width: 50%;
+				max-width: none;
+			}
 		}
 	}
 
 	&__link {
 		display: block;
 		$height: 400px;
+		position: relative;
+		overflow: hidden;
+
+		&:hover .b-projects__link--hover {
+			transform: translateX(0);
+		}
 
 		@include padding-hack($height);
-
-		// &::after {
-		// 	content: "";
-		// 	top: 0;
-		// 	right: 0;
-		// 	bottom: 0;
-		// 	left: 0;
-		// 	background: rgba(0, 0, 0, .5);
-		// 	position: absolute;
-		// }
 	}
 
 	&__link--hover {
@@ -57,11 +71,11 @@
 		align-items: center;
 		top: 0;
 		right: 0;
-		bottom: 0;
-		left: 0;
+		width: 100%;
+		height: 100%;
 		position: absolute;
 		background: rgba(0, 0, 0, .7);
-		opacity: 0;
+		transform: translateX(-100%);
 		transition: all .3s ease;
 
 		&:hover,

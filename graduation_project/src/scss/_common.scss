@@ -1,12 +1,13 @@
 *,
-*:before,
-*:after {
+*::before,
+*::after {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
 
 body, html {
+	scroll-behavior: smooth;
 	font-size: 100%;
 	font-family: $main-font;
 	min-height: 100vh;
@@ -25,7 +26,14 @@ a {
 	}
 }
 
+@import url('https://fonts.googleapis.com/css?family=Archivo+Black|Open+Sans:400,700|Source+Sans+Pro:300,400,400i,900&display=swap');
+
 .section {
+
+	&__titles {
+		justify-content: center;
+		text-align: center;
+	}
 
 	&__title {
 		font-family: $title-font;
@@ -62,5 +70,30 @@ a {
 
 	&-bold {
 		font-weight: 700;
+	}
+}
+
+// SLICK====
+.slick {
+
+	&-list {
+	height: inherit;
+	width: 100%;
+	}
+
+	&-track {
+		height: 100%;
+	}
+
+	&-initialized .slick-slide {
+		display: flex;
+		justify-content: center;
+	}
+}
+
+body {
+
+	&.no-scroll {
+		overflow: hidden;
 	}
 }

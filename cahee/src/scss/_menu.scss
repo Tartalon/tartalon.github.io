@@ -55,6 +55,7 @@
 		display: block;
 		position: fixed;
     	right: 15px;
+    	z-index: 3;
 
 		&:hover {
 			box-shadow: 0 0 6px 1px black;
