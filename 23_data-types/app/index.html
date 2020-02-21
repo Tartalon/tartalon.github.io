@@ -57,16 +57,61 @@
 			</form>
 
 			<div class="questions">
-				<h3 class="questions__title">Сколько ног у паука?</h3>
-				<form class="questions__form" id="questions__form">
-					<label for="#q-input__first" class="q-label">8</label>
-					<input type="radio" class="q-input__first" id="q-input__first">
-					<label for="#q-input__second" class="q-label">6</label>
-					<input type="radio" class="q-input__second" id="q-input__second">
-					<label for="#q-input__third" class="q-label">10</label>
-					<input type="radio" class="q-input__third" id="q-input__third">
-				</form>
-			</div>
+				<div class="questions__wrapper">
+					<form class="questions__form" id="questions__form">
+						<h3 class="questions__title">Сколько ног у паука?</h3>
+						<label class="q-label">
+							8
+							<input type="radio" name="paws" class="q-input" id="q-input__first">
+						</label>
+						<label class="q-label">
+							6
+							<input type="radio" name="paws" class="q-input" id="q-input__second">
+						</label>
+						<label class="q-label">
+							10
+							<input type="radio" name="paws" class="q-input" id="q-input__third">
+						</label>
+					</form>
+				</div>
+				<div class="questions__wrapper">
+					<form class="questions__form" id="questions__form">
+						<h3 class="questions__title">Скорость гепарда в рывке(км/ч)?</h3>
+						<label class="q-label">
+							120
+							<input type="radio" name="paws" class="q-input" id="q-input__first">
+						</label>
+						<label class="q-label">
+							80
+							<input type="radio" name="paws" class="q-input" id="q-input__second">
+						</label>
+						<label class="q-label">
+							135
+							<input type="radio" name="paws" class="q-input" id="q-input__third">
+						</label>
+					</form>
+				</div>
+				<div class="questions__wrapper">
+					<form class="questions__form" id="questions__form">
+						<h3 class="questions__title">Глубина марианской впадины(м)?</h3>
+						<label class="q-label">
+							12300
+							<input type="radio" name="paws" class="q-input" id="q-input__first">
+						</label>
+						<label class="q-label">
+							10900
+							<input type="radio" name="paws" class="q-input" id="q-input__second">
+						</label>
+						<label class="q-label">
+							7600
+							<input type="radio" name="paws" class="q-input" id="q-input__third">
+						</label>
+					</form>
+				</div>
+
+				<h3 class="q-answer"></h3>
+				<button class="q-button" id="q-button">Проверить</button>
+			</div> <!-- /.questions -->
 		</div>
 	</div> <!-- /.container -->
 </section> <!-- index.ejs -->  <script src="js/bundle.js"></script>

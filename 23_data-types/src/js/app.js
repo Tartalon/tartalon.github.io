@@ -225,3 +225,9 @@ checkSize.addEventListener('click', function () {
 		result.textContent = 'Круг НЕ влезит в квадрат';
 	}
 });
+
+
+
+
+//  ============= 10
+
