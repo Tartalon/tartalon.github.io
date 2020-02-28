@@ -231,3 +231,8 @@ checkSize.addEventListener('click', function () {
 
 //  ============= 10
 
+let answer = document.querySelector('.q-answer');
+let answerOptionsPaws = document.getElementsByName('paws');
+console.log(answerOptionsPaws);
+
+let pointsPaws, pointsSpeed, pointsDepth;
