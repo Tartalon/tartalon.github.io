@@ -231,8 +231,16 @@ checkSize.addEventListener('click', function () {
 
 //  ============= 10
 
-let answer = document.querySelector('.q-answer');
-let answerOptionsPaws = document.getElementsByName('paws');
-console.log(answerOptionsPaws);
+let checkPoints = document.querySelector('#q-button');
+checkPoints.addEventListener('click', function() {
+	let paws = document.getElementsByName('paws');
+	let speed = document.getElementsByName('speed');
+	let depth = document.getElementsByName('depth');
+	let resultPoints = 0;
 
-let pointsPaws, pointsSpeed, pointsDepth;
+	for ( let i = 0; i < paws.length; i++ ) {
+		if ( paws[i].checked && (paws[i].value == 8) ) {
+			resultPoints += 2;
+		}
+	}
+});
