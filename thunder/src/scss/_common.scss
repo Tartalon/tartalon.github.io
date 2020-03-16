@@ -25,3 +25,10 @@ a {
     text-decoration: none;
   }
 }
+
+.section__title--white {
+  font-size: px_to_rem(30px);
+  font-weight: 400;
+  text-transform: capitalize;
+  color: $white;
+}

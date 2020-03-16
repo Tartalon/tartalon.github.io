@@ -8,6 +8,11 @@
   @return $target / $context + 0em;
 }
 
+@mixin square ($size) {
+	width: $size;
+	height: $size;
+}
+
 @mixin padding-hack($padding, $object-fit: cover) {
 	position: relative;
 	padding-top: $padding;
