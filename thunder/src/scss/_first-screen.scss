@@ -2,6 +2,7 @@
   background: url("../img/bg_main_1.jpg") center no-repeat;
   background-size: cover;
   min-height: 100vh;
+  overflow: hidden;
 
   &__logo {
     display: flex;
