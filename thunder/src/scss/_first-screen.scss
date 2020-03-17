@@ -101,7 +101,8 @@
     color: $text-grey;
     transition: all .2s linear;
 
-    &:hover {
+    &:hover,
+    &:focus {
       color: $text-white;
     }
   }
