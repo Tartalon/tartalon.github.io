@@ -42,48 +42,50 @@
         </div>
         <!-- /.coll-md-3 -->
         <div class="col-md-8 ">
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a href="#home" class="nav__link">
-                home
-              </a>
-            </li>
-            <li class="nav__item">
-              <a href="#portfolio" class="nav__link">
-                portfolio
-              </a>
-            </li>
-            <li class="nav__item">
-              <a href="#" class="nav__link">
-                services
-              </a>
-            </li>
-            <li class="nav__item">
-              <a href="#" class="nav__link">
-                staff
-              </a>
-            </li>
-            <li class="nav__item">
-              <a href="#" class="nav__link">
-                pages
-              </a>
-            </li>
-            <li class="nav__item">
-              <a href="#" class="nav__link">
-                features
-              </a>
-            </li>
-            <li class="nav__item">
-              <a href="#" class="nav__link">
-                blog
-              </a>
-            </li>
-            <li class="nav__item">
-              <a href="#" class="nav__link">
-                contact
-              </a>
-            </li>
-          </ul>
+          <nav class="tr-nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="#home" class="nav__link">
+                  home
+                </a>
+              </li>
+              <li class="nav__item">
+                <a href="#portfolio" class="nav__link">
+                  portfolio
+                </a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">
+                  services
+                </a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">
+                  staff
+                </a>
+              </li>
+              <li class="nav__item">
+                <a href="#pages" class="nav__link">
+                  pages
+                </a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">
+                  features
+                </a>
+              </li>
+              <li class="nav__item">
+                <a href="#blog" class="nav__link">
+                  blog
+                </a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">
+                  contact
+                </a>
+              </li>
+            </ul>
+          </nav>
         </div>
       </div>
     </div>
@@ -156,7 +158,7 @@
 </section>
 <section class="tr-portfolio" id="portfolio">
   <div class="container">
-    <div class="row">
+    <div class="row tr-portfolio__titles--margen">
       <div class="col-md-6 tr-portfolio__titles">
         <h3 class="section__title--white tr-portfolio__title">
           recent work
@@ -336,7 +338,7 @@
     </div> <!-- /.row -->
   </div> <!-- /.container -->
 </section>
-<section class="tr-pages">
+<section class="tr-pages" id="pages">
   <div class="container">
     <div class="row">
       <div class="col-md-6">
@@ -360,9 +362,9 @@
     </div>
   </div>
 </section>
-<section class="tr-blog">
+<section class="tr-blog" id="blog">
   <div class="container">
-    <div class="row">
+    <div class="row tr-blog__titles">
       <div class="col">
         <h2 class="tr-blog__title">
           latest news
@@ -374,9 +376,39 @@
         <ul class="tr-card__list">
           <li class="tr-card__item">
             <a href="#" class="tr-card__link">
-              <img src="./img/blog.jpg" alt="flowers" class="tr-card__img">
+              <figure class="tr-card__img--box">
+                <img src="./img/blog.jpg" alt="flowers" class="tr-card__img">
+              </figure>
               <h4 class="tr-card__title">
                 this is a sample blog post with an extra super long title
+              </h4>
+              <p class="tr-card__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec dolor vitae neque semper aliquet sed et
+                nibh. Cras quis...
+              </p>
+            </a>
+          </li>
+          <li class="tr-card__item">
+            <a href="#" class="tr-card__link">
+              <figure class="tr-card__img--box">
+                <img src="./img/blog.jpg" alt="flowers" class="tr-card__img">
+              </figure>
+              <h4 class="tr-card__title">
+                this is a sample blog post
+              </h4>
+              <p class="tr-card__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec dolor vitae neque semper aliquet sed et
+                nibh. Cras quis...
+              </p>
+            </a>
+          </li>
+          <li class="tr-card__item">
+            <a href="#" class="tr-card__link">
+              <figure class="tr-card__img--box">
+                <img src="./img/blog.jpg" alt="flowers" class="tr-card__img">
+              </figure>
+              <h4 class="tr-card__title">
+                this is a sample blog post
               </h4>
               <p class="tr-card__text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec dolor vitae neque semper aliquet sed et
