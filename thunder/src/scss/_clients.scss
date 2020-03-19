@@ -1,0 +1,40 @@
+.tr-clients {
+  background-color: $white;
+  width: 100%;
+  padding: 50px 0;
+
+  &__titles {
+    margin-bottom: 25px;
+  }
+
+  &__title--wrapper {
+
+    &::before {
+      content: "";
+      height: 1px;
+    }
+  }
+
+  &__title {
+    font-size: px_to_rem(16px);
+    font-weight: 600;
+    text-transform: uppercase;
+    color: $text-dark;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-right: 15px;
+    min-height: 370px;
+  }
+
+  &__item {
+    $height: 175px;
+    @include padding-hack($height);
+    width: 100%;
+    max-width: 185px;
+    height: max-content;
+  }
+}
