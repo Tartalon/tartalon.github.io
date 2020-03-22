@@ -1,0 +1,36 @@
+<% const menuItem = [
+  {
+    link: "#home",
+    text: "home"
+  },
+  {
+    link: "#portfolio",
+    text: "portfolio"
+  },
+  {
+    link: "#staff",
+    text: "staff"
+  },
+  {
+    link: "#pages",
+    text: "pages"
+  },
+  {
+    link: "#features",
+    text: "features"
+  },
+  {
+    link: "#blog",
+    text: "blog"
+  },
+  {
+    link: "#contacts",
+    text: "contacts"
+  }
+]%>
+
+<% menuItem.forEach(menu => { %>
+  <li class = "nav-item">
+    <a href="<%= menu.link %>" class="nav__link"><%= menu.text %></a>
+  </li>
+<%})%>

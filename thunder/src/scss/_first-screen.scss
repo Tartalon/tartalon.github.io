@@ -1,6 +1,9 @@
 .tr-header {
-  background: url("../img/bg_main_1.jpg") center no-repeat;
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
+  background-image: url("../img/bg_main_1.jpg");
+  width: 100%;
   min-height: 100vh;
   overflow: hidden;
 
