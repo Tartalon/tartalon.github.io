@@ -1,10 +1,5 @@
 .tr-header {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-image: url("../img/bg_main_1.jpg");
-  width: 100%;
-  min-height: 100vh;
+  background-color: $dark;
   overflow: hidden;
 
   &__logo {
@@ -114,4 +109,144 @@
 
 .tr-logo__img {
   margin-right: 10px;
+}
+
+// SLIDER===========
+.header-slider__item {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.second-item {
+  height: 100vh;
+
+  &__container {
+    position: relative;
+  }
+}
+
+.slider {
+
+  &-second__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  &__title-second--wrapper {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, .5);
+    border-radius: 4px;
+    margin-bottom: 30px;
+  }
+
+  &__title-second {
+    padding: 20px;
+    font-size: px_to_rem(24px);
+    font-weight: 700;
+    text-transform: capitalize;
+    color: $text-white;
+  }
+
+  &__text-second--wrapper {
+    max-width: 250px;
+    background-color: $black;
+    border-radius: 4px;
+  }
+
+  &__text-second {
+    padding: 20px 30px 20px 10px;
+    font-size: px_to_rem(14px);
+    font-weight: 400;
+    line-height: px_to_em(24px);
+    color: $text-white;
+  }
+}
+
+.second-slider {
+
+  &__img-mac--absolut {
+    position: absolute;
+    bottom: 35px;
+    left: 55px;
+    z-index: 1;
+  }
+
+  &__img-mac--box {
+    position: relative;
+  }
+
+  &__img-ipad--absolut {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    z-index: 2;
+  }
+
+  &__img-iphone--absolut {
+    position: absolute;
+    bottom: 5px;
+    left: 140px;
+    z-index: 3;
+  }
+
+  &__img-macbook--absolut {
+    position: absolute;
+    bottom: 10px;
+    left: 335px;
+    z-index: 3;
+  }
+}
+
+.mac-img {
+  width: 100%;
+
+  &__box {
+    position: absolute;
+    width: 435px;
+    height: 245px;
+    bottom: 140px;
+    left: 20px;
+  }
+}
+
+.ipad-img {
+  width: 100%;
+
+  &__box {
+    position: absolute;
+    width: 140px;
+    height: 183px;
+    bottom: 28px;
+    left: 16px;
+  }
+}
+
+.iphone-img {
+  width: 100%;
+
+  &__box {
+    position: absolute;
+    width: 76px;
+    height: 115px;
+    bottom: 44px;
+    left: 8px;
+  }
+}
+
+.macbook-img {
+  width: 100%;
+
+  &__box {
+    position: absolute;
+    width: 300px;
+    height: 188px;
+    bottom: 33px;
+    left: 49px;
+  }
 }
