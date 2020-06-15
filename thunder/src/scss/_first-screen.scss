@@ -18,7 +18,45 @@
     &--wrapper {
       display: flex;
       justify-content: space-between;
+      align-items: center;
       color: $text-white;
+      height: 100px;
+    }
+
+    &--toggle {
+      display: block;
+      position: relative;
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+      z-index: 7;
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        top: 5px;
+        background-color: $white;
+        box-shadow: 0 14px 0 $white;
+        z-index: 7;
+        transition: all .2s linear;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        bottom: 5px;
+        background-color: $white;
+        z-index: 7;
+        transition: all .2s linear;
+      }
+
+      @include lg-screen {
+        display: none;
+      }
     }
   }
 
@@ -79,10 +117,27 @@
 
   &__list {
     display: flex;
+    flex-direction: column;
+    width: 0;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
-    min-height: 100px;
+    position: absolute;
+    top: -500px;
+    right: 0;
+    text-align: center;
+    padding: 70px 0 40px;
+    background-color: rgba(0, 0, 0, .8);
+    border-radius: 15px;
+    transition: all .2s linear;
+
+     @include lg-screen {
+       flex-direction: row;
+       top: 0;
+       width: 100%;
+       height: 100%;
+       padding: 0;
+       background-color: $black;
+     }
   }
 
   &__logo {
@@ -98,6 +153,8 @@
     font-size: 13px;
     font-weight: 700;
     color: $text-grey;
+    width: 100%;
+    padding: 6px 20px;
     transition: all .2s linear;
 
     &:hover,
@@ -107,8 +164,25 @@
   }
 }
 
+.nav__active {
+  top: 0;
+  width: 100%;
+}
+
 .tr-logo__img {
   margin-right: 10px;
+}
+
+.toggle__active::before {
+  top: 19px;
+  transform: rotate(45deg);
+  box-shadow: 0 0 0 $white;
+}
+
+.toggle__active::after {
+  bottom: 19px;
+  transform: rotate(-45deg);
+  background-origin: 0 0 0 $white;
 }
 
 // SLIDER===========
