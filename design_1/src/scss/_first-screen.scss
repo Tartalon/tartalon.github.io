@@ -1,0 +1,20 @@
+.nd__first-screen {
+  background:  url("../img/first_screen.jpg") center no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.container {
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.nd-main__title {
+  @include title-font;
+  text-transform: capitalize;
+}
+
+.title-span {
+  text-transform: lowercase;
+}
