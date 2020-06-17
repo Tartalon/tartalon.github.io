@@ -1,13 +1,28 @@
 .nd__first-screen {
-  background:  url("../img/first_screen.jpg") center no-repeat;
+  background: url("../img/first_screen.jpg") center no-repeat;
   background-size: cover;
   min-height: 100vh;
+  padding: 50px 0;
 }
 
 .container {
   width: 100%;
   max-width: 1080px;
   margin: 0 auto;
+  padding: 0 10px;
+}
+
+.nd-header {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.h-nav {
+  &__list {
+    display: flex;
+    text-align: center;
+  }
 }
 
 .nd-main__title {
