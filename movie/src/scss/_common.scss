@@ -6,7 +6,8 @@
 	box-sizing: border-box;
 }
 
-body, html {
+body,
+html {
 	scroll-behavior: smooth;
 	font-size: 100%;
 	font-family: $main-font;
@@ -24,4 +25,10 @@ a {
 	&:hover {
 		text-decoration: none;
 	}
+}
+
+.container {
+	max-width: 1170px;
+	margin: 0 auto;
+	padding: 0 15px;
 }

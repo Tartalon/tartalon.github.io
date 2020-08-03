@@ -1,0 +1,24 @@
+.first-screen {
+  background: #02101c url("../img/bg_firstScreen.jpg") no-repeat center;
+  background-size: cover;
+  padding: 35px 0 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  color: $text-color;
+}
+
+.nav-header {
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    min-width: 430px;
+  }
+
+  &__link {
+    color: $text-color;
+  }
+}
