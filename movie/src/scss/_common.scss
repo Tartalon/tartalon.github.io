@@ -32,3 +32,10 @@ a {
 	margin: 0 auto;
 	padding: 0 15px;
 }
+
+.title {
+	font-family: $main-font;
+	font-weight: 600;
+	font-size: 36px;
+	color: $title-color;
+}
