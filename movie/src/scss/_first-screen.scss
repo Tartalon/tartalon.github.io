@@ -1,25 +1,113 @@
 .first-screen {
-  background: #02101c url("../img/bg_firstScreen.jpg") no-repeat center;
+  background: #02101c url('../img/bg_firstScreen.jpg') no-repeat center;
   background-size: cover;
   padding: 35px 0 20px;
 }
 
 .header {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
   color: $text-color;
+
+  &__search {
+    display: block;
+    position: relative;
+    padding: 0 4px 5px;
+    margin-right: 2.8%;
+  }
+
+  &__logo {
+    margin-right: 11.3%;
+  }
+
+  &__user {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .nav-header {
+  margin-right: 11.1%;
 
   &__list {
     display: flex;
-    justify-content: space-between;
-    min-width: 430px;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 35px;
+    }
   }
 
   &__link {
     color: $text-color;
     text-transform: capitalize;
+    transition: all 0.3s linear;
+
+    &:hover {
+      color: $white;
+    }
+  }
+}
+
+.nav-active {
+  color: $white;
+}
+
+.search {
+  font-size: 10px;
+  background-color: transparent;
+  min-width: 170px;
+  border: none;
+  color: $red;
+  border-bottom: 1px solid $red;
+  padding-bottom: 5px;
+
+  &::placeholder {
+    color: $red;
+  }
+
+  &__button {
+    display: flex;
+    position: absolute;
+    right: 0;
+    bottom: 12px;
+    background-color: transparent;
+    border: none;
+  }
+}
+
+.user {
+  &__login {
+    color: $white;
+    text-transform: capitalize;
+    font-weight: 400;
+    font-size: 14px;
+    margin-right: 30px;
+    transition: all 0.3s linear;
+
+    &:hover {
+      cursor: pointer;
+      color: $red;
+    }
+  }
+
+  &__sign {
+    background-color: $button-red;
+    border: none;
+    padding: 13px 30px;
+    border-radius: 25px;
+    color: $white;
+    text-transform: capitalize;
+    transition: all 0.3s linear;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+      cursor: pointer;
+      background-color: $white;
+      color: $red;
+    }
   }
 }
