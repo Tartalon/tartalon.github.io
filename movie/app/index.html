@@ -3,15 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-    <title>Title</title>
-    <link
-      rel="shortcut icon"
-      type="image/x-icon"
-      href="assets/fav/favicon.ico"
-    />
+    <title>Kallyas</title>
+    <link rel="shortcut icon" type="image/x-icon" href="assets/fav/logo.png" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap"
       rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -44,31 +45,118 @@
             </ul>
           </div>
           <!-- /.header__nav -->
-          <div class="header__search">
-            <input
-              type="search__input"
-              class="search"
-              placeholder="Search..."
-            />
-            <button class="search__button">
-              <img
-                src="./img/search.png"
-                alt="searc-icon"
-                class="search__img"
+          <div class="header-user__wrapper">
+            <div class="header__search">
+              <input
+                type="search__input"
+                class="search"
+                placeholder="Search..."
               />
-            </button>
-          </div>
-          <!-- /.header__serch -->
-          <div class="header__user">
-            <butoon class="user__login">login</butoon>
-            <button class="user__sign">sign up</button>
+              <button class="search__button">
+                <img
+                  src="./img/search.png"
+                  alt="searc-icon"
+                  class="search__img"
+                />
+              </button>
+            </div>
+            <!-- /.header__serch -->
+            <div class="header__user">
+              <butoon class="user__login">login</butoon>
+              <button class="user__sign">sign up</button>
+            </div>
           </div>
         </header>
+
+        <main class="main__content">
+          <div class="main__description">
+            <div class="description__breadcrumbs">
+              <span class="breadcrumb__yer breadcrumb-item"> 2012 </span>
+              <span class="breadcrumb__genre-f breadcrumb-item"> action </span>
+              <span class="breadcrumb__genre-s breadcrumb-item">
+                adventure
+              </span>
+            </div>
+            <!-- description__breadcrumb -->
+            <div class="description__about">
+              <h1 class="description__title">the avengers</h1>
+              <p class="description__text">
+                When Thor's evil brother, Loki (Tom Hiddleston), gains access to
+                the unlimited power of the energy cube called the Tesseract,
+                Nick Fury (Samuel L. Jackson), director of S.H.I.E.L.D.,
+                initiates a superhero recruitment effort to defeat the
+                unprecedented threat to Earth.
+              </p>
+
+              <button class="description__button button-play">
+                <svg class="play-icon">
+                  <use xlink:href="#play-icon"></use>
+                </svg>
+                <span>play trailer</span>
+              </button>
+              <button class="description__button button">
+                <svg class="plus-icon">
+                  <use xlink:href="#plus-icon"></use>
+                </svg>
+                <span>add to list</span>
+              </button>
+            </div>
+            <!-- description__about -->
+          </div>
+          <!-- /.main__description -->
+
+          <div class="main__img">
+            <img
+              src="./img/theavengers.jpg"
+              alt="theavengers"
+              class="movie-img"
+            />
+          </div>
+          <!-- /.main__img -->
+        </main>
       </div>
       <!-- /.container -->
+
+      <div class="first-screen__slider">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide" style="background-image:url(./img/blacklist.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(./img/break.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(./img/defenders@2x.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(./img/gotham@2x.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(./img/lucifer.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(./img/theavengers.jpg)"></div>
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+      </div>
+      <!-- /.first-screen__slider -->
     </div>
     <!-- /.first-screen -->
 
+    <!-- svg======================= -->
+    <svg xmlns="http://www.w3.org/2000/svg" display="none">
+      <symbol id="plus-icon" viewBox="0 0 448 448">
+        <g>
+          <path
+            d="m272 184c-4.417969 0-8-3.582031-8-8v-176h-80v176c0 4.417969-3.582031 8-8 8h-176v80h176c4.417969 0 8 3.582031 8 8v176h80v-176c0-4.417969 3.582031-8 8-8h176v-80zm0 0"
+          />
+        </g>
+      </symbol>
+    </svg>
+
+    <svg xmlns="http://www.w3.org/2000/svg" display="none">
+      <symbol id="play-icon" viewBox="0 0 320.001 320.001">
+        <g>
+          <path
+            d="M295.84,146.049l-256-144c-4.96-2.784-11.008-2.72-15.904,0.128C19.008,5.057,16,10.305,16,16.001v288 c0,5.696,3.008,10.944,7.936,13.824c2.496,1.44,5.28,2.176,8.064,2.176c2.688,0,5.408-0.672,7.84-2.048l256-144 c5.024-2.848,8.16-8.16,8.16-13.952S300.864,148.897,295.84,146.049z"
+          />
+        </g>
+      </symbol>
+    </svg>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="js/bundle.js"></script>
   </body>
 </html>
