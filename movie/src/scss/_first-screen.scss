@@ -107,8 +107,7 @@
 
     &:hover {
       cursor: pointer;
-      background-color: $white;
-      color: $red;
+      background-color: $black;
     }
   }
 }
@@ -213,6 +212,17 @@
 // SLIDER==========================
 .first-screen__slider {
   position: relative;
+}
+
+.slider {
+
+  &__container {
+    position: relative;
+  }
+
+  &__slide {
+  @include padding-hack(200px);
+  }
 }
 
 .swiper-container {
