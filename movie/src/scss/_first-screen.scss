@@ -130,6 +130,10 @@
   }
 }
 
+.movie-img {
+  box-shadow: 15px 15px 35px black;
+}
+
 .description {
   &__breadcrumbs {
     margin-bottom: 20px;
@@ -215,6 +219,14 @@
 }
 
 .slider {
+
+  &__title {
+    font-size: px_to_em(14px);
+    font-weight: 300;
+    text-transform: uppercase;
+    color: $text-color;
+    margin-bottom: 30px;
+  }
 
   &__container {
     position: relative;

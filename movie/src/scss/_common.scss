@@ -14,6 +14,10 @@ html {
   min-height: 100vh;
 }
 
+body {
+  background-color: $bg-color;
+}
+
 input {
   outline: none;
 }
@@ -37,9 +41,11 @@ a {
   padding: 0 15px;
 }
 
-.title {
+.section__title {
   font-family: $main-font;
   font-weight: 600;
   font-size: 36px;
+  text-transform: uppercase;
   color: $title-color;
+  margin-bottom: 40px;
 }

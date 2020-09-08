@@ -1,3 +1,6 @@
+'use strict';
+
+
 // SWIPER==============
 var swiper = new Swiper('.swiper-container', {
   slidesPerView: 'auto',
@@ -18,3 +21,10 @@ var swiper = new Swiper('.swiper-container', {
         disableOnInteraction: false,
       },
 });
+
+
+// SECTION VIDEO====================
+.film {
+  
+}
+// 670x430
