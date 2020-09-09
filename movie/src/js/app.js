@@ -21,10 +21,3 @@ var swiper = new Swiper('.swiper-container', {
         disableOnInteraction: false,
       },
 });
-
-
-// SECTION VIDEO====================
-.film {
-  
-}
-// 670x430
