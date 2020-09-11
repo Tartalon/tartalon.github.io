@@ -21,6 +21,13 @@
     margin-bottom: 30px;
     align-self: start;
   }
+
+  &__genre {
+    overflow: hidden;
+    width: 100%;
+    max-width: 950px;
+    position: relative;
+  }
 }
 
 .advertising {
@@ -38,11 +45,28 @@
 }
 
 .genre {
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    width: 122%;
+  }
+
+  &__item {
+  }
+
   &__link {
     display: block;
     font-size: 12px;
     font-weight: 400;
     color: $white;
     text-transform: capitalize;
+    padding: 5px 15px;
+    background-color: $bg-genres;
+    border-radius: 15px;
+    transition: all 0.3s linear;
+
+    &:hover {
+      background-color: $button-red;
+    }
   }
 }
