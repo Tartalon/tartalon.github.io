@@ -22,11 +22,30 @@
     align-self: start;
   }
 
+  &__genre-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 950px;
+    display: flex;
+    justify-content: center;
+  }
+
   &__genre {
     overflow: hidden;
     width: 100%;
-    max-width: 950px;
     position: relative;
+  }
+
+  &__genre-prev {
+    position: absolute;
+    left: -30px;
+    top: 3px;
+  }
+
+  &__genre-next {
+    position: absolute;
+    right: -25px;
+    top: 3px;
   }
 }
 
@@ -51,9 +70,6 @@
     width: 122%;
   }
 
-  &__item {
-  }
-
   &__link {
     display: block;
     font-size: 12px;
@@ -68,5 +84,16 @@
     &:hover {
       background-color: $button-red;
     }
+  }
+}
+
+.arrow {
+  @include square(20px);
+  fill: $grey;
+  transition: all 0.3s linear;
+
+  &:hover {
+    cursor: pointer;
+    fill: $button-red;
   }
 }
