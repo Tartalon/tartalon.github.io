@@ -232,9 +232,9 @@
     position: relative;
   }
 
-  &__slide {
-    @include padding-hack(200px);
-  }
+  // &__slide {
+  //   @include padding-hack(200px);
+  // }
 }
 
 .swiper-container {

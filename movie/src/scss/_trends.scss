@@ -28,6 +28,7 @@
     max-width: 950px;
     display: flex;
     justify-content: center;
+    margin-bottom: 30px;
   }
 
   &__genre {
@@ -95,5 +96,24 @@
   &:hover {
     cursor: pointer;
     fill: $button-red;
+  }
+}
+
+.serials {
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  &__link {
+    width: 220px;
+    display: block;
+    transition: all 0.3s linear;
+
+    &:hover {
+      transform: scale(1.1);
+    }
   }
 }

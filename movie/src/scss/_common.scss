@@ -49,3 +49,8 @@ a {
   color: $title-color;
   margin-bottom: 40px;
 }
+
+.img-box {
+  @include padding-hack(200px);
+  width: 220px;
+}
