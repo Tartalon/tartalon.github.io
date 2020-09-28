@@ -100,11 +100,21 @@
 }
 
 .serials {
+  &__info-box {
+    display: flex;
+    justify-content: space-between;
+  }
+
   &__list {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 15px;
+  }
+
+  &__link {
+    text-transform: capitalize;
+    color: $text-color;
   }
 
   &__img-wrapper {
@@ -116,4 +126,19 @@
       transform: scale(1.1);
     }
   }
+}
+
+.card-info {
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    color: $text-color;
+  }
+}
+
+.cards-icon {
+  @include square(14px);
+  fill: $text-color;
 }
