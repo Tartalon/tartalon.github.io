@@ -1,0 +1,140 @@
+.ch-contact {
+	background:	$bg_grey url(../img/bg_contact.jpg) no-repeat;
+	background-size: cover;
+	padding: 100px 0 50px;
+
+	&__inner {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	&__description {
+		width: 100%;
+		max-width: 370px;
+		margin-bottom: 45px;
+	}
+
+	&__title {
+		text-align: center;
+		color: $black;
+		margin-bottom: 40px;
+	}
+
+	&__text {
+		text-align: center;
+		width: 100%;
+		max-width: 370px;
+	}
+
+	&__forms {
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+
+		@include sm-screen-max {
+			flex-direction: column;
+			max-width: 500px;
+			align-items: center;
+		}
+	}
+
+	&__form {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		flex-basis: 48%;
+
+		@include sm-screen-max {
+			margin-bottom: 30px;
+		}
+	}
+
+	&__we {
+		width: 100%;
+		flex-basis: 48%;
+
+		@include sm-screen-max {
+			text-align: center;
+		}
+	}
+}
+
+.form {
+
+	&__label:not(:last-child) {
+		margin-bottom: 15px;
+	}
+
+	&__input {
+		width: 100%;
+		padding: 20px;
+		font-size: px_to_rem(15px);
+		font-weight: 300;
+		background-color: $form;
+		color: $white;
+		border: none;
+
+		&:hover, &:focus, &:active {
+			font-weight: 700;
+			background-color: $form-focus;
+		}
+	}
+
+	&__submit {
+		font-size: px_to_rem(20px);
+		font-weight: 300;
+		text-transform: uppercase;
+		background-color: $blue-btn;
+		color: $white;
+		display: flex;
+		justify-content: center;
+		text-align: center;
+		width: 100%;
+		max-width: 170px;
+		padding: 15px 0;
+		border: none;
+
+		&:hover, &:focus, &:active {
+			background-color: $white;
+			color: $blue-btn;
+			font-weight: 700;
+		}
+
+		@include sm-screen-max {
+			max-width: none;
+		}
+	}
+}
+
+.message {
+	margin-bottom: 15px;
+}
+
+.we {
+
+	&__link {
+		display: block;
+		margin-bottom: 20px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		&:hover, &:focus {
+			background-color: $form;
+		}
+	}
+
+	&__title {
+		font-weight: 700;
+		text-transform: uppercase;
+		color: $black;
+		margin-bottom: 10px;
+	}
+
+	&__text {
+		font-weight: 300;
+		color: $black;
+	}
+}

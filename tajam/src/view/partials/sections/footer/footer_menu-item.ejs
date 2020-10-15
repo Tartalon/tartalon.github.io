@@ -1,0 +1,19 @@
+<% const menuItem = [
+	{
+		text: "help"
+	},
+	{
+		text: "terms & condition"
+	},
+	{
+		text: "privacy"
+	}
+]%>
+
+<% menuItem.forEach(menuFooter => { %>
+<li class="footer-menu__item">
+    <a href="#" class="footer-menu__link">
+        <%= menuFooter.text %>
+    </a>
+</li>
+<%})%>

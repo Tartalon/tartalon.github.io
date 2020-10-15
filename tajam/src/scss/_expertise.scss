@@ -1,0 +1,69 @@
+.tj-expertise {
+	padding: 70px 0 100px;
+
+	&__title {
+		margin-bottom: 15px;
+	}
+
+	&__titles {
+		font-family: $title-font;
+		margin-bottom: 65px;
+		position: relative;
+
+		&::after {
+			content: "";
+			width: 50px;
+			height: 2px;
+			background-color: $light-grey;
+			left: 50%;
+			bottom: -15px;
+			transform: translatex(-50%);
+			position: absolute;
+		}
+	}
+
+	&__item {
+
+		border-bottom: 1px solid $light-grey;
+
+		@include md-screen {
+
+			border-right: 1px solid $light-grey;
+
+				&:nth-child(3n+3) {
+					border-right: none;
+				}
+
+				&:nth-child(n+4) {
+					border-bottom: none;
+				}
+			}
+
+		.card {
+			border:none;
+			align-items: center;
+			padding: 35px 0;
+
+			&-img-top {
+				height: 50px;
+				width: auto;
+				margin-bottom: 30px;
+			}
+
+			&-title {
+				font-weight: 900;
+				font-size: px_to_rem(14px);
+				text-transform: uppercase;
+				color: $dark-grey;
+				margin-bottom: 25px;
+			}
+
+			&-text {
+				font-weight: 300;
+				font-size: px_to_rem(14px);
+				line-height: px_to_em(22px);
+				color: $text-color;
+			}
+		}
+	}
+}

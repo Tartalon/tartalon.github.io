@@ -1,0 +1,179 @@
+.b-services {
+	padding: 80px 0 130px;
+
+	&__titles {
+		margin-bottom: 55px;
+	}
+
+	&__subtitle {
+		color: $text-color;
+	}
+
+	&__content {
+		margin-bottom: 50px;
+
+		@include lg-screen {
+			margin-bottom: 0;
+		}
+	}
+
+	&__menu {
+		margin-bottom: 30px;
+
+		@include md-screen {
+			margin-bottom: 0;
+		}
+	}
+
+	&__list {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+
+		@include md-screen {
+			flex-direction: column;
+		}
+	}
+
+	&__item:not(:last-child) {
+
+		@include md-screen {
+			margin-bottom: 20px;
+		}
+	}
+
+	&__link {
+		margin-right: 0;
+	}
+
+	&__aside {
+		text-align: center;
+	}
+
+	&__skills {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}
+
+.aside {
+
+	&__title {
+		font-size: px_to_rem(20px);
+		font-weight: 400;
+		text-transform: capitalize;
+		color: $text-dark;
+		letter-spacing: px_to_em(4px);
+		margin-bottom: 25px;
+	}
+
+	&__subtitle {
+		color: $text-color;
+		margin-bottom: 25px;
+	}
+
+	&__text {
+		color: $text-color;
+	}
+}
+
+
+// SKILLS=====
+.skills {
+
+	&__list {
+		display: flex;
+		flex-direction: column;
+
+		@include sm-screen {
+			flex-direction: row;
+			justify-content: space-around;
+			width: 100%;
+		}
+	}
+
+	&__item {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-bottom: 35px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		@include sm-screen {
+			margin-bottom: 0;
+		}
+	}
+
+	&__svg {
+		@include square(120px);
+		margin-bottom: 20px;
+	}
+
+	&__number {
+		position: absolute;
+		top: 25%;
+		left: 35%;
+
+		&>h3 {
+			font-size: 25px;
+			font-weight: 400;
+			color: $text-color;
+
+			&>span {
+				font-size: 16px;
+			}
+		}
+	}
+
+	&__kind {
+		text-transform: capitalize;
+		font-weight: 300;
+		color: $text-color;
+	}
+}
+
+#circle {
+	fill: none;
+	stroke: #ccc;
+	stroke-width: 3px;
+
+	&__percent {
+		fill: none;
+		stroke-width: 5px;
+	}
+}
+
+.circle {
+
+	fill: none;
+	stroke: #ccc;
+	stroke-width: 3px;
+
+	&__percent {
+		fill: none;
+		stroke-width: 5px;
+	}
+
+	&_1 {
+		stroke-dasharray: 350px;
+		stroke-dashoffset: 70px;
+		stroke: $green;
+	}
+
+	&_2 {
+		stroke-dasharray: 350px;
+		stroke-dashoffset: 88px;
+		stroke: $green;
+	}
+
+	&_3 {
+		stroke-dasharray: 350px;
+		stroke-dashoffset: 140px;
+		stroke: $green;
+	}
+}

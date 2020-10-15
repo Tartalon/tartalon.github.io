@@ -1,0 +1,42 @@
+.ch-about {
+	background: $bg-green;
+	padding: 50px 0;
+
+	@include sm-screen-max {
+		padding: 0;
+	}
+
+	&__wrapper {
+		background: url("../img/bg_about.png") no-repeat;
+		width: 100%;
+		min-height: 650px;
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+
+		@include sm-screen-max {
+			justify-content: center;
+			min-height: 500px;
+		}
+	}
+
+	&__content {
+		width: 100%;
+		max-width: 500px;
+		min-height: 300px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		color: $white;
+
+		@include sm-screen-max {
+			align-items: center;
+		}
+
+		@include lg-screen-max {
+			background-color: rgba(0, 0, 0, .5);
+			border-radius: 15px;
+			padding: 15px;
+		}
+	}
+}

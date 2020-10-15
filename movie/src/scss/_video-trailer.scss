@@ -1,0 +1,50 @@
+.film-section {
+    background: url("../img/mission_impossible.jpg") no-repeat center;
+    background-size: cover;
+    padding: 100px 0;
+    position: relative;
+    z-index: 0;
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(2, 13, 24, .9);
+        z-index: 1;
+    }
+
+    &__inner {
+        position: relative;
+        z-index: 2;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.film {
+    &__trailer {
+        position: relative;
+        width: 100%;
+        max-width: 670px;
+        padding-bottom: 430px;
+        height: 0;
+
+        & iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__description {
+        width: 100%;
+        max-width: 460px;
+        text-align: right;
+    }
+}

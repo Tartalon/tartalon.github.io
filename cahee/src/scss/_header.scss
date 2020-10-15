@@ -1,0 +1,97 @@
+.first-screen {
+  width: 100%;
+  background: $white url(../img/bg_fs.jpg) no-repeat top left;
+  background-size: cover;
+
+
+  &__inner {
+    display: flex;
+    padding: 55px 0 70px;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @include xs-screen {
+      padding: 40px 0;
+    }
+
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 380px;
+    min-height: 240px;
+
+    @include sm-screen-max {
+      background-color: rgba(192, 192, 192, .4);
+      border-radius: 15px;
+      padding: 15px;
+      align-self: center;
+      max-width: 500px;
+      align-items: center;
+    }
+  }
+}
+
+.ch-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__logo {
+    font-family: $logo-font;
+    font-size: px_to_rem(50px);
+    text-transform: capitalize;
+    color: $black;
+  }
+}
+
+.content {
+
+  &__title {
+    font-size: px_to_rem(60px);
+    font-weight: 900;
+    color: $black;
+    text-transform: capitalize;
+
+    @include xs-screen {
+      font-size: px_to_rem(40px);
+    }
+  }
+
+  &__text {
+    line-height: 1.5em;
+  }
+
+  &__btn {
+    background-color: $orange-btn;
+    color: $white;
+    text-transform: uppercase;
+    width: 100%;
+    max-width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+
+    &:hover {
+      box-shadow: 0 0 10px 3px black;
+    }
+  }
+}
+
+.mous {
+  @include square(43px);
+  align-self: center;
+
+  &__svg {
+    @include square(43px);
+
+    &:hover {
+      fill: $orange-btn;
+    }
+  }
+}

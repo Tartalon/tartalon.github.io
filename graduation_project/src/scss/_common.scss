@@ -1,0 +1,99 @@
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body, html {
+	scroll-behavior: smooth;
+	font-size: 100%;
+	font-family: $main-font;
+	min-height: 100vh;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+@import url('https://fonts.googleapis.com/css?family=Archivo+Black|Open+Sans:400,700|Source+Sans+Pro:300,400,400i,900&display=swap');
+
+.section {
+
+	&__titles {
+		justify-content: center;
+		text-align: center;
+	}
+
+	&__title {
+		font-family: $title-font;
+		font-size: px_to_rem(20px);
+		font-weight: 300;
+		text-transform: uppercase;
+		letter-spacing: px_to_em(3px);
+		margin-bottom: 40px;
+	}
+
+	&__subtitle {
+		font-family: $main-font;
+		font-size: px_to_rem(16px);
+		font-weight: 400;
+		letter-spacing: px_to_em(1.5px);
+		line-height: px_to_em(25px);
+	}
+
+	&__text {
+		font-family: $main-font;
+		font-size: px_to_rem(14px);
+		font-weight: 400;
+		letter-spacing: px_to_em(1.5px);
+		line-height: px_to_em(25px);
+	}
+}
+
+.text {
+
+	&-green {
+		color: $green;
+		font-weight: 700;
+	}
+
+	&-bold {
+		font-weight: 700;
+	}
+}
+
+// SLICK====
+.slick {
+
+	&-list {
+	height: inherit;
+	width: 100%;
+	}
+
+	&-track {
+		height: 100%;
+	}
+
+	&-initialized .slick-slide {
+		display: flex;
+		justify-content: center;
+	}
+}
+
+body {
+
+	&.no-scroll {
+		overflow: hidden;
+	}
+}

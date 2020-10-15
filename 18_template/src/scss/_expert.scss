@@ -1,0 +1,40 @@
+.expert {
+  background-color: $grey-bg;
+
+  &__list {
+    min-height: 800px;
+  }
+
+  &__link {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+  }
+
+  &__img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include square(140px);
+    border: 1px solid $grey-text;
+    border-radius: 50%;
+  }
+
+  &__item-title {
+    font-size: px_to_rem(20px);
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $blue;
+
+    @include md-screen {
+      font-size: px_to_rem(24px);
+    }
+  }
+
+  &__item-text {
+    line-height: 2.1em;
+    text-align: center;
+  }
+}

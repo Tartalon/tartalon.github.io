@@ -1,0 +1,54 @@
+.footer {
+	background-color: $white;
+	padding: 75px 0 90px;
+
+	&__title {
+		display: none;
+	}
+
+	&__logo {
+		display: block;
+		font-family: $logo-font;
+		font-size: px_to_rem(25px);
+		text-transform: uppercase;
+		letter-spacing: px_to_em(1px);
+		color: $black;
+		margin-bottom: 20px;
+		transition: all .3s ease;
+
+		&:hover {
+			color: $green;
+		}
+	}
+
+	&__text {
+		color: $text-color;
+		margin-bottom: 30px;
+	}
+
+	&-soc__list {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+	}
+
+	&-soc__item:not(:last-child) {
+		margin-right: 10px;
+	}
+
+	&-soc__link {
+		@include square(40px);
+		background-color: $bg-sociol;
+		color:  $white;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: 50%;
+		transition: all .3s ease;
+
+		&:hover,
+		&:focus {
+			background-color: $green;
+		}
+	}
+}

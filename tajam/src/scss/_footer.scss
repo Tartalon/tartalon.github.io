@@ -1,0 +1,218 @@
+.tj-footer {
+	background: #4c3b71 url("../img/footer_bg.jpg") center no-repeat;
+	background-size: cover;
+	position: relative;
+	color: $white;
+
+	&::before {
+		content: "";
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background: linear-gradient(90deg, rgba(31,28,64,1) 0%, rgba(63,46,101,0.6) 100%);
+		position: absolute;
+	}
+
+	&__logo {
+		margin-bottom: 25px;
+		display: flex;
+
+		@include sm-screen-max {
+			margin-bottom: 15px;
+		}
+	}
+
+	&__title {
+		font-size: px_to_rem(15px);
+		font-weight: 900;
+		letter-spacing: 0.05em;
+		text-transform: uppercase;
+		margin-bottom: 45px;
+
+		@include sm-screen-max {
+			margin-bottom: 15px;
+		}
+	}
+
+	&__text {
+		font-size: px_to_rem(14px);
+		font-weight: 300;
+		line-height: 1.7em;
+		margin-bottom: 0;
+	}
+
+	&__position {
+		display: flex;
+		color: $white;
+		margin-bottom: 20px;
+
+		&:hover {
+			color: $cyan;
+		}
+
+		@include sm-screen-max {
+
+			&-margin {
+				margin-bottom: 40px;
+			}
+		}
+	}
+
+	&__form {
+		display: flex;
+		margin-bottom: 40px;
+
+		@include sm-screen-max {
+			justify-content: center;
+			margin-bottom: 15px;
+		}
+	}
+
+	&__email {
+		background:transparent;
+		padding: 10px 15px;
+		font-size: 300px;
+		font-size: px_to_rem(14px);
+		color: $white;
+		border: 1px solid rgba(255, 255, 255, .3);
+	}
+
+	&__label {
+		margin-right: 10px;
+		margin-bottom: 0;
+	}
+
+	&__submit {
+		background: rgba(192,192,192,0.6);
+		width: 70px;
+		height: 45px;
+		padding: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: 0;
+
+		&:hover {
+			background-color: #fff;
+		}
+	}
+
+	&__inner {
+		margin-bottom: 65px;
+
+		@include sm-screen-max {
+			text-align: center;
+		}
+	}
+
+	&__menu {
+
+		@include sm-screen-max {
+			margin-bottom: 40px;
+		}
+	}
+
+	&__who {
+
+		@include sm-screen-max {
+			margin-bottom: 40px;
+		}
+	}
+}
+
+.place-icon {
+	margin-right: 10px;
+}
+
+.phone-icon {
+	margin-right: 10px;
+}
+
+.social {
+
+	&__list {
+		display: flex;
+
+		@include sm-screen-max {
+			justify-content: center;
+		}
+	}
+
+	&__item:not(:last-child) {
+		margin-right: 10px;
+	}
+
+	&__link {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border: 1px solid $white;
+		border-radius: 50%;
+		@include square(35px);
+		color: $white;
+
+			&:hover {
+			color: $cyan;
+			border-color: $cyan;
+		}
+	}
+}
+
+.phone__link {
+	display: flex;
+	color: $white;
+
+	@include sm-screen-max {
+		justify-content: center;
+	}
+
+	&:hover {
+		color: $cyan;
+	}
+}
+
+.footer-menu {
+
+	&__list {
+		display: flex;
+
+		@include sm-screen-max {
+			justify-content: center;
+		}
+	}
+
+	&__item:not(:last-child) {
+		margin-right: 30px;
+
+		@include sm-screen-max {
+			margin-right: 15px;
+		}
+	}
+
+	&__link {
+		display: inline-block;
+		font-size: px_to_rem(14px);
+		font-weight: 400;
+		text-transform: uppercase;
+		color: $white;
+		letter-spacing: 0.07em;
+
+		@include sm-screen-max {
+			font-size: px_to_rem(12px);
+		}
+
+		&:hover {
+			color: $white;
+		}
+	}
+}
+
+.copyright {
+	text-align: end;
+
+	@include sm-screen-max {
+		text-align: center;
+		font-size: px_to_rem(12px);
+	}
+}

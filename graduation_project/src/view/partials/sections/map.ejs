@@ -1,0 +1,12 @@
+<script async defer>
+	var map;
+		function initMap() {
+			var pos = {lat: 49.066632, lng: 33.413616},
+    		map = new google.maps.Map(document.getElementById('map'), {
+        	center: pos,
+        	zoom: 15
+    	});
+    		var marker = new google.maps.Marker({position: pos, map: map, title: "We are here"});
+	};
+</script>
+<div id="map"></div>
