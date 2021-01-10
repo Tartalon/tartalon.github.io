@@ -1,0 +1,38 @@
+// HEADER======================
+.ls-header {
+  padding: 80px 0;
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(../img/desktop/image-hero.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &__logo {
+    font-size: 40px;
+    font-weight: 700;
+    color: $text-white;
+  }
+}
+
+.ls-header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav {
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 25px;
+  }
+
+  &__link {
+    font-weight: 400;
+    color: $text-white;
+    text-transform: capitalize;
+  }
+}
