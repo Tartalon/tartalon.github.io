@@ -9,7 +9,7 @@
 body,
 html {
   scroll-behavior: smooth;
-  font-size: 100%;
+  font-size: $base-size;
   font-family: $main-font;
   min-height: 100vh;
 }
@@ -30,7 +30,42 @@ a {
 .container {
   width: 100%;
   max-width: 1440px;
+  padding: 0 15px;
   margin: 0 auto;
+}
+
+// fonts===================
+/* balsamiq-sans-700 - latin */
+@font-face {
+  font-family: 'Balsamiq Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../assets/fonts/balsamiq-sans-v2-latin-700.eot'); /* IE9 Compat Modes */
+  src: local(''),
+    /* IE6-IE8 */ url('../assets/fonts/balsamiq-sans-v2-latin-700.woff2')
+      format('woff2');
+}
+
+/* alata-regular - latin */
+@font-face {
+  font-family: 'Alata';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../assets/fonts/alata-v2-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+    /* IE6-IE8 */ url('../assets/fonts/alata-v2-latin-regular.woff2')
+      format('woff2');
+}
+
+/* josefin-sans-300 - latin */
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/josefin-sans-v16-latin-300.eot'); /* IE9 Compat Modes */
+  src: local(''),
+    /* IE6-IE8 */ url('../fonts/josefin-sans-v16-latin-300.woff2')
+      format('woff2');
 }
 
 // # Front-end Style Guide
@@ -60,6 +95,8 @@ a {
 // - Font size: 15px
 
 // ### Fonts
+
+// Balsamiq Sans - ?
 
 // - Family: [Alata](https://fonts.google.com/specimen/Alata)
 // - Weight: 400
