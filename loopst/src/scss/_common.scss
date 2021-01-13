@@ -34,6 +34,14 @@ a {
   margin: 0 auto;
 }
 
+.section__title {
+  font-family: $title-font;
+  font-weight: 300;
+  font-size: px_to_rem(50px);
+  text-transform: uppercase;
+  color: $black;
+}
+
 // fonts===================
 /* balsamiq-sans-700 - latin */
 @font-face {

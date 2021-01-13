@@ -28,14 +28,6 @@
 }
 
 .description {
-  &__title {
-    font-family: $title-font;
-    font-weight: 300;
-    font-size: px_to_rem(50px);
-    text-transform: uppercase;
-    color: $black;
-  }
-
   &__text {
     font-family: $main-font;
     font-weight: 400;

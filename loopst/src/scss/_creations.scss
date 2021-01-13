@@ -1,0 +1,34 @@
+.ls-creations {
+  padding: 40px;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    letter-spacing: px_to_em(5px);
+    padding: 0 45px;
+    border: 1px solid $dark-gray;
+    border-radius: 2px;
+    transition: all 0.2s linear;
+
+    &:hover {
+      background-color: $black;
+      color: $gray;
+    }
+  }
+}
+
+.preview-list {
+  &__link {
+    display: flex;
+    background-image: url(../img/desktop/image-deep-earth.jpg);
+    width: 100%;
+    max-width: 325px;
+  }
+}
