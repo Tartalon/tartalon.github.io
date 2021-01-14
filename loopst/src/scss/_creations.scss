@@ -4,6 +4,7 @@
   &__header {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 100px;
   }
 
   &__link {
@@ -22,13 +23,22 @@
       color: $gray;
     }
   }
+
+  &__preview {
+    display: grid;
+    grid-template-columns: repeat(4, 256px);
+    grid-template-rows: repeat(2, 450px);
+    gap: 2rem;
+  }
 }
 
 .preview-list {
   &__link {
     display: flex;
     background-image: url(../img/desktop/image-deep-earth.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
     width: 100%;
-    max-width: 325px;
+    height: 100%;
   }
 }
