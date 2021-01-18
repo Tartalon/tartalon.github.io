@@ -34,6 +34,18 @@ a {
   margin: 0 auto;
 }
 
+.section {
+  max-width: 1440px;
+  margin: 0 auto;
+
+  &__container {
+    width: 100%;
+    max-width: 1145px;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+}
+
 .section__title {
   font-family: $title-font;
   font-weight: 300;

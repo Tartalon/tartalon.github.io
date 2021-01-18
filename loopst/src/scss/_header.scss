@@ -1,7 +1,6 @@
 // HEADER======================
 .ls-header {
-  display: flex;
-  padding: 80px 0 130px;
+  display: grid;
   width: 100%;
   min-height: 100vh;
   background-image: url(../img/desktop/image-hero.jpg);
@@ -10,9 +9,8 @@
 
   &__container {
     min-height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    display: grid;
+    grid-template-rows: 1fr 5fr;
   }
 
   &__logo {
@@ -23,28 +21,29 @@
   }
 
   &__nav {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
     align-items: center;
   }
 
   &__main {
     width: 100%;
+    align-self: center;
   }
 }
 
 .nav {
   &__list {
-    display: flex;
-    align-items: center;
-  }
-
-  &__item:not(:last-child) {
-    margin-right: 30px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-column-start: 3;
+    grid-column-end: 6;
+    justify-self: end;
+    grid-column-gap: 35px;
   }
 
   &__link {
-    display: block;
+    display: inline-block;
     font-family: $title-font;
     font-weight: 400;
     color: $text-white;
