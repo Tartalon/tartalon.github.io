@@ -29,7 +29,7 @@ a {
 
 .container {
   width: 100%;
-  max-width: 1440px;
+  max-width: 1145px;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -37,13 +37,6 @@ a {
 .section {
   max-width: 1440px;
   margin: 0 auto;
-
-  &__container {
-    width: 100%;
-    max-width: 1145px;
-    padding: 0 15px;
-    margin: 0 auto;
-  }
 }
 
 .section__title {
@@ -52,6 +45,12 @@ a {
   font-size: px_to_rem(50px);
   text-transform: uppercase;
   color: $black;
+}
+
+.logo {
+  font-family: $logo-font;
+  font-weight: 700;
+  color: $text-white;
 }
 
 // fonts===================

@@ -2,27 +2,44 @@
 .ls-header {
   display: grid;
   width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
   min-height: 100vh;
   background-image: url(../img/desktop/image-hero.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.5) 0%,
+      rgba(0, 0, 0, 0.5) 100%
+    );
+  }
 
   &__container {
+    position: relative;
     min-height: 100%;
     display: grid;
     grid-template-rows: 1fr 5fr;
+    z-index: 2;
   }
 
   &__logo {
-    font-family: $logo-font;
     font-size: px_to_rem(40px);
-    font-weight: 700;
-    color: $text-white;
   }
 
   &__nav {
-    display: grid;
-    grid-template-columns: 1fr 5fr;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
   }
 
@@ -34,17 +51,16 @@
 
 .nav {
   &__list {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-column-start: 3;
-    grid-column-end: 6;
-    justify-self: end;
-    grid-column-gap: 35px;
+    display: flex;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 30px;
   }
 
   &__link {
     display: inline-block;
-    font-family: $title-font;
+    font-family: $main-font;
     font-weight: 400;
     color: $text-white;
     text-transform: capitalize;
@@ -72,7 +88,7 @@
 .main {
   &__content {
     width: 100%;
-    max-width: 800px;
+    max-width: 700px;
     padding: 40px;
     border: 2px solid $white;
   }
@@ -80,7 +96,7 @@
   &__title {
     font-family: $title-font;
     font-weight: 300;
-    font-size: px_to_rem(75px);
+    font-size: px_to_rem(65px);
     letter-spacing: 0.1em;
     color: $text-white;
     text-transform: uppercase;
