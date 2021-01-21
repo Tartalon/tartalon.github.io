@@ -5,7 +5,6 @@
   margin: 0 auto;
   min-height: 100vh;
   background-image: url(../img/mobile/image-hero.jpg);
-  // background-image: url(../img/desktop/image-hero.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
@@ -41,7 +40,10 @@
 
   &__logo {
     font-size: px_to_rem(30px);
-    // font-size: px_to_rem(40px);
+
+    @include md-screen {
+      font-size: px_to_rem(40px);
+    }
   }
 
   &__nav {
@@ -63,20 +65,34 @@
     justify-content: center;
     position: absolute;
     top: 0;
-    left: 0;
+    left: -100%;
     width: 100%;
     height: 100vh;
     background-color: $black;
     padding: 115px 0 115px 35px;
+    transition: all 0.3s ease-in-out;
 
     @include lg-screen {
       display: flex;
+      flex-direction: row;
+      position: relative;
+      height: auto;
+      left: 0;
+      font-size: $base-size;
+      background-color: transparent;
+      padding: 0;
+      justify-content: flex-end;
     }
   }
 
   &__item:not(:last-child) {
     margin-bottom: 20px;
     // margin-right: 55px;
+
+    @include lg-screen {
+      margin-bottom: 0;
+      margin-right: 45px;
+    }
   }
 
   &__link {
@@ -86,8 +102,13 @@
     font-weight: 300;
     color: $text-white;
     text-transform: uppercase;
-    // text-transform: capitalize;
     position: relative;
+
+    @include lg-screen {
+      font-family: $main-font;
+      font-size: $base-size;
+      text-transform: capitalize;
+    }
 
     &::after {
       content: '';
@@ -108,21 +129,44 @@
   }
 }
 
+.nav-list-active {
+  left: 0;
+}
+
+// MAIN=====================
+
 .main {
   &__content {
     width: 100%;
     max-width: 700px;
-    padding: 40px;
+    padding: 16px;
     border: 2px solid $white;
+    height: 100%;
+
+    @include sm-screen {
+      padding: 25px;
+    }
+
+    @include md-screen {
+      padding: 40px;
+    }
   }
 
   &__title {
     font-family: $title-font;
     font-weight: 300;
-    font-size: px_to_rem(65px);
+    font-size: px_to_rem(35px);
     letter-spacing: 0.1em;
     color: $text-white;
     text-transform: uppercase;
+
+    @include sm-screen {
+      font-size: 45px;
+    }
+
+    @include md-screen {
+      font-size: px_to_rem(65px);
+    }
   }
 }
 
@@ -130,10 +174,11 @@
 
 .nav__burger {
   display: block;
-  width: 35px;
-  height: 35px;
+  width: 30px;
+  height: 30px;
   background-color: transparent;
   border: none;
+  outline: none;
 
   @include lg-screen {
     display: none;
@@ -143,7 +188,7 @@
 .nav__burger span {
   display: block;
   width: 100%;
-  height: 3px;
+  height: 2px;
   background-color: $white;
   position: relative;
   transition: all 0.3s linear;
@@ -153,18 +198,18 @@
     content: '';
     left: 0;
     width: 100%;
-    height: 3px;
+    height: 2px;
     background-color: $white;
     position: absolute;
     transition: all 0.3s linear;
   }
 
   &::before {
-    top: -12px;
+    top: -10px;
   }
 
   &::after {
-    top: 12px;
+    top: 10px;
   }
 }
 
