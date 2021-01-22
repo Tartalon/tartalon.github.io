@@ -1,14 +1,30 @@
 .ls-about {
-  padding: 120px 0;
+  padding: 50px 0;
+
+  @include lg-screen {
+    padding: 120px 0;
+  }
 
   &__container {
     position: relative;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include lg-screen {
+      align-items: start;
+    }
   }
 
   &__image-box {
     width: 100%;
-    max-width: 63%;
+    max-width: 775px;
+    margin-bottom: 40px;
+
+    @include lg-screen {
+      max-width: 63%;
+    }
   }
 
   &__image {
@@ -17,17 +33,37 @@
   }
 
   &__description {
-    position: absolute;
-    bottom: 0;
-    right: 0;
+    // position: absolute;
+    // bottom: 0;
+    // right: 0;
     width: 100%;
-    max-width: 50%;
-    padding: 60px 0 0 80px;
+    max-width: 775px;
+    // max-width: 50%;
+    // padding: 120px 0 0 80px;
+    padding: 0;
     background-color: $white;
+    text-align: center;
+
+    @include lg-screen {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      max-width: 50%;
+      padding: 120px 0 0 80px;
+    }
   }
 }
 
 .description {
+  &__title {
+    font-size: 30px;
+    margin-bottom: 20px;
+
+    @include md-screen {
+      font-size: 50px;
+    }
+  }
+
   &__text {
     font-family: $main-font;
     font-weight: 400;
