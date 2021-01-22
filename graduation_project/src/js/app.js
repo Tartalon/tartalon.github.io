@@ -105,9 +105,9 @@ modalClose.on("click", function(event) {
 
 document.body.onload = function() {
 	setTimeout(function () {
-		let preloader = document.getElementById('page-preloader');
+		let preloader = document.querySelector('.preloader');
 		if(!preloader.classList.contains('done')) {
-			preloader .classList.add('done');
+			preloader.classList.add('done');
 		}
 	}, 2000);
 }
