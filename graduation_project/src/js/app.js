@@ -103,7 +103,7 @@ modalClose.on("click", function(event) {
 // 	}
 // }
 
-document.body.onload = function() {
+window.onload = function() {
 	setTimeout(function () {
 		let preloader = document.querySelector('.preloader');
 		if(!preloader.classList.contains('done')) {
