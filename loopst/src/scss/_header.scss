@@ -15,7 +15,7 @@
 
   &::after {
     position: absolute;
-    content: '';
+    content: "";
     top: 0;
     left: 0;
     width: 100%;
@@ -58,30 +58,65 @@
   }
 }
 
-.nav {
+.header-nav {
   &__list {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     position: absolute;
     top: 0;
     left: -100%;
     width: 100%;
     height: 100vh;
+    justify-content: center;
     background-color: $black;
     padding: 115px 0 115px 35px;
     transition: all 0.3s ease-in-out;
 
     @include lg-screen {
-      display: flex;
-      flex-direction: row;
       position: relative;
       height: auto;
       left: 0;
-      font-size: $base-size;
       background-color: transparent;
       padding: 0;
       justify-content: flex-end;
+    }
+  }
+
+  &__link {
+    font-family: $title-font;
+    font-size: px_to_rem(25px);
+    text-transform: uppercase;
+    position: relative;
+
+    @include lg-screen {
+      font-family: $main-font;
+      font-size: $base-size;
+      text-transform: capitalize;
+    }
+  }
+}
+
+.nav {
+  &__list {
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    // position: absolute;
+    // top: 0;
+    // left: -100%;
+    // width: 100%;
+    // height: 100vh;
+    // background-color: $black;
+    // padding: 115px 0 115px 35px;
+    // transition: all 0.3s ease-in-out;
+
+    @include lg-screen {
+      display: flex;
+      flex-direction: row;
+      // position: relative;
+      // height: auto;
+      // left: 0;
+      // background-color: transparent;
+      // padding: 0;
+      // justify-content: flex-end;
     }
   }
 
@@ -97,21 +132,21 @@
 
   &__link {
     display: inline-block;
-    font-family: $title-font;
-    font-size: px_to_rem(25px);
+    // font-family: $title-font;
+    // font-size: px_to_rem(25px);
     font-weight: 300;
     color: $text-white;
-    text-transform: uppercase;
-    position: relative;
+    // text-transform: uppercase;
+    // position: relative;
 
-    @include lg-screen {
-      font-family: $main-font;
-      font-size: $base-size;
-      text-transform: capitalize;
-    }
+    // @include lg-screen {
+    //   font-family: $main-font;
+    //   font-size: $base-size;
+    //   text-transform: capitalize;
+    // }
 
     &::after {
-      content: '';
+      content: "";
       display: block;
       position: absolute;
       bottom: -10px;
@@ -195,7 +230,7 @@
 
   &::before,
   &::after {
-    content: '';
+    content: "";
     left: 0;
     width: 100%;
     height: 2px;

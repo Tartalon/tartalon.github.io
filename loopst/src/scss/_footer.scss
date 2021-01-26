@@ -7,25 +7,34 @@
 
   &__container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    // grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "nav"
+      "social";
+    grid-template-rows: 4fr 1fr;
+    grid-row-gap: 25px;
     color: $text-white;
   }
 
   &__logo {
-    font-size: px_to_rem(27px);
+    font-size: px_to_rem(32px);
+    // font-size: px_to_rem(27px);
   }
 
   &__nav {
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 6fr;
     grid-row-gap: 25px;
+    grid-area: nav;
+    justify-content: center;
   }
 
   &__social {
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-row-gap: 25px;
-    justify-content: end;
+    grid-area: social;
+    // justify-content: end;
   }
 
   &__copyright {
@@ -35,20 +44,26 @@
 
 .footer-nav {
   &__list {
-    grid-row-start: 2;
-    grid-column-start: 1;
+    // grid-row-start: 2;
+    // grid-column-start: 1;
     align-items: center;
   }
 
   &__item:not(:last-child) {
-    margin-right: 30px;
+    // margin-right: 30px;
+  }
+
+  &__link {
+    font-size: px_to_rem(20px);
+    text-transform: capitalize;
   }
 }
 
 .social {
   &__list {
     display: flex;
-    justify-self: end;
+    // justify-self: end;
+    justify-content: center;
   }
 
   &__item:not(:last-child) {
@@ -59,7 +74,7 @@
     display: block;
     position: relative;
     &::after {
-      content: '';
+      content: "";
       display: block;
       position: absolute;
       bottom: -10px;
@@ -79,4 +94,5 @@
 
 .copyright__text {
   color: $gray;
+  text-align: center;
 }
