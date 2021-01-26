@@ -12,14 +12,14 @@
     grid-row-gap: 30px;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
-      'title title'
-      'main main'
-      'button button';
+      "title title"
+      "main main"
+      "button button";
 
     @include lg-screen {
       grid-template-areas:
-        'title button'
-        'main main';
+        "title button"
+        "main main";
     }
 
     @include xl-screen {
@@ -97,7 +97,7 @@
   display: flex;
 
   &::before {
-    content: '';
+    content: "";
     display: block;
     position: absolute;
     top: 0;
@@ -111,7 +111,7 @@
     );
     z-index: 1;
 
-    @include lg-screen {
+    @include xl-screen {
       background: linear-gradient(
         0deg,
         rgba(0, 0, 0, 0.9) 0%,
@@ -121,7 +121,7 @@
   }
 
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     display: block;
     top: 0;
