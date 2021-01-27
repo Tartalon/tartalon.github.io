@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="initial-scale=1.0, width=device-width" />
     <title>Loopstudios</title>
+    <link rel="stylesheet" href="assets/libs/animate.min.css" />
     <link
       rel="shortcut icon"
       type="image/x-icon"
@@ -25,30 +26,40 @@
   <body>
     <header class="ls-header">
       <div class="container ls-header__container">
-        <nav class="ls-header__nav">
+        <nav class="wow fadeInDown ls-header__nav" data-wow-offset="0">
           <a href="#" class="logo ls-header__logo">loopstudios</a>
           <ul class="nav__list header-nav__list">
             <li class="nav__item header-nav__item">
-              <a href="#" class="nav__link header-nav__link mobile-link">about</a>
+              <a href="#" class="nav__link header-nav__link mobile-link"
+                >about</a
+              >
             </li>
             <li class="nav__item header-nav__item">
-              <a href="#" class="nav__link header-nav__link mobile-link">careers</a>
+              <a href="#" class="nav__link header-nav__link mobile-link"
+                >careers</a
+              >
             </li>
             <li class="nav__item header-nav__item">
-              <a href="#" class="nav__link header-nav__link mobile-link">events</a>
+              <a href="#" class="nav__link header-nav__link mobile-link"
+                >events</a
+              >
             </li>
             <li class="nav__item header-nav__item">
-              <a href="#" class="nav__link header-nav__link mobile-link">products</a>
+              <a href="#" class="nav__link header-nav__link mobile-link"
+                >products</a
+              >
             </li>
             <li class="nav__item header-nav__item">
-              <a href="#" class="nav__link header-nav__link mobile-link">support</a>
+              <a href="#" class="nav__link header-nav__link mobile-link"
+                >support</a
+              >
             </li>
           </ul>
           <button class="nav__burger">
             <span class="burger-line"></span>
           </button>
         </nav>
-        <main class="ls-header__main">
+        <main class="wow fadeInUp ls-header__main" data-wow-offset="0">
           <div class="main__content">
             <h1 class="main__title">Immersive experiences that deliver</h1>
           </div>
@@ -60,7 +71,10 @@
 
     <section class="section ls-about" id="about">
       <div class="container ls-about__container section__container">
-        <figure class="ls-about__image-box">
+        <figure
+          class="wow fadeInRight ls-about__image-box"
+          data-wow-offset="200"
+        >
           <picture>
             <source
               srcset="./img/desktop/image-interactive-d.jpg"
@@ -79,7 +93,7 @@
             />
           </picture>
         </figure>
-        <div class="ls-about__description">
+        <div class="wow fadeInLeft ls-about__description" data-wow-offset="200">
           <h2 class="description__title section__title">
             The leader in interactive VR
           </h2>
@@ -98,11 +112,21 @@
 
     <section class="section ls-creations">
       <div class="container ls-creations__container section__container">
-        <h2 class="ls-creations__title section__title">Our creations</h2>
-        <a href="#" class="ls-creations__link">see all</a>
+        <h2
+          class="wow fadeInRight ls-creations__title section__title"
+          data-wow-offset="200"
+        >
+          Our creations
+        </h2>
+        <a
+          href="#"
+          class="wow fadeInLeft ls-creations__link"
+          data-wow-offset="200"
+          >see all</a
+        >
         <!-- /.ls-creations__header -->
         <ul class="ls-creations__preview preview__list">
-          <li class="preview-list__item">
+          <li class="wow fadeInUp preview-list__item" data-wow-offset="200">
             <a href="#" class="preview-list__link">
               <picture class="preview-link__img-wrapper">
                 <source
@@ -124,7 +148,7 @@
               <h3 class="link__title preview-link__title">deep<br />earth</h3>
             </a>
           </li>
-          <li class="preview-list__item">
+          <li class="wow fadeInUp preview-list__item" data-wow-offset="200">
             <a href="#" class="preview-list__link">
               <picture class="preview-link__img-wrapper">
                 <source
@@ -146,7 +170,7 @@
               <h3 class="link__title preview-link__title">night<br />arcade</h3>
             </a>
           </li>
-          <li class="preview-list__item">
+          <li class="wow fadeInUp preview-list__item" data-wow-offset="200">
             <a href="#" class="preview-list__link">
               <picture class="preview-link__img-wrapper">
                 <source
@@ -170,7 +194,7 @@
               </h3>
             </a>
           </li>
-          <li class="preview-list__item">
+          <li class="wow fadeInUp preview-list__item" data-wow-offset="200">
             <a href="#" class="preview-list__link">
               <picture class="preview-link__img-wrapper">
                 <source
@@ -192,7 +216,7 @@
               <h3 class="link__title preview-link__title">the<br />grid</h3>
             </a>
           </li>
-          <li class="preview-list__item">
+          <li class="wow fadeInUp preview-list__item" data-wow-offset="200">
             <a href="#" class="preview-list__link">
               <picture class="preview-link__img-wrapper">
                 <source
@@ -216,7 +240,7 @@
               </h3>
             </a>
           </li>
-          <li class="preview-list__item">
+          <li class="wow fadeInUp preview-list__item" data-wow-offset="200">
             <a href="#" class="preview-list__link">
               <picture class="preview-link__img-wrapper">
                 <source
@@ -240,7 +264,7 @@
               </h3>
             </a>
           </li>
-          <li class="preview-list__item">
+          <li class="wow fadeInUp preview-list__item" data-wow-offset="200">
             <a href="#" class="preview-list__link">
               <picture class="preview-link__img-wrapper">
                 <source
@@ -264,7 +288,7 @@
               </h3>
             </a>
           </li>
-          <li class="preview-list__item">
+          <li class="wow fadeInUp preview-list__item" data-wow-offset="200">
             <a href="#" class="preview-list__link">
               <picture class="preview-link__img-wrapper">
                 <source
@@ -297,7 +321,7 @@
 
     <footer class="ls-footer">
       <div class="container section__container ls-footer__container">
-        <nav class="ls-footer__nav">
+        <nav class="ls-footer__nav wow fadeInRight">
           <a href="#" class="logo ls-footer__logo">loopstudios</a>
           <ul class="nav__list footer-nav__list">
             <li class="nav__item footer-nav__item">
@@ -319,7 +343,7 @@
         </nav>
         <!-- /.ls-footer__nav -->
 
-        <div class="ls-footer__social">
+        <div class="ls-footer__social wow fadeInLeft">
           <ul class="social__list">
             <li class="social__item">
               <a href="#" class="social__link" target="_blank">
@@ -409,6 +433,10 @@
     Coded by <a href="#">Your Name Here</a>.
   </div> -->
 
+    <script src="assets/libs/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
     <script src="js/bundle.js"></script>
   </body>
 </html>
