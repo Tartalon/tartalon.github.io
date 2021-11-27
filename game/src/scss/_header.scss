@@ -1,0 +1,56 @@
+.header {
+  width: 100%;
+  min-height: 100vh;
+  padding: px_to_rem(20px) 0;
+
+  &__nav {
+    font-family: $main-font-b;
+    font-size: px_to_rem(12px);
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.nav {
+  &__list {
+    display: none;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 35px;
+  }
+
+  &__link {
+    font-family: $main-font-b;
+    font-size: px_to_rem(12px);
+    text-transform: uppercase;
+  }
+
+  &-actions {
+    display: flex;
+    align-items: center;
+  }
+
+  &__langs-box {
+    margin-right: 40px;
+  }
+
+  &__langs {
+    font-family: inherit;
+    font-size: inherit;
+    text-transform: inherit;
+    border: none;
+    max-width: 50px;
+    padding-right: 20px;
+  }
+
+  &-svg {
+    @include square(31px);
+  }
+}
+
+.logo__image {
+  @include square(55px);
+}

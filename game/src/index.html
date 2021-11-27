@@ -16,7 +16,7 @@
       <div class="container">
         <nav class="header__nav">
           <div class="logo-box">
-            <img src="./img/logo.png" alt="" class="logo__image" />
+            <img src="./img/logo.png" alt="logo" class="logo__image" />
           </div>
           <ul class="nav__list">
             <li class="nav__item"><a href="#" class="nav__link">main</a></li>
@@ -29,14 +29,18 @@
             </li>
             <li class="nav__item"><a href="#" class="nav__link">quotes</a></li>
           </ul>
-          <div class="nav__leng"><span>eng</span></div>
-          <div class="nav__social">
-            <svg class="nav__xbox-icon svg">
-              <use xlink:href="#xbox"></use>
-            </svg>
-            <svg class="nav__steam-icon svg">
-              <use xlink:href="#steam"></use>
-            </svg>
+          <div class="nav-actions">
+            <div class="nav__langs-box">
+              <input type="text" value="eng" class="nav__langs" />
+            </div>
+            <div class="nav__social">
+              <svg class="nav__xbox-icon nav-svg">
+                <use xlink:href="#xbox"></use>
+              </svg>
+              <svg class="nav__steam-icon nav-svg">
+                <use xlink:href="#steam"></use>
+              </svg>
+            </div>
           </div>
         </nav>
       </div>
