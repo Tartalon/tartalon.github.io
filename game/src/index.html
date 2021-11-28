@@ -12,39 +12,50 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header class="header">
-      <div class="container">
-        <nav class="header__nav">
-          <div class="logo-box">
-            <img src="./img/logo.png" alt="logo" class="logo__image" />
-          </div>
-          <ul class="nav__list">
-            <li class="nav__item"><a href="#" class="nav__link">main</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">about</a></li>
-            <li class="nav__item">
-              <a href="#" class="nav__link">game features</a>
-            </li>
-            <li class="nav__item">
-              <a href="#" class="nav__link">system requirements</a>
-            </li>
-            <li class="nav__item"><a href="#" class="nav__link">quotes</a></li>
-          </ul>
-          <div class="nav-actions">
-            <div class="nav__langs-box">
-              <input type="text" value="eng" class="nav__langs" />
+    <section class="first-screen">
+      <header class="header">
+        <div class="container">
+          <nav class="header__nav">
+            <div class="logo-box">
+              <a class="logo__link" href="#">
+                <img src="./img/logo.png" alt="logo" class="logo__image" />
+              </a>
             </div>
-            <div class="nav__social">
-              <svg class="nav__xbox-icon nav-svg">
-                <use xlink:href="#xbox"></use>
-              </svg>
-              <svg class="nav__steam-icon nav-svg">
-                <use xlink:href="#steam"></use>
-              </svg>
+            <ul class="nav__list">
+              <li class="nav__item"><a href="#" class="nav__link">main</a></li>
+              <li class="nav__item"><a href="#" class="nav__link">about</a></li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">game features</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">system requirements</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">quotes</a>
+              </li>
+            </ul>
+            <div class="nav-actions">
+              <div class="nav__langs-box">
+                <ul class="nav__langs lang__list">
+                  <li class="lang__item">eng</li>
+                  <li class="lang__item">rus</li>
+                  <li class="lang__item">fra</li>
+                  <li class="lang__item">deu</li>
+                </ul>
+              </div>
+              <div class="nav__social">
+                <svg class="nav__xbox-icon nav-svg">
+                  <use xlink:href="#xbox"></use>
+                </svg>
+                <svg class="nav__steam-icon nav-svg">
+                  <use xlink:href="#steam"></use>
+                </svg>
+              </div>
             </div>
-          </div>
-        </nav>
-      </div>
-    </header>
+          </nav>
+        </div>
+      </header>
+    </section>
 
     <svg xmlns="http://www.w3.org/2000/svg" display="none">
       <symbol id="xbox" viewbox="0 0 31 31">
