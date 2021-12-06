@@ -1,12 +1,13 @@
 .first-screen {
   max-width: 1960px;
+  min-height: 100vh;
   background: url(../img/main_bg-min.jpg) no-repeat bottom;
   background-size: cover;
   margin: 0 auto;
   position: relative;
 
   &::after {
-    content: "";
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
@@ -23,7 +24,7 @@
 
 .header {
   width: 100%;
-  min-height: 100vh;
+  min-height: 100%;
   padding: px_to_rem(20px) 0;
   position: relative;
   z-index: 2;
@@ -70,7 +71,7 @@
     position: relative;
 
     &::after {
-      content: "";
+      content: '';
       position: absolute;
       z-index: 0;
       top: -10px;
@@ -109,7 +110,7 @@
     position: relative;
 
     &::after {
-      content: "";
+      content: '';
       position: absolute;
       top: 0;
       right: 2px;
@@ -151,4 +152,68 @@
   &:hover .nav-svg {
     fill: $white;
   }
+}
+
+// Hamburger =======================
+
+.header__hamburger {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 18px;
+
+  & span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: $white;
+    position: relative;
+    border-radius: 3px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: -6px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: $white;
+      border-radius: 3px;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 6px;
+      left: 50%;
+      width: 50%;
+      height: 2px;
+      background-color: $white;
+      border-radius: 3px;
+    }
+  }
+}
+
+// Gif ======================
+.img-gif__box {
+  position: absolute;
+  top: 0;
+  // left: -100%;
+  width: 150px;
+  height: max-content;
+  animation: 4s infinite fly-in;
+}
+
+@keyframes fly-in {
+  from {
+    left: -100%;
+  }
+  to {
+    right: 400px;
+  }
+}
+
+.img-gif {
+  width: 100%;
 }

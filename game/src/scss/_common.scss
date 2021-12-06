@@ -27,29 +27,32 @@ a {
 }
 
 @font-face {
-  font-family: "Bebas";
+  font-family: 'Bebas';
   font-style: normal;
   font-weight: 700;
-  src: url("../assets/fonts/BebasNeue-Bold.woff");
+  src: url('../assets/fonts/BebasNeue-Bold.woff');
 }
 
 @font-face {
-  font-family: "OpenSans-b";
+  font-family: 'OpenSans-b';
   font-style: normal;
   font-weight: 700;
-  src: url("../assets/fonts/OpenSans-Bold.woff");
+  src: url('../assets/fonts/OpenSans-Bold.woff');
 }
 
 @font-face {
-  font-family: "OpenSans-r";
+  font-family: 'OpenSans-r';
   font-style: normal;
   font-weight: 400;
-  src: url("../assets/fonts/OpenSans-Regular.woff");
+  src: url('../assets/fonts/OpenSans-Regular.woff');
 }
 
 .container {
   width: 100%;
   max-width: 1200px;
+  min-height: inherit;
   padding: 0 15px;
   margin: 0 auto;
+  overflow: hidden;
+  position: relative;
 }

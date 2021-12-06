@@ -16,3 +16,27 @@
   width: $size;
   height: $size;
 }
+
+@mixin xl-screen {
+  @media only screen and (min-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin lg-screen {
+  @media only screen and (min-width: 992px) {
+    @content;
+  }
+}
+
+@mixin md-screen {
+  @media only screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin sm-screen {
+  @media only screen and (min-width: 576px) {
+    @content;
+  }
+}
