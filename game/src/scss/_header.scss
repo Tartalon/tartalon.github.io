@@ -43,6 +43,8 @@
 .nav {
   &__list {
     display: flex;
+    clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+    animation: 0.8s linear 1.8s clip forwards;
   }
 
   &__item:not(:last-child) {
@@ -58,6 +60,15 @@
 
     &:hover {
       color: $color-hover;
+    }
+  }
+
+  @keyframes clip {
+    from {
+      clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+    }
+    to {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     }
   }
 
@@ -195,25 +206,21 @@
   }
 }
 
-// Gif ======================
 .img-gif__box {
   position: absolute;
-  top: 0;
+  top: -15px;
   // left: -100%;
-  width: 150px;
-  height: max-content;
-  animation: 4s infinite fly-in;
+  width: 200px;
+  height: 100px;
+  animation: 3s linear 1s fly-in forwards;
+  background: center / contain url('../img/animated-helicopter-image-0037.gif');
 }
 
 @keyframes fly-in {
-  from {
-    left: -100%;
+  0% {
+    left: -30%;
   }
-  to {
-    right: 400px;
+  100% {
+    left: 120%;
   }
-}
-
-.img-gif {
-  width: 100%;
 }
