@@ -1,0 +1,29 @@
+.first-screen {
+  width: 100%;
+  min-height: 100vh;
+  padding: 30px 0 90px;
+}
+
+.header {
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.nav {
+  &__list {
+    display: flex;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 60px;
+  }
+
+  &__link {
+    font-size: px_to_em(12px);
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+  }
+}
