@@ -1,226 +1,292 @@
 .first-screen {
-  max-width: 1960px;
-  min-height: 100vh;
-  background: url(../img/main_bg-min.jpg) no-repeat bottom;
-  background-size: cover;
-  margin: 0 auto;
-  position: relative;
+	max-width: 1960px;
+	min-height: 100vh;
+	background: url(../img/mobile/bg_image_1-min.jpg) no-repeat bottom;
+	background-size: cover;
+	margin: 0 auto;
+	position: relative;
 
-  &::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: radial-gradient(
-      189.96% 61.18% at 50% 38.82%,
-      rgba(255, 181, 72, 0) 0%,
-      rgba(52, 44, 29, 0.80319) 73.22%,
-      #08090a 99.74%
-    );
-  }
+	&::after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: radial-gradient(
+			189.96% 61.18% at 50% 38.82%,
+			rgba(255, 181, 72, 0) 0%,
+			rgba(52, 44, 29, 0.80319) 73.22%,
+			#08090a 99.74%
+		);
+	}
+
+	@include sm-screen {
+		background: url(../img/main_bg-min.jpg) no-repeat bottom;
+	}
 }
 
 .header {
-  width: 100%;
-  min-height: 100%;
-  padding: px_to_rem(20px) 0;
-  position: relative;
-  z-index: 2;
+	width: 100%;
+	min-height: 100%;
+	padding: px_to_rem(20px) 0;
+	position: relative;
+	z-index: 2;
 
-  &__nav {
-    font-family: $main-font-b;
-    font-size: px_to_rem(12px);
-    text-transform: uppercase;
-    color: $white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+	&__nav {
+		font-family: $main-font-b;
+		font-size: px_to_rem(12px);
+		text-transform: uppercase;
+		color: $white;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
 }
 
 .nav {
-  &__list {
-    display: flex;
-    clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
-    animation: 0.8s linear 1.8s clip forwards;
-  }
+	&__list {
+		display: none;
 
-  &__item:not(:last-child) {
-    margin-right: 35px;
-  }
+		@include md-screen {
+			display: flex;
+		}
 
-  &__link {
-    display: block;
-    font-family: $main-font-b;
-    font-size: px_to_rem(12px);
-    text-transform: uppercase;
-    transition: all 0.2s linear;
+		@include lg-screen {
+			clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+			animation: 0.8s linear 1.86s clip forwards;
+		}
+	}
 
-    &:hover {
-      color: $color-hover;
-    }
-  }
+	&__item:not(:last-child) {
+		margin-right: 35px;
+	}
 
-  @keyframes clip {
-    from {
-      clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
-    }
-    to {
-      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-    }
-  }
+	&__link {
+		display: block;
+		font-family: $main-font-b;
+		font-size: px_to_rem(12px);
+		text-transform: uppercase;
+		transition: all 0.2s linear;
 
-  &-actions {
-    display: flex;
-    align-items: center;
-  }
+		&:hover {
+			color: $color-hover;
+		}
+	}
 
-  &__langs-box {
-    margin-right: 40px;
-    position: relative;
+	@keyframes clip {
+		from {
+			clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+		}
+		to {
+			clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+		}
+	}
 
-    &::after {
-      content: '';
-      position: absolute;
-      z-index: 0;
-      top: -10px;
-      right: -24px;
-      height: 30px;
-      width: 1px;
-      background-color: rgba(255, 255, 255, 0.5);
-    }
-  }
+	&-actions {
+		display: flex;
+		align-items: center;
+	}
 
-  &__social {
-    display: flex;
-  }
+	&__langs-box {
+		margin-right: 40px;
+		position: relative;
 
-  &-svg {
-    fill: #ffb548;
-    @include square(31px);
-    transition: all 0.2s linear;
+		&::after {
+			content: '';
+			position: absolute;
+			z-index: 0;
+			top: -10px;
+			right: -24px;
+			height: 30px;
+			width: 1px;
+			background-color: rgba(255, 255, 255, 0.5);
+		}
+	}
 
-    &:hover {
-      fill: $white;
-    }
-  }
+	&__social {
+		display: none;
+
+		@include sm-screen {
+			display: flex;
+			margin-right: 30px;
+		}
+
+		@include md-screen {
+			margin-right: 0;
+		}
+	}
+
+	&-svg {
+		fill: #ffb548;
+		@include square(31px);
+		transition: all 0.2s linear;
+
+		&:hover {
+			fill: $white;
+		}
+	}
 }
 
 .logo {
-  &__link {
-    display: block;
-  }
+	&__link {
+		display: block;
+	}
 }
 
 .lang {
-  &__list {
-    height: 1em;
-    overflow: hidden;
-    position: relative;
+	&__input {
+		font-family: inherit;
+		font-size: inherit;
+		font-weight: bold;
+		text-transform: uppercase;
+		background-color: transparent;
+		color: inherit;
+		max-width: 30px;
+		border: none;
+		transition: all 0.2s linear;
 
-    &::after {
-      content: '';
-      position: absolute;
-      top: 0;
-      right: 2px;
-      @include square(6px);
-      border-bottom: 2px solid $white;
-      border-left: 2px solid $white;
-      transform: rotate(-45deg);
-    }
-  }
+		&-wrapper {
+			position: relative;
+			padding-right: 10px;
+			transition: all 0.2s linear;
 
-  &__item {
-    padding-right: 20px;
+			&::after {
+				content: '';
+				position: absolute;
+				display: block;
+				right: 0;
+				top: 1.5px;
+				@include square(6px);
+				border-left: 2px solid $white;
+				border-bottom: 2px solid $white;
+				transform: rotate(-45deg);
+				transition: all 0.2s linear;
+			}
 
-    &:hover {
-      cursor: default;
-      color: $color-hover;
-    }
+			&:hover {
+				color: $color-hover;
+			}
 
-    &:hover::after {
-      border-color: $color-hover;
-    }
-  }
+			&:hover::after {
+				border-color: $color-hover;
+			}
+		}
+	}
+
+	&__list {
+		position: absolute;
+		top: 20px;
+		left: -5px;
+		background-color: black;
+		border-radius: 3px;
+		padding: 5px 20px 5px 5px;
+		display: none;
+	}
+
+	&__item {
+		margin-bottom: 3px;
+		&:hover {
+			cursor: default;
+			color: $color-hover;
+		}
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		&:hover {
+			color: $color-hover;
+		}
+	}
 }
 
 .logo__image {
-  @include square(55px);
+	@include square(55px);
 }
 
 .social {
-  &__link {
-    display: block;
-    margin-right: 15px;
+	&__link {
+		display: block;
+		margin-right: 15px;
+		transition: all 0.2s linear;
 
-    &:last-child {
-      margin-right: 0;
-    }
-  }
+		&:last-child {
+			margin-right: 0;
+		}
+	}
 
-  &:hover .nav-svg {
-    fill: $white;
-  }
+	&:hover .nav-svg {
+		fill: $white;
+	}
 }
 
-// Hamburger =======================
+// Burger =======================
 
-.header__hamburger {
-  display: none;
-  align-items: center;
-  justify-content: center;
-  width: 24px;
-  height: 18px;
+.header__burger {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 24px;
+	height: 18px;
 
-  & span {
-    display: block;
-    width: 100%;
-    height: 2px;
-    background-color: $white;
-    position: relative;
-    border-radius: 3px;
+	& span {
+		display: block;
+		width: 100%;
+		height: 2px;
+		background-color: $white;
+		position: relative;
+		border-radius: 3px;
 
-    &::before {
-      content: '';
-      position: absolute;
-      top: -6px;
-      left: 0;
-      width: 100%;
-      height: 2px;
-      background-color: $white;
-      border-radius: 3px;
-    }
+		&::before {
+			content: '';
+			position: absolute;
+			top: -6px;
+			left: 0;
+			width: 100%;
+			height: 2px;
+			background-color: $white;
+			border-radius: 3px;
+		}
 
-    &::after {
-      content: '';
-      position: absolute;
-      top: 6px;
-      left: 50%;
-      width: 50%;
-      height: 2px;
-      background-color: $white;
-      border-radius: 3px;
-    }
-  }
+		&::after {
+			content: '';
+			position: absolute;
+			top: 6px;
+			left: 50%;
+			width: 50%;
+			height: 2px;
+			background-color: $white;
+			border-radius: 3px;
+		}
+	}
+
+	@include md-screen {
+		display: none;
+	}
 }
 
-.img-gif__box {
-  position: absolute;
-  top: -15px;
-  // left: -100%;
-  width: 200px;
-  height: 100px;
-  animation: 3s linear 1s fly-in forwards;
-  background: center / contain url('../img/animated-helicopter-image-0037.gif');
+.gif-wrapper {
+	display: none;
+
+	@include lg-screen {
+		display: block;
+		position: absolute;
+		top: -15px;
+		left: -100%;
+		width: 200px;
+		height: 100px;
+		animation: 3s linear 1s fly-in forwards;
+		background: center / contain
+			url('../img/animated-helicopter-image-0037.gif');
+	}
 }
 
 @keyframes fly-in {
-  0% {
-    left: -30%;
-  }
-  100% {
-    left: 120%;
-  }
+	0% {
+		left: -30%;
+	}
+	100% {
+		left: 120%;
+	}
 }
