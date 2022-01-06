@@ -53,9 +53,10 @@
 		width: calc(100% + 30px);
 		height: 100vh;
 		top: 0;
-		left: -15px;
+		right: -120%;
 		padding: 80px 0 15px;
 		background-color: rgba(000, 000, 000, 0.7);
+		transition: all 0.3s ease-out;
 	}
 
 	&__list {
@@ -83,7 +84,7 @@
 	&__link {
 		display: block;
 		font-family: $main-font-b;
-		font-size: px_to_rem(25px);
+		font-size: px_to_rem(22px);
 		// font-size: px_to_rem(12px);
 		text-transform: uppercase;
 		transition: all 0.2s linear;
@@ -125,13 +126,13 @@
 
 	&__social {
 		display: none;
+		margin-right: 30px;
 
 		@include sm-screen {
 			display: flex;
-			margin-right: 30px;
 		}
 
-		@include md-screen {
+		@include lg-screen {
 			margin-right: 0;
 		}
 	}
@@ -150,6 +151,7 @@
 .social-mobile {
 	display: flex;
 	justify-content: center;
+	margin-right: 0;
 }
 
 .logo {
@@ -296,7 +298,7 @@
 		}
 	}
 
-	@include md-screen {
+	@include lg-screen {
 		display: none;
 	}
 }
