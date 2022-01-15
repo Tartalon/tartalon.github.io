@@ -51,12 +51,21 @@
 		position: absolute;
 		z-index: 2;
 		width: calc(100% + 30px);
-		height: 100vh;
+		min-height: 100vh;
 		top: 0;
 		right: -120%;
 		padding: 80px 0 15px;
 		background-color: rgba(000, 000, 000, 0.7);
 		transition: all 0.3s ease-out;
+
+		@include lg-screen {
+			right: 0;
+			background-color: transparent;
+			position: relative;
+			min-height: 100%;
+			width: 100%;
+			padding: inherit;
+		}
 	}
 
 	&__list {
@@ -66,28 +75,33 @@
 		align-items: center;
 		margin-bottom: 40px;
 
-		@include md-screen {
-			display: flex;
-		}
-
 		@include lg-screen {
+			flex-direction: row;
+			margin: 0 auto;
 			clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
-			animation: 0.8s linear 1.86s clip forwards;
+			animation: 0.8s linear 1.97s clip forwards;
 		}
 	}
 
 	&__item:not(:last-child) {
 		margin-bottom: 20px;
-		// margin-right: 35px;
+
+		@include lg-screen {
+			margin-bottom: 0;
+			margin-right: 35px;
+		}
 	}
 
 	&__link {
 		display: block;
 		font-family: $main-font-b;
 		font-size: px_to_rem(22px);
-		// font-size: px_to_rem(12px);
 		text-transform: uppercase;
 		transition: all 0.2s linear;
+
+		@include lg-screen {
+			font-size: px_to_rem(12px);
+		}
 
 		&:hover {
 			color: $color-hover;
@@ -152,6 +166,10 @@
 	display: flex;
 	justify-content: center;
 	margin-right: 0;
+
+	@include lg-screen {
+		display: none;
+	}
 }
 
 .logo {
